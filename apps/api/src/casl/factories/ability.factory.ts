@@ -9,7 +9,7 @@ import {
 import { AuthUser } from '../../auth/auth.interface';
 import { UserRole } from '../../user/user.constant';
 import { Product } from '../../product/schemas/product.schema';
-import { ProductWarrantyClaim } from '../../product/schemas/product-warranty-claim.schema';
+import { WarrantyClaim } from '../../product/schemas/warranty-claim.schema';
 
 import { Subject, AppAbility } from '../casl.interface';
 import { Action } from '../casl.constant';
@@ -27,13 +27,13 @@ export class AbilityFactory {
           [Action.Create, Action.Read, Action.Update, Action.Delete],
           Product,
         );
-        can([Action.Read, Action.Update], ProductWarrantyClaim);
+        can([Action.Read, Action.Update], WarrantyClaim);
         break;
 
       case UserRole.Customer:
       default:
         can([Action.Read], Product);
-        can([Action.Create, Action.Read], ProductWarrantyClaim);
+        can([Action.Create, Action.Read], WarrantyClaim);
         break;
     }
 

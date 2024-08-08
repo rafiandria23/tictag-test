@@ -1,4 +1,4 @@
-export enum ProductWarrantyClaimStatus {
+export enum WarrantyClaimStatus {
   Pending = 'pending',
   Approved = 'approved',
   Rejected = 'rejected',
@@ -11,7 +11,7 @@ export enum ProductSortProperty {
   UpdatedAt = 'updated_at',
 }
 
-export enum ProductWarrantyClaimSortProperty {
+export enum WarrantyClaimSortProperty {
   Id = 'id',
   Name = 'name',
   ConfirmedAt = 'confirmed_at',

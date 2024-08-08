@@ -53,9 +53,9 @@ import { DashboardModule } from '../dashboard/dashboard.module';
     CommonModule,
     CaslModule,
     AuthModule,
+    DashboardModule,
     UserModule,
     ProductModule,
-    DashboardModule,
   ],
   providers: [
     Logger,

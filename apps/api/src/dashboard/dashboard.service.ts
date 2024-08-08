@@ -1,19 +1,12 @@
-import _ from 'lodash';
 import { Injectable, UnprocessableEntityException } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
-import { Model, FilterQuery } from 'mongoose';
 
-import { PaginationDto } from '../common/dtos/pagination.dto';
-import { SortDto } from '../common/dtos/sort.dto';
 import { CommonService } from '../common/common.service';
 
-import { ProductWarrantyClaimStatus } from '../product/product.constant';
-import { Product } from '../product/schemas/product.schema';
-import { ProductWarrantyClaim } from '../product/schemas/product-warranty-claim.schema';
+import { WarrantyClaimStatus } from '../product/product.constant';
 import { CreateProductDto } from '../product/dtos/create-product.dto';
 import { ReadAllProductsDto } from '../product/dtos/read-all-products.dto';
 import { UpdateProductDto } from '../product/dtos/update-product.dto';
-import { CreateProductWarrantyClaimDto } from '../product/dtos/create-product-warranty-claim.dto';
+import { ReadAllWarrantyClaimsDto } from '../product/dtos/read-all-warranty-claims.dto';
 import { ProductService } from '../product/product.service';
 
 @Injectable()
@@ -23,34 +16,68 @@ export class DashboardService {
     private readonly productService: ProductService,
   ) {}
 
-  public createProduct(payload: CreateProductDto) {
-    return this.productService.create(payload);
+  public async createProduct(payload: CreateProductDto) {
+    const createdProduct = await this.productService.create(payload);
+
+    return this.commonService.successTimestamp({
+      data: createdProduct,
+    });
   }
 
-  public readProductById() {}
+  public async readProductById(id: string) {
+    const existingProduct = await this.productService.readById(id).exec();
 
-  public readAllProducts() {}
+    if (!existingProduct) {
+      throw new UnprocessableEntityException('Product does not exist!');
+    }
 
-  public updateProduct() {}
+    return this.commonService.successTimestamp({
+      data: existingProduct,
+    });
+  }
 
-  public deleteProduct() {}
+  public readAllProducts(queries: ReadAllProductsDto) {
+    return this.productService.readAll(queries);
+  }
 
-  public readProductWarrantyClaimById() {}
+  public updateProduct(id: string, payload: UpdateProductDto) {
+    return this.productService.update(id, payload);
+  }
 
-  public readAllProductWarrantyClaims() {}
+  public deleteProduct(id: string) {
+    return this.productService.delete(id);
+  }
 
-  public approveProductWarrantyClaim(id: string, approvedBy: string) {
+  public async readWarrantyClaimById(id: string) {
+    const existingWarrantyClaim = await this.productService
+      .readWarrantyClaimById(id)
+      .exec();
+
+    if (!existingWarrantyClaim) {
+      throw new UnprocessableEntityException('Warranty claim does not exist!');
+    }
+
+    return this.commonService.successTimestamp({
+      data: existingWarrantyClaim,
+    });
+  }
+
+  public readAllWarrantyClaims(queries: ReadAllWarrantyClaimsDto) {
+    return this.productService.readAllWarrantyClaims(queries);
+  }
+
+  public approveWarrantyClaim(id: string, approvedBy: string) {
     return this.productService.confirmWarrantyClaim(
       id,
-      ProductWarrantyClaimStatus.Approved,
+      WarrantyClaimStatus.Approved,
       approvedBy,
     );
   }
 
-  public rejectProductWarrantyClaim(id: string, rejectedBy: string) {
+  public rejectWarrantyClaim(id: string, rejectedBy: string) {
     return this.productService.confirmWarrantyClaim(
       id,
-      ProductWarrantyClaimStatus.Rejected,
+      WarrantyClaimStatus.Rejected,
       rejectedBy,
     );
   }

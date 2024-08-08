@@ -6,11 +6,12 @@ import { CaslModule } from '../casl/casl.module';
 
 import { Product, ProductSchema } from './schemas/product.schema';
 import {
-  ProductWarrantyClaim,
-  ProductWarrantyClaimSchema,
-} from './schemas/product-warranty-claim.schema';
+  WarrantyClaim,
+  WarrantyClaimSchema,
+} from './schemas/warranty-claim.schema';
 import { ProductService } from './product.service';
 import { ProductController } from './product.controller';
+import { WarrantyClaimController } from './warranty-claim.controller';
 
 @Module({
   imports: [
@@ -20,15 +21,15 @@ import { ProductController } from './product.controller';
         schema: ProductSchema,
       },
       {
-        name: ProductWarrantyClaim.name,
-        schema: ProductWarrantyClaimSchema,
+        name: WarrantyClaim.name,
+        schema: WarrantyClaimSchema,
       },
     ]),
     CommonModule,
     CaslModule,
   ],
   providers: [ProductService],
-  controllers: [ProductController],
+  controllers: [ProductController, WarrantyClaimController],
   exports: [ProductService],
 })
 export class ProductModule {}

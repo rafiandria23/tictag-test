@@ -4,11 +4,10 @@ import { HydratedDocument, Types } from 'mongoose';
 
 import { User, UserDocument } from '../../user/schemas/user.schema';
 
-import { ProductWarrantyClaimStatus } from '../product.constant';
+import { WarrantyClaimStatus } from '../product.constant';
 import { Product, ProductDocument } from './product.schema';
 
-export type ProductWarrantyClaimDocument =
-  HydratedDocument<ProductWarrantyClaim>;
+export type WarrantyClaimDocument = HydratedDocument<WarrantyClaim>;
 
 @Schema({
   collection: 'product_warranty_claims',
@@ -17,7 +16,7 @@ export type ProductWarrantyClaimDocument =
     updatedAt: 'updated_at',
   },
 })
-export class ProductWarrantyClaim {
+export class WarrantyClaim {
   @Prop({
     required: true,
   })
@@ -38,10 +37,10 @@ export class ProductWarrantyClaim {
   @Prop({
     type: String,
     required: true,
-    enum: _.values(ProductWarrantyClaimStatus),
-    default: ProductWarrantyClaimStatus.Pending,
+    enum: _.values(WarrantyClaimStatus),
+    default: WarrantyClaimStatus.Pending,
   })
-  status: ProductWarrantyClaimStatus;
+  status: WarrantyClaimStatus;
 
   @Prop({
     type: Types.ObjectId,
@@ -66,5 +65,4 @@ export class ProductWarrantyClaim {
   confirmed_at: Date | null;
 }
 
-export const ProductWarrantyClaimSchema =
-  SchemaFactory.createForClass(ProductWarrantyClaim);
+export const WarrantyClaimSchema = SchemaFactory.createForClass(WarrantyClaim);

@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString, IsMongoId } from 'class-validator';
 
-export class ReadProductWarrantyClaimByIdDto {
+export class ReadWarrantyClaimByIdDto {
   @ApiProperty({
     required: true,
   })

@@ -5,23 +5,23 @@ import { PaginationDto } from '../../common/dtos/pagination.dto';
 import { SortDto } from '../../common/dtos/sort.dto';
 
 import {
-  ProductWarrantyClaimSortProperty,
-  ProductWarrantyClaimStatus,
+  WarrantyClaimSortProperty,
+  WarrantyClaimStatus,
 } from '../product.constant';
 
-export class ReadAllProductWarrantyClaimsDto extends IntersectionType(
+export class ReadAllWarrantyClaimsDto extends IntersectionType(
   PaginationDto,
   SortDto,
 ) {
   @ApiProperty({
     required: false,
-    enum: ProductWarrantyClaimSortProperty,
+    enum: WarrantyClaimSortProperty,
   })
-  @IsEnum(ProductWarrantyClaimSortProperty)
+  @IsEnum(WarrantyClaimSortProperty)
   @IsString()
   @IsOptional()
-  public readonly sort_by?: ProductWarrantyClaimSortProperty =
-    ProductWarrantyClaimSortProperty.Name;
+  public readonly sort_by?: WarrantyClaimSortProperty =
+    WarrantyClaimSortProperty.Name;
 
   @ApiProperty({
     required: false,
@@ -47,13 +47,12 @@ export class ReadAllProductWarrantyClaimsDto extends IntersectionType(
 
   @ApiProperty({
     required: false,
-    enum: ProductWarrantyClaimStatus,
+    enum: WarrantyClaimStatus,
   })
-  @IsEnum(ProductWarrantyClaimStatus)
+  @IsEnum(WarrantyClaimStatus)
   @IsString()
   @IsOptional()
-  public readonly status?: ProductWarrantyClaimStatus =
-    ProductWarrantyClaimStatus.Pending;
+  public readonly status?: WarrantyClaimStatus = WarrantyClaimStatus.Pending;
 
   @ApiProperty({
     required: false,

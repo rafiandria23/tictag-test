@@ -24,7 +24,7 @@ export class UserController {
   public async me(@Auth() authUser: AuthUser) {
     const existingUser = await this.userService
       .readById(authUser.id)
-      .select(['-password'])
+      .select('-password')
       .exec();
 
     if (!existingUser) {
