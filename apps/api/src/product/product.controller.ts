@@ -8,7 +8,9 @@ import {
   Query,
   UnprocessableEntityException,
 } from '@nestjs/common';
+import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 
+import { DocsTag } from '../common/common.constant';
 import { CommonService } from '../common/common.service';
 import { Action } from '../casl/casl.constant';
 import { CheckPolicy } from '../casl/casl.decorator';
@@ -21,6 +23,8 @@ import { ProductService } from './product.service';
 
 @Controller('/products')
 @UseGuards(PolicyGuard)
+@ApiTags(DocsTag.Product)
+@ApiBearerAuth()
 export class ProductController {
   constructor(
     private readonly productService: ProductService,

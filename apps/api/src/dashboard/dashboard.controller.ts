@@ -12,7 +12,9 @@ import {
   Query,
   Body,
 } from '@nestjs/common';
+import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 
+import { DocsTag } from '../common/common.constant';
 import { Action } from '../casl/casl.constant';
 import { CheckPolicy } from '../casl/casl.decorator';
 import { PolicyGuard } from '../casl/guards/policy.guard';
@@ -31,6 +33,8 @@ import { DashboardService } from './dashboard.service';
 
 @Controller('/dashboard')
 @UseGuards(PolicyGuard)
+@ApiTags(DocsTag.Dashboard)
+@ApiBearerAuth()
 export class DashboardController {
   constructor(private readonly dashboardService: DashboardService) {}
 

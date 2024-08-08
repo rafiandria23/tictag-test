@@ -12,3 +12,10 @@ export enum SortDirection {
   ASC = 'asc',
   DESC = 'desc',
 }
+
+export enum DocsTag {
+  Auth = 'Auth',
+  Dashboard = 'Dashboard',
+  User = 'User',
+  Product = 'Product',
+}

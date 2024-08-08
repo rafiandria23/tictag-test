@@ -5,7 +5,9 @@ import {
   HttpStatus,
   UnprocessableEntityException,
 } from '@nestjs/common';
+import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 
+import { DocsTag } from '../common/common.constant';
 import { CommonService } from '../common/common.service';
 import { AuthUser } from '../auth/auth.interface';
 import { Auth } from '../auth/auth.decorator';
@@ -13,6 +15,8 @@ import { Auth } from '../auth/auth.decorator';
 import { UserService } from './user.service';
 
 @Controller('/users')
+@ApiTags(DocsTag.User)
+@ApiBearerAuth()
 export class UserController {
   constructor(
     private readonly userService: UserService,

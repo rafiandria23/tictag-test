@@ -5,6 +5,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
+import { DocsTag } from './common/common.constant';
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
@@ -17,8 +18,11 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Tictag Test API')
-    .setDescription('Test for Tictag.')
     .setVersion('1.0')
+    .addTag(DocsTag.Auth)
+    .addTag(DocsTag.Dashboard)
+    .addTag(DocsTag.User)
+    .addTag(DocsTag.Product)
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
@@ -34,7 +38,7 @@ async function bootstrap() {
       stream: {
         write: (message) => Logger.log(message.replace('\n', '')),
       },
-    })
+    }),
   );
 
   await app.listen(apiPort, apiHost);
