@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Mobile",
-    "slug": "mobile",
+    "name": "Tictag",
+    "slug": "tictag",
+    "scheme": "tictag",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -34,7 +35,8 @@
           "skipProguard": false,
           "subdomains": ["10.0.2.2", "localhost"]
         }
-      ]
+      ],
+      "expo-secure-store"
     ]
   }
 }

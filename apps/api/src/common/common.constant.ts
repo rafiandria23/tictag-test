@@ -1,16 +1,16 @@
 export enum PaginationPage {
-  MIN = 1,
+  Min = 1,
 }
 
 export enum PaginationSize {
-  MIN = 1,
-  MAX = 500,
-  DEFAULT = 10,
+  Min = 1,
+  Max = 500,
+  Default = 10,
 }
 
 export enum SortDirection {
-  ASC = 'asc',
-  DESC = 'desc',
+  Asc = 'asc',
+  Desc = 'desc',
 }
 
 export enum DocsTag {

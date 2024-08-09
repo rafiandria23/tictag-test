@@ -11,5 +11,5 @@ export class SortDto {
   @IsEnum(SortDirection)
   @IsString()
   @IsOptional()
-  public readonly sort?: SortDirection = SortDirection.ASC;
+  public readonly sort?: SortDirection = SortDirection.Asc;
 }

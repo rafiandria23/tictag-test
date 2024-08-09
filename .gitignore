@@ -60,4 +60,4 @@ apps/mobile-e2e/artifacts
 
 # Env
 .env
-.env.local
+.env*.local

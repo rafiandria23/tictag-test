@@ -2,6 +2,11 @@
   "name": "mobile",
   "version": "0.0.1",
   "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp yarn.lock apps/mobile",
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/mobile"
+  },
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
@@ -9,10 +14,38 @@
     "react-native": "*",
     "expo": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "jest-expo": "*",
+    "@nx/devkit": "*",
+    "@nx/eslint": "*",
+    "@nx/jest": "*",
+    "@nx/js": "*",
+    "@nx/react": "*",
+    "@nx/web": "*",
+    "@nx/webpack": "*",
+    "chalk": "*",
+    "enhanced-resolve": "*",
+    "fs-extra": "*",
+    "metro-resolver": "*",
+    "node-fetch": "*",
+    "tsconfig-paths": "*",
+    "tslib": "*",
+    "@expo/metro-config": "*",
+    "react-native-svg-transformer": "*",
+    "react": "*",
+    "react-redux": "*",
+    "react-native-paper": "*",
+    "dayjs": "*",
+    "@reduxjs/toolkit": "*",
+    "zod": "*",
+    "expo-router": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*",
+    "expo-linking": "*",
+    "expo-constants": "*",
+    "expo-status-bar": "*",
+    "react-dom": "*",
+    "expo-secure-store": "*"
   },
-  "scripts": {
-    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/mobile && cp yarn.lock apps/mobile",
-    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/mobile"
-  }
+  "devDependencies": {}
 }

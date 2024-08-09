@@ -26,7 +26,7 @@ export class User {
 
   @Prop({
     required: false,
-    default: true,
+    default: null,
   })
   last_name?: string;
 

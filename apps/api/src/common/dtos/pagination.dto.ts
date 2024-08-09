@@ -7,25 +7,25 @@ import { PaginationPage, PaginationSize } from '../common.constant';
 export class PaginationDto {
   @ApiProperty({
     required: false,
-    minimum: PaginationPage.MIN,
-    default: PaginationPage.MIN,
+    minimum: PaginationPage.Min,
+    default: PaginationPage.Min,
   })
   @Transform(({ value }) => parseInt(value, 10))
-  @Min(PaginationPage.MIN)
+  @Min(PaginationPage.Min)
   @IsNumber()
   @IsOptional()
-  public readonly page?: number = PaginationPage.MIN;
+  public readonly page?: number = PaginationPage.Min;
 
   @ApiProperty({
     required: false,
-    minimum: PaginationSize.MIN,
-    maximum: PaginationSize.MAX,
-    default: PaginationSize.DEFAULT,
+    minimum: PaginationSize.Min,
+    maximum: PaginationSize.Max,
+    default: PaginationSize.Default,
   })
   @Transform(({ value }) => parseInt(value, 10))
-  @Max(PaginationSize.MAX)
-  @Min(PaginationSize.MIN)
+  @Max(PaginationSize.Max)
+  @Min(PaginationSize.Min)
   @IsNumber()
   @IsOptional()
-  public readonly page_size?: number = PaginationSize.DEFAULT;
+  public readonly page_size?: number = PaginationSize.Default;
 }
