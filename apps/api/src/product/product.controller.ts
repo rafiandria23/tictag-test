@@ -37,6 +37,7 @@ export class ProductController {
   public async readById(@Param() params: ReadProductByIdDto) {
     const existingProduct = await this.productService
       .readById(params.id)
+      .lean()
       .exec();
 
     if (!existingProduct) {

@@ -27,6 +27,7 @@ export class AuthService {
     const existingUser = await this.userService
       .readByEmail(payload.email)
       .populate('password')
+      .lean()
       .exec();
 
     if (existingUser !== null) {
@@ -65,6 +66,7 @@ export class AuthService {
     const existingUser = await this.userService
       .readByEmail(payload.email)
       .populate('password')
+      .lean()
       .exec();
 
     if (!existingUser) {

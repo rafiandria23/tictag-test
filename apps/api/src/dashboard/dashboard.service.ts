@@ -25,7 +25,10 @@ export class DashboardService {
   }
 
   public async readProductById(id: string) {
-    const existingProduct = await this.productService.readById(id).exec();
+    const existingProduct = await this.productService
+      .readById(id)
+      .lean()
+      .exec();
 
     if (!existingProduct) {
       throw new UnprocessableEntityException('Product does not exist!');
@@ -51,6 +54,7 @@ export class DashboardService {
   public async readWarrantyClaimById(id: string) {
     const existingWarrantyClaim = await this.productService
       .readWarrantyClaimById(id)
+      .lean()
       .exec();
 
     if (!existingWarrantyClaim) {

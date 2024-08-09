@@ -29,6 +29,7 @@ export class UserController {
     const existingUser = await this.userService
       .readById(authUser.id)
       .select('-password')
+      .lean()
       .exec();
 
     if (!existingUser) {

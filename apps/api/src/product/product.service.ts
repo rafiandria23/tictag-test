@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import { Injectable, UnprocessableEntityException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model, FilterQuery } from 'mongoose';
+import { Model, Types, FilterQuery } from 'mongoose';
+import dayjs from 'dayjs';
 
 import { PaginationDto } from '../common/dtos/pagination.dto';
 import { SortDto } from '../common/dtos/sort.dto';
@@ -48,9 +49,7 @@ export class ProductService {
 
     if (!_.isEmpty(candidates)) {
       _.forOwn(candidates, (candidateValue, candidateKey) => {
-        _.set(filters, candidateKey, {
-          $reges: new RegExp(candidateValue as string, 'i'),
-        });
+        _.set(filters, candidateKey, new RegExp(candidateValue as string, 'i'));
       });
     }
 
@@ -76,7 +75,7 @@ export class ProductService {
   }
 
   public async update(id: string, payload: UpdateProductDto) {
-    const { modifiedCount } = await this.warrantyClaimModel
+    const { modifiedCount } = await this.productModel
       .updateOne(
         {
           _id: id,
@@ -134,7 +133,7 @@ export class ProductService {
       name: payload.name,
       description: payload.description,
       product: existingProduct._id,
-      submitted_by: submittedBy,
+      submitted_by: new Types.ObjectId(submittedBy),
     });
 
     return this.commonService.successTimestamp({
@@ -160,10 +159,16 @@ export class ProductService {
     ]);
 
     if (!_.isEmpty(candidates)) {
+      const refCandidateKeys = ['product', 'submitted_by', 'confirmed_by'];
+
       _.forOwn(candidates, (candidateValue, candidateKey) => {
-        _.set(filters, candidateKey, {
-          $reges: new RegExp(candidateValue as string, 'i'),
-        });
+        _.set(
+          filters,
+          candidateKey,
+          refCandidateKeys.includes(candidateKey)
+            ? new Types.ObjectId(candidateValue)
+            : new RegExp(candidateValue as string, 'i'),
+        );
       });
     }
 
@@ -204,8 +209,12 @@ export class ProductService {
 
     if (existingWarrantyClaim.status === WarrantyClaimStatus.Pending) {
       _.set(existingWarrantyClaim, 'status', confirmation);
-      _.set(existingWarrantyClaim, 'confirmed_by', confirmedBy);
-      _.set(existingWarrantyClaim, 'confirmed_at', new Date());
+      _.set(
+        existingWarrantyClaim,
+        'confirmed_by',
+        new Types.ObjectId(confirmedBy),
+      );
+      _.set(existingWarrantyClaim, 'confirmed_at', dayjs());
 
       await existingWarrantyClaim.save();
 

@@ -11,6 +11,7 @@ import {
   UnprocessableEntityException,
 } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
+import { Types } from 'mongoose';
 
 import { DocsTag } from '../common/common.constant';
 import { CommonService } from '../common/common.service';
@@ -54,7 +55,10 @@ export class WarrantyClaimController {
   ) {
     const existingWarrantyClaim = await this.productService
       .readWarrantyClaimById(params.id)
-      .where('submitted_by', authUser.id)
+      .where({
+        submitted_by: new Types.ObjectId(authUser.id),
+      })
+      .lean()
       .exec();
 
     if (!existingWarrantyClaim) {
