@@ -24,7 +24,7 @@ import { Auth } from '../auth/auth.decorator';
 import { WarrantyClaim } from './schemas/warranty-claim.schema';
 import { CreateWarrantyClaimDto } from './dtos/create-warranty-claim.dto';
 import { ReadWarrantyClaimByIdDto } from './dtos/read-warranty-claim-by-id.dto';
-import { ReadAllWarrantyClaimsDto } from './dtos/read-all-warranty-claims.dto';
+import { CustomerReadAllWarrantyClaimsDto } from './dtos/customer-read-all-warranty-claims.dto';
 import { ProductService } from './product.service';
 
 @Controller('/warranty-claims')
@@ -74,7 +74,7 @@ export class WarrantyClaimController {
   @CheckPolicy((ability) => ability.can(Action.Read, WarrantyClaim))
   public readAll(
     @Auth() authUser: AuthUser,
-    @Query() queries: ReadAllWarrantyClaimsDto,
+    @Query() queries: CustomerReadAllWarrantyClaimsDto,
   ) {
     return this.productService.readAllWarrantyClaims({
       ...queries,
