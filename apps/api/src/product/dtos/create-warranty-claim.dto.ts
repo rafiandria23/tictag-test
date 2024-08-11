@@ -1,10 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString, IsMongoId } from 'class-validator';
+import { Transform } from 'class-transformer';
 
 export class CreateWarrantyClaimDto {
   @ApiProperty({
     required: true,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsNotEmpty()
   public readonly name: string;
@@ -12,6 +14,7 @@ export class CreateWarrantyClaimDto {
   @ApiProperty({
     required: true,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsNotEmpty()
   public readonly description: string;
@@ -20,6 +23,7 @@ export class CreateWarrantyClaimDto {
     required: true,
   })
   @IsMongoId()
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsNotEmpty()
   product: string;

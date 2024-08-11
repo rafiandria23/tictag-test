@@ -1,5 +1,6 @@
 import { IntersectionType, ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString, IsEnum } from 'class-validator';
+import { Transform } from 'class-transformer';
 
 import { PaginationDto } from '../../common/dtos/pagination.dto';
 import { SortDto } from '../../common/dtos/sort.dto';
@@ -15,6 +16,7 @@ export class ReadAllProductsDto extends IntersectionType(
     enum: ProductSortProperty,
   })
   @IsEnum(ProductSortProperty)
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly sort_by?: ProductSortProperty = ProductSortProperty.Name;
@@ -22,6 +24,7 @@ export class ReadAllProductsDto extends IntersectionType(
   @ApiProperty({
     required: false,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly name?: string;
@@ -29,6 +32,7 @@ export class ReadAllProductsDto extends IntersectionType(
   @ApiProperty({
     required: false,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly description?: string;

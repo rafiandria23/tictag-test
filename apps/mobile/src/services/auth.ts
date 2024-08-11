@@ -1,11 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 import type { SuccessTimestamp } from '../interfaces/api';
-import type {
-  AuthToken,
-  SignUpPayload,
-  SignInPayload,
-} from '../interfaces/auth';
+import type { AuthToken, SignUpPayload } from '../interfaces/auth';
+import type { SignInPayload } from '../types/auth';
 
 export const authApi = createApi({
   reducerPath: 'authApi',

@@ -1,5 +1,6 @@
 import { IntersectionType, ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString, IsEnum, IsMongoId } from 'class-validator';
+import { Transform } from 'class-transformer';
 
 import { PaginationDto } from '../../common/dtos/pagination.dto';
 import { SortDto } from '../../common/dtos/sort.dto';
@@ -18,6 +19,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
     enum: WarrantyClaimSortProperty,
   })
   @IsEnum(WarrantyClaimSortProperty)
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly sort_by?: WarrantyClaimSortProperty =
@@ -26,6 +28,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
   @ApiProperty({
     required: false,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly name?: string;
@@ -33,6 +36,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
   @ApiProperty({
     required: false,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly description?: string;
@@ -41,6 +45,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
     required: false,
   })
   @IsMongoId()
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly product?: string;
@@ -50,6 +55,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
     enum: WarrantyClaimStatus,
   })
   @IsEnum(WarrantyClaimStatus)
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly status?: WarrantyClaimStatus = WarrantyClaimStatus.Pending;
@@ -58,6 +64,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
     required: false,
   })
   @IsMongoId()
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly submitted_by?: string;
@@ -66,6 +73,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
     required: false,
   })
   @IsMongoId()
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsOptional()
   public readonly confirmed_by?: string;

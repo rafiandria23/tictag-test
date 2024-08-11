@@ -14,6 +14,7 @@ export class CreateUserDto {
   @ApiProperty({
     required: true,
   })
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsNotEmpty()
   public readonly first_name: string;
@@ -21,6 +22,7 @@ export class CreateUserDto {
   @ApiProperty({
     required: false,
   })
+  @Transform(({ value }) => (!value ? null : value.trim()))
   @IsString()
   @IsOptional()
   public readonly last_name?: string;
@@ -29,8 +31,8 @@ export class CreateUserDto {
     required: true,
     format: 'email',
   })
-  @Transform(({ value }) => value?.trim().toLowerCase())
   @IsEmail()
+  @Transform(({ value }) => value?.trim().toLowerCase())
   @IsString()
   @IsNotEmpty()
   public readonly email: string;
@@ -40,6 +42,7 @@ export class CreateUserDto {
     enum: UserRole,
   })
   @IsEnum(UserRole)
+  @Transform(({ value }) => value?.trim())
   @IsString()
   @IsNotEmpty()
   public readonly role: UserRole;

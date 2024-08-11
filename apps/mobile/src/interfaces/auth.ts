@@ -4,8 +4,7 @@ export interface AuthToken {
   access_token: string;
 }
 
-export interface SignUpPayload extends Omit<User, '_id'> {
+export interface SignUpPayload extends Pick<User, 'first_name' | 'email'> {
+  last_name: string;
   password: string;
 }
-
-export type SignInPayload = Pick<SignUpPayload, 'email' | 'password'>;

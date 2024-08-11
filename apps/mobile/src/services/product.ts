@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import * as SecureStore from 'expo-secure-store';
 
 import type { SuccessTimestamp, ReadAllMetadata } from '../interfaces/api';
 import type {
@@ -10,11 +11,23 @@ import {
   ReadAllProductsPayload,
   ReadAllWarrantyClaimsPayload,
 } from '../types/product';
+import { AuthSecureStoreKey } from '../constants/auth';
 
 export const productApi = createApi({
   reducerPath: 'productApi',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/products`,
+    prepareHeaders: async (headers) => {
+      const accessToken = await SecureStore.getItemAsync(
+        AuthSecureStoreKey.AccessToken,
+      );
+
+      if (accessToken !== null) {
+        headers.set('Authorization', `Bearer ${accessToken}`);
+      }
+
+      return headers;
+    },
   }),
   endpoints: (builder) => ({
     readById: builder.query<SuccessTimestamp<undefined, Product>, string>({
@@ -40,6 +53,17 @@ export const warrantyClaimApi = createApi({
   reducerPath: 'warrantyClaimApi',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/warranty-claims`,
+    prepareHeaders: async (headers) => {
+      const accessToken = await SecureStore.getItemAsync(
+        AuthSecureStoreKey.AccessToken,
+      );
+
+      if (accessToken !== null) {
+        headers.set('Authorization', `Bearer ${accessToken}`);
+      }
+
+      return headers;
+    },
   }),
   endpoints: (builder) => ({
     create: builder.mutation<

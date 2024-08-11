@@ -14,9 +14,9 @@ export interface PaginationPayload {
   page_size?: number;
 }
 
-export interface SortPayload<T = unknown> {
+export interface SortPayload<T> {
   sort?: SortDirection;
-  sort_by?: keyof T;
+  sort_by?: T;
 }
 
 export interface ReadAllMetadata {

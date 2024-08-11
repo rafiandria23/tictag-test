@@ -7,6 +7,7 @@ export const SignUpValidationSchema = zod.object({
       invalid_type_error: 'First name is invalid!',
     })
     .trim()
+
     .min(2, 'First name must not be empty!'),
   last_name: zod.string().trim().optional(),
   email: zod
@@ -15,6 +16,7 @@ export const SignUpValidationSchema = zod.object({
       invalid_type_error: 'Email is invalid!',
     })
     .trim()
+    .toLowerCase()
     .email('Email is invalid!'),
   password: zod
     .string({

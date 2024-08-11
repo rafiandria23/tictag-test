@@ -60,7 +60,7 @@ export class ProductService {
         .skip(queries.page_size * (queries.page - 1))
         .limit(queries.page_size)
         .sort({
-          [queries.sort_by]: queries.sort,
+          [queries.sort_by === 'id' ? '_id' : queries.sort_by]: queries.sort,
         })
         .lean()
         .exec(),
@@ -179,7 +179,7 @@ export class ProductService {
         .skip(queries.page_size * (queries.page - 1))
         .limit(queries.page_size)
         .sort({
-          [queries.sort_by]: queries.sort,
+          [queries.sort_by === 'id' ? '_id' : queries.sort_by]: queries.sort,
         })
         .populate('product')
         .populate('submitted_by', '-password')

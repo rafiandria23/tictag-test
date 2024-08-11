@@ -45,7 +45,12 @@
     "expo-constants": "*",
     "expo-status-bar": "*",
     "react-dom": "*",
-    "expo-secure-store": "*"
+    "expo-secure-store": "*",
+    "react-hook-form": "*",
+    "@hookform/resolvers": "*",
+    "validator": "*",
+    "expo-build-properties": "*",
+    "expo-splash-screen": "*"
   },
   "devDependencies": {}
 }
