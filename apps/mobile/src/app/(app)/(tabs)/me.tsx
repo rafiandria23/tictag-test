@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import { useCallback } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
-import { Button } from 'react-native-paper';
+import { Text, Button } from 'react-native-paper';
 
 import { AuthSecureStoreKey } from '../../../constants/auth';
 import { userApi } from '../../../services/user';
