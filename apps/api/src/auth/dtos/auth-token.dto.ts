@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class ReadAllMetadataDto {
+export class AuthTokenDto {
   @ApiProperty({
     required: true,
   })
-  public readonly total: number;
+  access_token: string;
 }

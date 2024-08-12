@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class ReadAllMetadataDto {
+export class ErrorMessageDto {
   @ApiProperty({
     required: true,
   })
-  public readonly total: number;
+  public readonly message: string;
 }
