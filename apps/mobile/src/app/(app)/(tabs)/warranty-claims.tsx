@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { useState, useCallback, useEffect } from 'react';
-import { View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { useRouter } from 'expo-router';
 import { TouchableRipple } from 'react-native-paper';
 
@@ -69,18 +69,25 @@ const WarrantyClaimsTabScreen: FC = () => {
   }, [metadata, warrantyClaims, handleFetch, filters]);
 
   return (
-    <View>
-      <FlatList
-        data={warrantyClaims}
-        keyExtractor={(warrantyClaim) => warrantyClaim._id}
-        onEndReached={handleFetchNext}
-        renderItem={({ item: warrantyClaim }) => (
-          <TouchableRipple onPress={handleDetails(warrantyClaim._id)}>
-            <WarrantyClaimCard warrantyClaim={warrantyClaim} />
-          </TouchableRipple>
-        )}
-      />
-    </View>
+    <FlatList
+      data={warrantyClaims}
+      keyExtractor={(warrantyClaim) => warrantyClaim._id}
+      onEndReached={handleFetchNext}
+      renderItem={({ item: warrantyClaim }) => (
+        <TouchableRipple
+          onPress={handleDetails(warrantyClaim._id)}
+          style={{
+            flex: 1,
+          }}
+        >
+          <WarrantyClaimCard warrantyClaim={warrantyClaim} />
+        </TouchableRipple>
+      )}
+      contentContainerStyle={{
+        padding: 16,
+        gap: 16,
+      }}
+    />
   );
 };
 

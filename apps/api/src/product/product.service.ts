@@ -8,7 +8,11 @@ import { PaginationDto } from '../common/dtos/pagination.dto';
 import { SortDto } from '../common/dtos/sort.dto';
 import { CommonService } from '../common/common.service';
 
-import { WarrantyClaimStatus } from './product.constant';
+import {
+  WarrantyClaimStatus,
+  ProductSortProperty,
+  WarrantyClaimSortProperty,
+} from './product.constant';
 import { Product } from './schemas/product.schema';
 import { WarrantyClaim } from './schemas/warranty-claim.schema';
 import { CreateProductDto } from './dtos/create-product.dto';
@@ -60,7 +64,9 @@ export class ProductService {
         .skip(queries.page_size * (queries.page - 1))
         .limit(queries.page_size)
         .sort({
-          [queries.sort_by === 'id' ? '_id' : queries.sort_by]: queries.sort,
+          [queries.sort_by === ProductSortProperty.Id
+            ? '_id'
+            : queries.sort_by]: queries.sort,
         })
         .lean()
         .exec(),
@@ -179,7 +185,9 @@ export class ProductService {
         .skip(queries.page_size * (queries.page - 1))
         .limit(queries.page_size)
         .sort({
-          [queries.sort_by === 'id' ? '_id' : queries.sort_by]: queries.sort,
+          [queries.sort_by === WarrantyClaimSortProperty.Id
+            ? '_id'
+            : queries.sort_by]: queries.sort,
         })
         .populate('product')
         .populate('submitted_by', '-password')

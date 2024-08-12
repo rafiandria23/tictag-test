@@ -38,10 +38,33 @@ const AppLayout: FC = () => {
   return (
     <Stack>
       <Stack.Screen
-        key="(tabs)"
         name="(tabs)"
         options={{
           headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="products/[id]"
+        options={{
+          headerBackTitleVisible: false,
+          title: 'Product Details',
+        }}
+      />
+
+      <Stack.Screen
+        name="warranty-claims/create"
+        options={{
+          headerBackTitleVisible: false,
+          title: 'Claim Warranty',
+        }}
+      />
+
+      <Stack.Screen
+        name="warranty-claims/[id]"
+        options={{
+          headerBackTitleVisible: false,
+          title: 'Warranty Claim Details',
         }}
       />
     </Stack>

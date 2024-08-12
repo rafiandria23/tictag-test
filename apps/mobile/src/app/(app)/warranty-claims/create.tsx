@@ -60,7 +60,6 @@ const CreateWarrantyClaimScreen: FC = () => {
   return (
     <View>
       <Controller
-        key="name"
         control={form.control}
         name="name"
         render={({ field, fieldState }) => (
@@ -82,7 +81,6 @@ const CreateWarrantyClaimScreen: FC = () => {
       />
 
       <Controller
-        key="description"
         control={form.control}
         name="description"
         render={({ field, fieldState }) => (

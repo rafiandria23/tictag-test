@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { useState, useCallback, useEffect } from 'react';
-import { View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { useRouter } from 'expo-router';
 import { TouchableRipple } from 'react-native-paper';
 
@@ -69,18 +69,30 @@ const ProductsTabScreen: FC = () => {
   }, [metadata, products, handleFetch, filters]);
 
   return (
-    <View>
-      <FlatList
-        data={products}
-        keyExtractor={(product) => product._id}
-        onEndReached={handleFetchNext}
-        renderItem={({ item: product }) => (
-          <TouchableRipple onPress={handleDetails(product._id)}>
-            <ProductCard product={product} />
-          </TouchableRipple>
-        )}
-      />
-    </View>
+    <FlatList
+      data={products}
+      keyExtractor={(product) => product._id}
+      onEndReached={handleFetchNext}
+      renderItem={({ item: product }) => (
+        <TouchableRipple
+          onPress={handleDetails(product._id)}
+          style={{
+            flex: 1,
+          }}
+        >
+          <ProductCard product={product} />
+        </TouchableRipple>
+      )}
+      numColumns={2}
+      columnWrapperStyle={{
+        justifyContent: 'space-between',
+        gap: 16,
+      }}
+      contentContainerStyle={{
+        padding: 16,
+        gap: 16,
+      }}
+    />
   );
 };
 

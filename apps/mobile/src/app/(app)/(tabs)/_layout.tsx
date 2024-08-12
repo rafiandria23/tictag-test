@@ -6,7 +6,6 @@ const TabLayout: FC = () => {
   return (
     <Tabs>
       <Tabs.Screen
-        key="products"
         name="products"
         options={{
           title: 'Products',
@@ -19,8 +18,8 @@ const TabLayout: FC = () => {
           ),
         }}
       />
+
       <Tabs.Screen
-        key="warranty-claims"
         name="warranty-claims"
         options={{
           title: 'Warranty Claims',
@@ -33,8 +32,8 @@ const TabLayout: FC = () => {
           ),
         }}
       />
+
       <Tabs.Screen
-        key="me"
         name="me"
         options={{
           title: 'Me',

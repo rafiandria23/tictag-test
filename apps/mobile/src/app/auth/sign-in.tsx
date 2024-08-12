@@ -1,11 +1,16 @@
 import type { FC } from 'react';
 import { useCallback } from 'react';
-import { View } from 'react-native';
+import {
+  SafeAreaView,
+  KeyboardAvoidingView,
+  ScrollView,
+  View,
+} from 'react-native';
 import { useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { TextInput, HelperText, Button } from 'react-native-paper';
+import { Text, TextInput, HelperText, Button } from 'react-native-paper';
 
 import type { SignInPayload } from '../../types/auth';
 import { AuthSecureStoreKey } from '../../constants/auth';
@@ -38,68 +43,114 @@ const SignInScreen: FC = () => {
     [signIn, router],
   );
 
+  const handleSignUp = useCallback(() => {
+    router.push('/auth/sign-up');
+  }, [router]);
+
   return (
-    <View>
-      <Controller
-        key="email"
-        control={form.control}
-        name="email"
-        render={({ field, fieldState }) => (
-          <>
-            <TextInput
-              ref={field.ref}
-              label="Email"
-              keyboardType="email-address"
-              autoCapitalize="none"
-              autoComplete="email"
-              autoCorrect={false}
-              autoFocus
-              textContentType="emailAddress"
-              returnKeyType="next"
-              value={field.value}
-              onBlur={field.onBlur}
-              onChangeText={field.onChange}
-              error={!!fieldState.error}
-              onSubmitEditing={() => form.setFocus('password')}
-            />
-            <HelperText type="error">{fieldState.error?.message}</HelperText>
-          </>
-        )}
-      />
-
-      <Controller
-        key="password"
-        control={form.control}
-        name="password"
-        render={({ field, fieldState }) => (
-          <>
-            <TextInput
-              ref={field.ref}
-              label="Password"
-              secureTextEntry
-              keyboardType="visible-password"
-              autoCapitalize="none"
-              autoComplete="password"
-              autoCorrect={false}
-              textContentType="password"
-              returnKeyType="send"
-              value={field.value}
-              onBlur={field.onBlur}
-              onChangeText={field.onChange}
-              error={!!fieldState.error}
-            />
-            <HelperText type="error">{fieldState.error?.message}</HelperText>
-          </>
-        )}
-      />
-
-      <Button
-        loading={signInStatus.isLoading}
-        onPress={form.handleSubmit(handleSignIn)}
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}
+    >
+      <KeyboardAvoidingView
+        behavior="padding"
+        style={{
+          flex: 1,
+        }}
       >
-        Sign in
-      </Button>
-    </View>
+        <ScrollView
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{
+            flexGrow: 1,
+            padding: 32,
+            gap: 32,
+          }}
+        >
+          <Text variant="titleLarge">Sign in</Text>
+
+          <View
+            style={{
+              gap: 16,
+            }}
+          >
+            <Controller
+              control={form.control}
+              name="email"
+              render={({ field, fieldState }) => (
+                <View>
+                  <TextInput
+                    ref={field.ref}
+                    label="Email"
+                    mode="outlined"
+                    inputMode="email"
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    autoComplete="email"
+                    autoCorrect={false}
+                    autoFocus
+                    textContentType="emailAddress"
+                    returnKeyType="next"
+                    value={field.value}
+                    onBlur={field.onBlur}
+                    onChangeText={field.onChange}
+                    error={!!fieldState.error}
+                    onSubmitEditing={() => form.setFocus('password')}
+                  />
+
+                  <HelperText type="error">
+                    {fieldState.error?.message}
+                  </HelperText>
+                </View>
+              )}
+            />
+
+            <Controller
+              control={form.control}
+              name="password"
+              render={({ field, fieldState }) => (
+                <View>
+                  <TextInput
+                    ref={field.ref}
+                    label="Password"
+                    mode="outlined"
+                    inputMode="text"
+                    secureTextEntry
+                    keyboardType="visible-password"
+                    autoCapitalize="none"
+                    autoComplete="password"
+                    autoCorrect={false}
+                    textContentType="password"
+                    returnKeyType="send"
+                    value={field.value}
+                    onBlur={field.onBlur}
+                    onChangeText={field.onChange}
+                    error={!!fieldState.error}
+                    onSubmitEditing={form.handleSubmit(handleSignIn)}
+                  />
+
+                  <HelperText type="error">
+                    {fieldState.error?.message}
+                  </HelperText>
+                </View>
+              )}
+            />
+          </View>
+
+          <Button
+            mode="contained"
+            loading={signInStatus.isLoading}
+            onPress={form.handleSubmit(handleSignIn)}
+          >
+            Sign in
+          </Button>
+
+          <Button compact onPress={handleSignUp}>
+            Create an account
+          </Button>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 };
 
