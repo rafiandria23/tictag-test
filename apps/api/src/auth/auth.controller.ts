@@ -5,6 +5,7 @@ import {
   ApiCreatedResponse,
   ApiBadRequestResponse,
   ApiUnprocessableEntityResponse,
+  ApiInternalServerErrorResponse,
   getSchemaPath,
 } from '@nestjs/swagger';
 
@@ -90,6 +91,24 @@ export class AuthController {
       ],
     },
   })
+  @ApiInternalServerErrorResponse({
+    schema: {
+      allOf: [
+        {
+          $ref: getSchemaPath(RawSuccessTimestampDto),
+        },
+        {
+          type: 'object',
+          properties: {
+            data: {
+              $ref: getSchemaPath(ErrorMessageDto),
+            },
+          },
+          required: ['data'],
+        },
+      ],
+    },
+  })
   public staffSignUp(@Body() payload: UserSignUpDto) {
     return this.authService.staffSignUp(payload);
   }
@@ -137,6 +156,24 @@ export class AuthController {
     },
   })
   @ApiUnprocessableEntityResponse({
+    schema: {
+      allOf: [
+        {
+          $ref: getSchemaPath(RawSuccessTimestampDto),
+        },
+        {
+          type: 'object',
+          properties: {
+            data: {
+              $ref: getSchemaPath(ErrorMessageDto),
+            },
+          },
+          required: ['data'],
+        },
+      ],
+    },
+  })
+  @ApiInternalServerErrorResponse({
     schema: {
       allOf: [
         {
@@ -218,6 +255,24 @@ export class AuthController {
       ],
     },
   })
+  @ApiInternalServerErrorResponse({
+    schema: {
+      allOf: [
+        {
+          $ref: getSchemaPath(RawSuccessTimestampDto),
+        },
+        {
+          type: 'object',
+          properties: {
+            data: {
+              $ref: getSchemaPath(ErrorMessageDto),
+            },
+          },
+          required: ['data'],
+        },
+      ],
+    },
+  })
   public customerSignUp(@Body() payload: UserSignUpDto) {
     return this.authService.customerSignUp(payload);
   }
@@ -265,6 +320,24 @@ export class AuthController {
     },
   })
   @ApiUnprocessableEntityResponse({
+    schema: {
+      allOf: [
+        {
+          $ref: getSchemaPath(RawSuccessTimestampDto),
+        },
+        {
+          type: 'object',
+          properties: {
+            data: {
+              $ref: getSchemaPath(ErrorMessageDto),
+            },
+          },
+          required: ['data'],
+        },
+      ],
+    },
+  })
+  @ApiInternalServerErrorResponse({
     schema: {
       allOf: [
         {
