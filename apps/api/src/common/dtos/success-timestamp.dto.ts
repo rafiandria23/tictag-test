@@ -14,9 +14,13 @@ export class SuccessTimestampDto<MD = undefined, D = undefined> {
   })
   public readonly timestamp: Dayjs;
 
-  @ApiProperty()
+  @ApiProperty({
+    required: false,
+  })
   public readonly metadata: MD = undefined;
 
-  @ApiProperty()
+  @ApiProperty({
+    required: false,
+  })
   public readonly data: D = undefined;
 }
