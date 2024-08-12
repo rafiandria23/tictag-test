@@ -1,6 +1,11 @@
 import _ from 'lodash';
 import { Reflector } from '@nestjs/core';
-import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
+import {
+  Injectable,
+  CanActivate,
+  ExecutionContext,
+  ForbiddenException,
+} from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { isFunction } from 'tipe-apa';
 
@@ -39,8 +44,14 @@ export class PolicyGuard implements CanActivate {
     const { user } = context.switchToHttp().getRequest<AuthRequest>();
     const ability = this.abilityFactory.createForUser(user);
 
-    return policyHandlers.every((handler) =>
-      this.execPolicyHandler(handler, ability),
-    );
+    if (
+      policyHandlers.every((handler) =>
+        this.execPolicyHandler(handler, ability),
+      )
+    ) {
+      return true;
+    }
+
+    throw new ForbiddenException('You are not authorized!');
   }
 }
