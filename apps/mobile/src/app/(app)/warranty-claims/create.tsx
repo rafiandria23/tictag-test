@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { useState, useCallback, useEffect } from 'react';
-import { View } from 'react-native';
+import { KeyboardAvoidingView, ScrollView, View } from 'react-native';
 import { useRouter, useLocalSearchParams, Redirect } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -12,6 +12,8 @@ import type {
 } from '../../../interfaces/product';
 import { CreateWarrantyClaimValidationSchema } from '../../../validations/product';
 import { productApi, warrantyClaimApi } from '../../../services/product';
+
+import ProductCard from '../../../components/product/ProductCard';
 
 const CreateWarrantyClaimScreen: FC = () => {
   const router = useRouter();
@@ -58,54 +60,87 @@ const CreateWarrantyClaimScreen: FC = () => {
   }
 
   return (
-    <View>
-      <Controller
-        control={form.control}
-        name="name"
-        render={({ field, fieldState }) => (
-          <>
-            <TextInput
-              ref={field.ref}
-              label="Name"
-              autoFocus
-              returnKeyType="next"
-              value={field.value}
-              onBlur={field.onBlur}
-              onChangeText={field.onChange}
-              error={!!fieldState.error}
-              onSubmitEditing={() => form.setFocus('description')}
-            />
-            <HelperText type="error">{fieldState.error?.message}</HelperText>
-          </>
-        )}
-      />
-
-      <Controller
-        control={form.control}
-        name="description"
-        render={({ field, fieldState }) => (
-          <>
-            <TextInput
-              ref={field.ref}
-              label="Description"
-              multiline
-              value={field.value}
-              onBlur={field.onBlur}
-              onChangeText={field.onChange}
-              error={!!fieldState.error}
-            />
-            <HelperText type="error">{fieldState.error?.message}</HelperText>
-          </>
-        )}
-      />
-
-      <Button
-        loading={createStatus.isLoading}
-        onPress={form.handleSubmit(handleCreate)}
+    <KeyboardAvoidingView
+      behavior="padding"
+      style={{
+        flex: 1,
+      }}
+    >
+      <ScrollView
+        keyboardShouldPersistTaps="handled"
+        contentContainerStyle={{
+          flexGrow: 1,
+          padding: 32,
+          gap: 32,
+        }}
       >
-        Submit
-      </Button>
-    </View>
+        {chosenProduct && <ProductCard product={chosenProduct} />}
+
+        <View
+          style={{
+            gap: 16,
+          }}
+        >
+          <Controller
+            control={form.control}
+            name="name"
+            render={({ field, fieldState }) => (
+              <View>
+                <TextInput
+                  ref={field.ref}
+                  label="Name"
+                  mode="outlined"
+                  inputMode="text"
+                  autoFocus
+                  returnKeyType="next"
+                  value={field.value}
+                  onBlur={field.onBlur}
+                  onChangeText={field.onChange}
+                  error={!!fieldState.error}
+                  onSubmitEditing={() => form.setFocus('description')}
+                />
+
+                <HelperText type="error">
+                  {fieldState.error?.message}
+                </HelperText>
+              </View>
+            )}
+          />
+
+          <Controller
+            control={form.control}
+            name="description"
+            render={({ field, fieldState }) => (
+              <View>
+                <TextInput
+                  ref={field.ref}
+                  label="Description"
+                  mode="outlined"
+                  inputMode="text"
+                  multiline
+                  value={field.value}
+                  onBlur={field.onBlur}
+                  onChangeText={field.onChange}
+                  error={!!fieldState.error}
+                />
+
+                <HelperText type="error">
+                  {fieldState.error?.message}
+                </HelperText>
+              </View>
+            )}
+          />
+        </View>
+
+        <Button
+          mode="contained"
+          loading={createStatus.isLoading}
+          onPress={form.handleSubmit(handleCreate)}
+        >
+          Submit
+        </Button>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 };
 

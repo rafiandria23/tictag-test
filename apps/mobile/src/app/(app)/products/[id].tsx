@@ -42,7 +42,9 @@ const ProductDetailsScreen: FC = () => {
     <View>
       <Text>{product?.name}</Text>
       <Text>{product?.description}</Text>
-      <Button onPress={handleWarrantyClaim}>Claim Warranty</Button>
+      <Button mode="contained-tonal" onPress={handleWarrantyClaim}>
+        Claim warranty
+      </Button>
     </View>
   );
 };

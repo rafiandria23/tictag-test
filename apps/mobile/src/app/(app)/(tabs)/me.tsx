@@ -1,9 +1,10 @@
+import _ from 'lodash';
 import type { FC } from 'react';
 import { useCallback } from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
-import { Text, Button } from 'react-native-paper';
+import { Avatar, Text, Button } from 'react-native-paper';
 
 import { AuthSecureStoreKey } from '../../../constants/auth';
 import { useAppSelector } from '../../../hooks/store';
@@ -23,11 +24,44 @@ const MeTabScreen: FC = () => {
   }
 
   return (
-    <View>
-      <Text>{userState.me.email}</Text>
+    <ScrollView
+      contentContainerStyle={{
+        flexGrow: 1,
+        alignItems: 'center',
+        padding: 32,
+        gap: 32,
+      }}
+    >
+      <Avatar.Text
+        size={64}
+        label={`${userState.me.first_name[0]}${_.get(
+          userState,
+          'me.last_name[0]',
+          '',
+        )}`}
+      />
 
-      <Button onPress={handleSignOut}>Sign out</Button>
-    </View>
+      <View
+        style={{
+          alignItems: 'center',
+          gap: 16,
+        }}
+      >
+        <Text variant="titleSmall">
+          {`${userState.me.first_name} ${_.get(
+            userState,
+            'me.last_name',
+            '',
+          )}`.trim()}
+        </Text>
+
+        <Text variant="bodySmall">{userState.me.email}</Text>
+      </View>
+
+      <Button mode="contained-tonal" onPress={handleSignOut}>
+        Sign out
+      </Button>
+    </ScrollView>
   );
 };
 
