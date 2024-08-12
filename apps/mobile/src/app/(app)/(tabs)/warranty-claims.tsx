@@ -1,8 +1,6 @@
 import type { FC } from 'react';
 import { useState, useCallback, useEffect } from 'react';
 import { FlatList } from 'react-native';
-import { useRouter } from 'expo-router';
-import { TouchableRipple } from 'react-native-paper';
 
 import type { ReadAllMetadata } from '../../../interfaces/api';
 import type { WarrantyClaim } from '../../../interfaces/product';
@@ -14,7 +12,6 @@ import { warrantyClaimApi } from '../../../services/product';
 import WarrantyClaimCard from '../../../components/product/WarrantyClaimCard';
 
 const WarrantyClaimsTabScreen: FC = () => {
-  const router = useRouter();
   const [metadata, setMetadata] = useState<ReadAllMetadata>({
     total: 0,
   });
@@ -53,15 +50,6 @@ const WarrantyClaimsTabScreen: FC = () => {
     }
   }, [metadata, warrantyClaims, handleFetch, filters]);
 
-  const handleDetails = useCallback<(id: WarrantyClaim['_id']) => () => void>(
-    (id) => {
-      return () => {
-        router.push(`/warranty-claims/${id}`);
-      };
-    },
-    [router],
-  );
-
   useEffect(() => {
     if (!metadata.total && !warrantyClaims.length) {
       handleFetch(filters);
@@ -74,14 +62,7 @@ const WarrantyClaimsTabScreen: FC = () => {
       keyExtractor={(warrantyClaim) => warrantyClaim._id}
       onEndReached={handleFetchNext}
       renderItem={({ item: warrantyClaim }) => (
-        <TouchableRipple
-          onPress={handleDetails(warrantyClaim._id)}
-          style={{
-            flex: 1,
-          }}
-        >
-          <WarrantyClaimCard warrantyClaim={warrantyClaim} />
-        </TouchableRipple>
+        <WarrantyClaimCard warrantyClaim={warrantyClaim} />
       )}
       contentContainerStyle={{
         padding: 16,

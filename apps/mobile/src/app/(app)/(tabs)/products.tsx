@@ -1,8 +1,6 @@
 import type { FC } from 'react';
 import { useState, useCallback, useEffect } from 'react';
 import { FlatList } from 'react-native';
-import { useRouter } from 'expo-router';
-import { TouchableRipple } from 'react-native-paper';
 
 import { ReadAllMetadata } from '../../../interfaces/api';
 import type { Product } from '../../../interfaces/product';
@@ -14,12 +12,12 @@ import { productApi } from '../../../services/product';
 import ProductCard from '../../../components/product/ProductCard';
 
 const ProductsTabScreen: FC = () => {
-  const router = useRouter();
   const [metadata, setMetadata] = useState<ReadAllMetadata>({
     total: 0,
   });
   const [filters, setFilters] = useState<ReadAllProductsPayload>({
     page: 1,
+    page_size: 50,
     sort: SortDirection.Desc,
     sort_by: ProductSortProperty.CreatedAt,
   });
@@ -53,15 +51,6 @@ const ProductsTabScreen: FC = () => {
     }
   }, [metadata, products, handleFetch, filters]);
 
-  const handleDetails = useCallback<(id: Product['_id']) => () => void>(
-    (id) => {
-      return () => {
-        router.push(`/products/${id}`);
-      };
-    },
-    [router],
-  );
-
   useEffect(() => {
     if (!metadata.total && !products.length) {
       handleFetch(filters);
@@ -73,16 +62,7 @@ const ProductsTabScreen: FC = () => {
       data={products}
       keyExtractor={(product) => product._id}
       onEndReached={handleFetchNext}
-      renderItem={({ item: product }) => (
-        <TouchableRipple
-          onPress={handleDetails(product._id)}
-          style={{
-            flex: 1,
-          }}
-        >
-          <ProductCard product={product} />
-        </TouchableRipple>
-      )}
+      renderItem={({ item: product }) => <ProductCard product={product} />}
       numColumns={2}
       columnWrapperStyle={{
         justifyContent: 'space-between',

@@ -1,10 +1,10 @@
 import type { FC } from 'react';
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import { SplashScreen, useRouter, Stack } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 
 import { AuthSecureStoreKey } from '../../constants/auth';
-import { useAppDispatch } from '../../hooks/store';
+import { useAppDispatch, useAppSelector } from '../../hooks/store';
 import { userSlice } from '../../stores/user';
 import { userApi } from '../../services/user';
 
@@ -13,7 +13,12 @@ SplashScreen.preventAutoHideAsync();
 const AppLayout: FC = () => {
   const router = useRouter();
   const dispatch = useAppDispatch();
-  const [me] = userApi.useLazyMeQuery();
+  const userState = useAppSelector((state) => state.user);
+  const [me, meStatus] = userApi.useLazyMeQuery();
+
+  const isCheckingAuth = useMemo(() => {
+    return !userState.me || meStatus.isLoading || meStatus.isFetching;
+  }, [userState, meStatus]);
 
   const checkAuth = useCallback(async () => {
     const accessToken = await SecureStore.getItemAsync(
@@ -34,6 +39,10 @@ const AppLayout: FC = () => {
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
+
+  if (isCheckingAuth) {
+    return null;
+  }
 
   return (
     <Stack>

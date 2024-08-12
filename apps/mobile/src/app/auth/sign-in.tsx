@@ -137,17 +137,23 @@ const SignInScreen: FC = () => {
             />
           </View>
 
-          <Button
-            mode="contained"
-            loading={signInStatus.isLoading}
-            onPress={form.handleSubmit(handleSignIn)}
+          <View
+            style={{
+              gap: 16,
+            }}
           >
-            Sign in
-          </Button>
+            <Button
+              mode="contained"
+              loading={signInStatus.isLoading}
+              onPress={form.handleSubmit(handleSignIn)}
+            >
+              Sign in
+            </Button>
 
-          <Button compact onPress={handleSignUp}>
-            Create an account
-          </Button>
+            <Button compact onPress={handleSignUp}>
+              Create an account
+            </Button>
+          </View>
         </ScrollView>
       </KeyboardAvoidingView>
     </SafeAreaView>

@@ -1,4 +1,6 @@
 import type { FC } from 'react';
+import { useCallback } from 'react';
+import { useRouter } from 'expo-router';
 import { Card, Text } from 'react-native-paper';
 
 import type { Product } from '../../interfaces/product';
@@ -8,11 +10,17 @@ export interface ProductCardProps {
 }
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
+  const router = useRouter();
+
+  const handleDetails = useCallback(() => {
+    router.push(`/products/${product._id}`);
+  }, [router, product]);
+
   return (
-    <Card>
-      <Card.Title title={product.name} />
+    <Card onPress={handleDetails}>
+      <Card.Title title={<Text variant="titleSmall">{product.name}</Text>} />
       <Card.Content>
-        <Text>{product.description}</Text>
+        <Text variant="bodySmall">{product.description}</Text>
       </Card.Content>
     </Card>
   );
