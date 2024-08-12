@@ -14,6 +14,7 @@ export class ReadAllProductsDto extends IntersectionType(
   @ApiProperty({
     required: false,
     enum: ProductSortProperty,
+    default: ProductSortProperty.Name,
   })
   @IsEnum(ProductSortProperty)
   @Transform(({ value }) => value?.trim())

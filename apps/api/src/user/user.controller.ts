@@ -31,9 +31,9 @@ import { UserService } from './user.service';
 @ApiBearerAuth()
 @ApiExtraModels(
   RawSuccessTimestampDto,
-  UserDto,
   ValidationErrorDto,
   ErrorMessageDto,
+  UserDto,
 )
 export class UserController {
   constructor(

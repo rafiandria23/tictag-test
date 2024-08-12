@@ -8,6 +8,7 @@ export class SortDto {
   @ApiProperty({
     required: false,
     enum: SortDirection,
+    default: SortDirection.Asc,
   })
   @IsEnum(SortDirection)
   @Transform(({ value }) => value?.trim())

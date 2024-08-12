@@ -17,7 +17,7 @@ async function bootstrap() {
   app.setGlobalPrefix(globalPrefix);
 
   const config = new DocumentBuilder()
-    .setTitle('Tictag Test API')
+    .setTitle('Tictag API')
     .setVersion('1.0')
     .addTag(DocsTag.Auth)
     .addTag(DocsTag.Dashboard)

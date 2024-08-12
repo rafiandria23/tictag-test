@@ -24,9 +24,9 @@ import { AuthService } from './auth.service';
 @ApiTags(DocsTag.Auth)
 @ApiExtraModels(
   RawSuccessTimestampDto,
-  AuthTokenDto,
   ValidationErrorDto,
   ErrorMessageDto,
+  AuthTokenDto,
 )
 export class AuthController {
   constructor(private readonly authService: AuthService) {}

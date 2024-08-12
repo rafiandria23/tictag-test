@@ -17,6 +17,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
   @ApiProperty({
     required: false,
     enum: WarrantyClaimSortProperty,
+    default: WarrantyClaimSortProperty.Name,
   })
   @IsEnum(WarrantyClaimSortProperty)
   @Transform(({ value }) => value?.trim())
@@ -53,6 +54,7 @@ export class ReadAllWarrantyClaimsDto extends IntersectionType(
   @ApiProperty({
     required: false,
     enum: WarrantyClaimStatus,
+    default: WarrantyClaimStatus.Pending,
   })
   @IsEnum(WarrantyClaimStatus)
   @Transform(({ value }) => value?.trim())
