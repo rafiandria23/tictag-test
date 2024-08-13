@@ -48,17 +48,28 @@ const WarrantyClaimDetailsScreen: FC = () => {
     >
       {warrantyClaim && (
         <>
-          <Text variant="titleMedium">{warrantyClaim.name}</Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              gap: 32,
+            }}
+          >
+            <View style={{ flexGrow: 0.8 }}>
+              <Text variant="titleMedium">{warrantyClaim.name}</Text>
+            </View>
 
-          <ProductCard product={warrantyClaim.product} />
-
-          <Text variant="bodyMedium">{warrantyClaim.description}</Text>
+            <View>
+              <WarrantyClaimStatusChip status={warrantyClaim.status} />
+            </View>
+          </View>
 
           <Divider />
 
-          <View style={{ flexDirection: 'row' }}>
-            <WarrantyClaimStatusChip status={warrantyClaim.status} />
-          </View>
+          <Text variant="bodyMedium">{warrantyClaim.description}</Text>
+
+          <ProductCard product={warrantyClaim.product} />
         </>
       )}
     </ScrollView>
