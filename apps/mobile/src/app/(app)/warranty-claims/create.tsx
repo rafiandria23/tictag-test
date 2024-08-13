@@ -17,13 +17,12 @@ import ProductCard from '../../../components/product/ProductCard';
 
 const CreateWarrantyClaimScreen: FC = () => {
   const router = useRouter();
-  const { product } = useLocalSearchParams<{ product: Product['_id'] }>();
+  const { product } = useLocalSearchParams<{ product?: Product['_id'] }>();
   const [chosenProduct, setChosenProduct] = useState<Product | null>(null);
-  const [readProductById, readProductByIdStatus] =
-    productApi.useLazyReadByIdQuery();
+  const [readProductById] = productApi.useLazyReadByIdQuery();
   const [create, createStatus] = warrantyClaimApi.useCreateMutation();
   const form = useForm<CreateWarrantyClaimPayload>({
-    mode: 'onBlur',
+    mode: 'onSubmit',
     resolver: zodResolver(CreateWarrantyClaimValidationSchema),
     defaultValues: {
       name: '',
@@ -33,7 +32,7 @@ const CreateWarrantyClaimScreen: FC = () => {
   });
 
   const handleFetchProduct = useCallback(async () => {
-    const { data } = await readProductById(product).unwrap();
+    const { data } = await readProductById(product as string).unwrap();
 
     setChosenProduct(data);
   }, [readProductById, product]);
@@ -53,7 +52,9 @@ const CreateWarrantyClaimScreen: FC = () => {
     if (product && !chosenProduct) {
       handleFetchProduct();
     }
-  }, [product, chosenProduct, handleFetchProduct]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (!product) {
     return <Redirect href="/products" />;
@@ -84,10 +85,12 @@ const CreateWarrantyClaimScreen: FC = () => {
           <Controller
             control={form.control}
             name="name"
+            disabled={createStatus.isLoading}
             render={({ field, fieldState }) => (
               <View>
                 <TextInput
                   ref={field.ref}
+                  disabled={field.disabled}
                   label="Name"
                   mode="outlined"
                   inputMode="text"
@@ -110,10 +113,12 @@ const CreateWarrantyClaimScreen: FC = () => {
           <Controller
             control={form.control}
             name="description"
+            disabled={createStatus.isLoading}
             render={({ field, fieldState }) => (
               <View>
                 <TextInput
                   ref={field.ref}
+                  disabled={field.disabled}
                   label="Description"
                   mode="outlined"
                   inputMode="text"
@@ -134,6 +139,7 @@ const CreateWarrantyClaimScreen: FC = () => {
 
         <Button
           mode="contained"
+          disabled={createStatus.isLoading}
           loading={createStatus.isLoading}
           onPress={form.handleSubmit(handleCreate)}
         >

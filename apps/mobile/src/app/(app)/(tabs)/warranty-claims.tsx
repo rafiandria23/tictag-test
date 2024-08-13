@@ -1,6 +1,7 @@
 import type { FC } from 'react';
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { FlatList } from 'react-native';
+import { ActivityIndicator } from 'react-native-paper';
 
 import type { ReadAllMetadata } from '../../../interfaces/api';
 import type { WarrantyClaim } from '../../../interfaces/product';
@@ -15,13 +16,18 @@ const WarrantyClaimsTabScreen: FC = () => {
   const [metadata, setMetadata] = useState<ReadAllMetadata>({
     total: 0,
   });
-  const [filters, setFilters] = useState<ReadAllWarrantyClaimsPayload>({
-    page: 1,
-    sort: SortDirection.Desc,
-    sort_by: WarrantyClaimSortProperty.UpdatedAt,
-  });
+  const [readAllPayload, setReadAllPayload] =
+    useState<ReadAllWarrantyClaimsPayload>({
+      page: 1,
+      sort: SortDirection.Desc,
+      sort_by: WarrantyClaimSortProperty.UpdatedAt,
+    });
   const [warrantyClaims, setWarrantyClaims] = useState<WarrantyClaim[]>([]);
-  const [readAll] = warrantyClaimApi.useLazyReadAllQuery();
+  const [readAll, readAllStatus] = warrantyClaimApi.useLazyReadAllQuery();
+
+  const isLoading = useMemo(() => {
+    return readAllStatus.isLoading || readAllStatus.isFetching;
+  }, [readAllStatus]);
 
   const handleFetch = useCallback<
     (payload: ReadAllWarrantyClaimsPayload) => Promise<void>
@@ -35,35 +41,58 @@ const WarrantyClaimsTabScreen: FC = () => {
       setMetadata({
         total,
       });
-      setFilters(payload);
+      setReadAllPayload(payload);
       setWarrantyClaims([...warrantyClaims, ...data]);
     },
-    [readAll, setMetadata, setFilters, setWarrantyClaims, warrantyClaims],
+    [
+      readAll,
+      setMetadata,
+      setReadAllPayload,
+      setWarrantyClaims,
+      warrantyClaims,
+    ],
   );
 
   const handleFetchNext = useCallback(async () => {
     if (metadata.total > warrantyClaims.length) {
-      handleFetch({
-        ...filters,
-        page: (filters.page as number) + 1,
+      await handleFetch({
+        ...readAllPayload,
+        page: (readAllPayload.page as number) + 1,
       });
     }
-  }, [metadata, warrantyClaims, handleFetch, filters]);
+  }, [metadata, warrantyClaims, handleFetch, readAllPayload]);
+
+  const handleRefresh = useCallback(() => {
+    setReadAllPayload({
+      ...readAllPayload,
+      page: 0,
+    });
+    setWarrantyClaims([]);
+  }, [setReadAllPayload, readAllPayload, setWarrantyClaims]);
 
   useEffect(() => {
-    if (!metadata.total && !warrantyClaims.length) {
-      handleFetch(filters);
+    if (!warrantyClaims.length) {
+      handleFetch(readAllPayload);
     }
-  }, [metadata, warrantyClaims, handleFetch, filters]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <FlatList
       data={warrantyClaims}
       keyExtractor={(warrantyClaim) => warrantyClaim._id}
       onEndReached={handleFetchNext}
+      refreshing={isLoading}
+      onRefresh={handleRefresh}
       renderItem={({ item: warrantyClaim }) => (
         <WarrantyClaimCard warrantyClaim={warrantyClaim} />
       )}
+      ListFooterComponent={
+        (readAllPayload.page as number) > 1 && isLoading ? (
+          <ActivityIndicator />
+        ) : null
+      }
       contentContainerStyle={{
         padding: 16,
         gap: 16,

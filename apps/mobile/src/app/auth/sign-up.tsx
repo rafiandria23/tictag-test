@@ -6,6 +6,7 @@ import {
   ScrollView,
   View,
 } from 'react-native';
+import { useRouter } from 'expo-router';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Text, TextInput, HelperText, Button } from 'react-native-paper';
@@ -17,9 +18,10 @@ import { authApi } from '../../services/auth';
 import Storage from '../../utils/storage';
 
 const SignUpScreen: FC = () => {
+  const router = useRouter();
   const [signUp, signUpStatus] = authApi.useSignUpMutation();
   const form = useForm<SignUpPayload>({
-    mode: 'onBlur',
+    mode: 'onSubmit',
     resolver: zodResolver(SignUpValidationSchema),
     defaultValues: {
       first_name: '',
@@ -34,8 +36,10 @@ const SignUpScreen: FC = () => {
       const { data } = await signUp(payload).unwrap();
 
       await Storage.setItem(AuthStorageKey.AccessToken, data.access_token);
+
+      router.replace('/');
     },
-    [signUp],
+    [signUp, router],
   );
 
   return (
@@ -68,10 +72,12 @@ const SignUpScreen: FC = () => {
             <Controller
               control={form.control}
               name="first_name"
+              disabled={signUpStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="First name"
                     mode="outlined"
                     inputMode="text"
@@ -96,10 +102,12 @@ const SignUpScreen: FC = () => {
             <Controller
               control={form.control}
               name="last_name"
+              disabled={signUpStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="Last Name"
                     mode="outlined"
                     inputMode="text"
@@ -123,10 +131,12 @@ const SignUpScreen: FC = () => {
             <Controller
               control={form.control}
               name="email"
+              disabled={signUpStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="Email"
                     mode="outlined"
                     inputMode="email"
@@ -153,10 +163,12 @@ const SignUpScreen: FC = () => {
             <Controller
               control={form.control}
               name="password"
+              disabled={signUpStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="Password"
                     mode="outlined"
                     inputMode="text"
@@ -184,6 +196,7 @@ const SignUpScreen: FC = () => {
 
           <Button
             mode="contained"
+            disabled={signUpStatus.isLoading}
             loading={signUpStatus.isLoading}
             onPress={form.handleSubmit(handleSignUp)}
           >

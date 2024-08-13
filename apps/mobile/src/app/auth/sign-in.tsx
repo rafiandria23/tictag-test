@@ -21,7 +21,7 @@ const SignInScreen: FC = () => {
   const router = useRouter();
   const [signIn, signInStatus] = authApi.useSignInMutation();
   const form = useForm<SignInPayload>({
-    mode: 'onBlur',
+    mode: 'onSubmit',
     resolver: zodResolver(SignInValidationSchema),
     defaultValues: {
       email: '',
@@ -74,10 +74,12 @@ const SignInScreen: FC = () => {
             <Controller
               control={form.control}
               name="email"
+              disabled={signInStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="Email"
                     mode="outlined"
                     inputMode="email"
@@ -105,10 +107,12 @@ const SignInScreen: FC = () => {
             <Controller
               control={form.control}
               name="password"
+              disabled={signInStatus.isLoading}
               render={({ field, fieldState }) => (
                 <View>
                   <TextInput
                     ref={field.ref}
+                    disabled={field.disabled}
                     label="Password"
                     mode="outlined"
                     inputMode="text"
@@ -141,6 +145,7 @@ const SignInScreen: FC = () => {
           >
             <Button
               mode="contained"
+              disabled={signInStatus.isLoading}
               loading={signInStatus.isLoading}
               onPress={form.handleSubmit(handleSignIn)}
             >

@@ -1,6 +1,7 @@
 import type { FC } from 'react';
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { FlatList } from 'react-native';
+import { ActivityIndicator } from 'react-native-paper';
 
 import { ReadAllMetadata } from '../../../interfaces/api';
 import type { Product } from '../../../interfaces/product';
@@ -15,14 +16,17 @@ const ProductsTabScreen: FC = () => {
   const [metadata, setMetadata] = useState<ReadAllMetadata>({
     total: 0,
   });
-  const [filters, setFilters] = useState<ReadAllProductsPayload>({
+  const [readAllPayload, setReadAllPayload] = useState<ReadAllProductsPayload>({
     page: 1,
-    page_size: 50,
     sort: SortDirection.Desc,
     sort_by: ProductSortProperty.CreatedAt,
   });
   const [products, setProducts] = useState<Product[]>([]);
-  const [readAll] = productApi.useLazyReadAllQuery();
+  const [readAll, readAllStatus] = productApi.useLazyReadAllQuery();
+
+  const isLoading = useMemo(() => {
+    return readAllStatus.isLoading || readAllStatus.isFetching;
+  }, [readAllStatus]);
 
   const handleFetch = useCallback<
     (payload: ReadAllProductsPayload) => Promise<void>
@@ -36,38 +40,50 @@ const ProductsTabScreen: FC = () => {
       setMetadata({
         total,
       });
-      setFilters(payload);
+      setReadAllPayload(payload);
       setProducts([...products, ...data]);
     },
-    [readAll, setMetadata, setFilters, setProducts, products],
+    [readAll, setMetadata, setReadAllPayload, setProducts, products],
   );
 
   const handleFetchNext = useCallback(async () => {
     if (metadata.total > products.length) {
-      handleFetch({
-        ...filters,
-        page: (filters.page as number) + 1,
+      await handleFetch({
+        ...readAllPayload,
+        page: (readAllPayload.page as number) + 1,
       });
     }
-  }, [metadata, products, handleFetch, filters]);
+  }, [metadata, products, handleFetch, readAllPayload]);
+
+  const handleRefresh = useCallback(() => {
+    setReadAllPayload({
+      ...readAllPayload,
+      page: 0,
+    });
+    setProducts([]);
+  }, [setReadAllPayload, readAllPayload, setProducts]);
 
   useEffect(() => {
-    if (!metadata.total && !products.length) {
-      handleFetch(filters);
+    if (!products.length) {
+      handleFetch(readAllPayload);
     }
-  }, [metadata, products, handleFetch, filters]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <FlatList
       data={products}
       keyExtractor={(product) => product._id}
       onEndReached={handleFetchNext}
+      refreshing={isLoading}
+      onRefresh={handleRefresh}
       renderItem={({ item: product }) => <ProductCard product={product} />}
-      numColumns={2}
-      columnWrapperStyle={{
-        justifyContent: 'space-between',
-        gap: 16,
-      }}
+      ListFooterComponent={
+        (readAllPayload.page as number) > 1 && isLoading ? (
+          <ActivityIndicator />
+        ) : null
+      }
       contentContainerStyle={{
         padding: 16,
         gap: 16,

@@ -1,8 +1,8 @@
 import type { FC } from 'react';
-import { useState, useCallback, useEffect } from 'react';
-import { View } from 'react-native';
-import { useRouter, useLocalSearchParams, Redirect } from 'expo-router';
-import { Text, Button } from 'react-native-paper';
+import { useState, useMemo, useCallback, useEffect } from 'react';
+import { ScrollView, RefreshControl } from 'react-native';
+import { useRouter, useLocalSearchParams } from 'expo-router';
+import { Text, Divider, Button } from 'react-native-paper';
 
 import type { Product } from '../../../interfaces/product';
 import { productApi } from '../../../services/product';
@@ -13,17 +13,15 @@ const ProductDetailsScreen: FC = () => {
   const [product, setProduct] = useState<Product | null>(null);
   const [readById, readByIdStatus] = productApi.useLazyReadByIdQuery();
 
+  const isLoading = useMemo(() => {
+    return readByIdStatus.isLoading || readByIdStatus.isFetching;
+  }, [readByIdStatus]);
+
   const handleFetch = useCallback(async () => {
     const { data } = await readById(id).unwrap();
 
     setProduct(data);
   }, [readById, id, setProduct]);
-
-  useEffect(() => {
-    if (id && !product) {
-      handleFetch();
-    }
-  }, [id, product, handleFetch]);
 
   const handleWarrantyClaim = useCallback(() => {
     router.push({
@@ -34,18 +32,39 @@ const ProductDetailsScreen: FC = () => {
     });
   }, [router, product]);
 
-  if (!id) {
-    return <Redirect href="/products" />;
-  }
+  useEffect(() => {
+    if (!product) {
+      handleFetch();
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <View>
-      <Text>{product?.name}</Text>
-      <Text>{product?.description}</Text>
-      <Button mode="contained-tonal" onPress={handleWarrantyClaim}>
-        Claim warranty
-      </Button>
-    </View>
+    <ScrollView
+      contentContainerStyle={{
+        flexGrow: 1,
+        padding: 32,
+        gap: 32,
+      }}
+      refreshControl={
+        <RefreshControl refreshing={isLoading} onRefresh={handleFetch} />
+      }
+    >
+      {product && (
+        <>
+          <Text variant="titleMedium">{product.name}</Text>
+
+          <Text variant="bodyMedium">{product.description}</Text>
+
+          <Divider />
+
+          <Button mode="contained-tonal" onPress={handleWarrantyClaim}>
+            Claim warranty
+          </Button>
+        </>
+      )}
+    </ScrollView>
   );
 };
 
