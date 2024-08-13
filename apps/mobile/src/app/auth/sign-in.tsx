@@ -7,7 +7,6 @@ import {
   View,
 } from 'react-native';
 import { useRouter } from 'expo-router';
-import * as SecureStore from 'expo-secure-store';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Text, TextInput, HelperText, Button } from 'react-native-paper';
@@ -16,6 +15,7 @@ import type { SignInPayload } from '../../types/auth';
 import { AuthStorageKey } from '../../constants/auth';
 import { SignInValidationSchema } from '../../validations/auth';
 import { authApi } from '../../services/auth';
+import Storage from '../../utils/storage';
 
 const SignInScreen: FC = () => {
   const router = useRouter();
@@ -33,10 +33,7 @@ const SignInScreen: FC = () => {
     async (payload) => {
       const { data } = await signIn(payload).unwrap();
 
-      await SecureStore.setItemAsync(
-        AuthStorageKey.AccessToken,
-        data.access_token,
-      );
+      await Storage.setItem(AuthStorageKey.AccessToken, data.access_token);
 
       router.replace('/');
     },

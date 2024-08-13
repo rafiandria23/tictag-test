@@ -1,12 +1,12 @@
 import type { FC } from 'react';
 import { useCallback, useEffect, useMemo } from 'react';
 import { SplashScreen, useRouter, Stack } from 'expo-router';
-import * as SecureStore from 'expo-secure-store';
 
 import { AuthStorageKey } from '../../constants/auth';
 import { useAppDispatch, useAppSelector } from '../../hooks/store';
 import { userSlice } from '../../stores/user';
 import { userApi } from '../../services/user';
+import Storage from '../../utils/storage';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -21,9 +21,7 @@ const AppLayout: FC = () => {
   }, [userState, meStatus]);
 
   const checkAuth = useCallback(async () => {
-    const accessToken = await SecureStore.getItemAsync(
-      AuthStorageKey.AccessToken,
-    );
+    const accessToken = await Storage.getItem(AuthStorageKey.AccessToken);
 
     if (!accessToken) {
       router.replace('/auth/sign-in');

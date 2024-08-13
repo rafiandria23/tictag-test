@@ -6,7 +6,6 @@ import {
   ScrollView,
   View,
 } from 'react-native';
-import * as SecureStore from 'expo-secure-store';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Text, TextInput, HelperText, Button } from 'react-native-paper';
@@ -15,6 +14,7 @@ import type { SignUpPayload } from '../../interfaces/auth';
 import { AuthStorageKey } from '../../constants/auth';
 import { SignUpValidationSchema } from '../../validations/auth';
 import { authApi } from '../../services/auth';
+import Storage from '../../utils/storage';
 
 const SignUpScreen: FC = () => {
   const [signUp, signUpStatus] = authApi.useSignUpMutation();
@@ -33,10 +33,7 @@ const SignUpScreen: FC = () => {
     async (payload) => {
       const { data } = await signUp(payload).unwrap();
 
-      await SecureStore.setItemAsync(
-        AuthStorageKey.AccessToken,
-        data.access_token,
-      );
+      await Storage.setItem(AuthStorageKey.AccessToken, data.access_token);
     },
     [signUp],
   );

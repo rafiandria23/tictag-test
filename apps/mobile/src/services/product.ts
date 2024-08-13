@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import * as SecureStore from 'expo-secure-store';
 
 import type { SuccessTimestamp, ReadAllMetadata } from '../interfaces/api';
 import type {
@@ -12,15 +11,14 @@ import {
   ReadAllWarrantyClaimsPayload,
 } from '../types/product';
 import { AuthStorageKey } from '../constants/auth';
+import Storage from '../utils/storage';
 
 export const productApi = createApi({
   reducerPath: 'productApi',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/products`,
     prepareHeaders: async (headers) => {
-      const accessToken = await SecureStore.getItemAsync(
-        AuthStorageKey.AccessToken,
-      );
+      const accessToken = await Storage.getItem(AuthStorageKey.AccessToken);
 
       if (accessToken !== null) {
         headers.set('Authorization', `Bearer ${accessToken}`);
@@ -54,9 +52,7 @@ export const warrantyClaimApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/warranty-claims`,
     prepareHeaders: async (headers) => {
-      const accessToken = await SecureStore.getItemAsync(
-        AuthStorageKey.AccessToken,
-      );
+      const accessToken = await Storage.getItem(AuthStorageKey.AccessToken);
 
       if (accessToken !== null) {
         headers.set('Authorization', `Bearer ${accessToken}`);
