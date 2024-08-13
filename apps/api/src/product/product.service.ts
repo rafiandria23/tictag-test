@@ -135,12 +135,25 @@ export class ProductService {
       throw new UnprocessableEntityException('Product does not exist!');
     }
 
-    const createdWarrantyClaim = await this.warrantyClaimModel.create({
+    let createdWarrantyClaim = await this.warrantyClaimModel.create({
       name: payload.name,
       description: payload.description,
       product: existingProduct._id,
       submitted_by: new Types.ObjectId(submittedBy),
     });
+    createdWarrantyClaim = await createdWarrantyClaim.populate([
+      {
+        path: 'product',
+      },
+      {
+        path: 'submitted_by',
+        select: '-password',
+      },
+      {
+        path: 'confirmed_by',
+        select: '-password',
+      },
+    ]);
 
     return this.commonService.successTimestamp({
       data: createdWarrantyClaim,
@@ -148,11 +161,19 @@ export class ProductService {
   }
 
   public readWarrantyClaimById(id: string) {
-    return this.warrantyClaimModel
-      .findById(id)
-      .populate('product')
-      .populate('submitted_by', '-password')
-      .populate('confirmed_by', '-password');
+    return this.warrantyClaimModel.findById(id).populate([
+      {
+        path: 'product',
+      },
+      {
+        path: 'submitted_by',
+        select: '-password',
+      },
+      {
+        path: 'confirmed_by',
+        select: '-password',
+      },
+    ]);
   }
 
   public async readAllWarrantyClaims(queries: ReadAllWarrantyClaimsDto) {
@@ -189,9 +210,19 @@ export class ProductService {
             ? '_id'
             : queries.sort_by]: queries.sort,
         })
-        .populate('product')
-        .populate('submitted_by', '-password')
-        .populate('confirmed_by', '-password')
+        .populate([
+          {
+            path: 'product',
+          },
+          {
+            path: 'submitted_by',
+            select: '-password',
+          },
+          {
+            path: 'confirmed_by',
+            select: '-password',
+          },
+        ])
         .lean()
         .exec(),
     ]);
