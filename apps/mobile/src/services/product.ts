@@ -11,7 +11,7 @@ import {
   ReadAllProductsPayload,
   ReadAllWarrantyClaimsPayload,
 } from '../types/product';
-import { AuthSecureStoreKey } from '../constants/auth';
+import { AuthStorageKey } from '../constants/auth';
 
 export const productApi = createApi({
   reducerPath: 'productApi',
@@ -19,7 +19,7 @@ export const productApi = createApi({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/products`,
     prepareHeaders: async (headers) => {
       const accessToken = await SecureStore.getItemAsync(
-        AuthSecureStoreKey.AccessToken,
+        AuthStorageKey.AccessToken,
       );
 
       if (accessToken !== null) {
@@ -55,7 +55,7 @@ export const warrantyClaimApi = createApi({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/warranty-claims`,
     prepareHeaders: async (headers) => {
       const accessToken = await SecureStore.getItemAsync(
-        AuthSecureStoreKey.AccessToken,
+        AuthStorageKey.AccessToken,
       );
 
       if (accessToken !== null) {

@@ -1,3 +1,3 @@
-export enum AuthSecureStoreKey {
+export enum AuthStorageKey {
   AccessToken = 'access-token',
 }

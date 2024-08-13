@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo } from 'react';
 import { SplashScreen, useRouter, Stack } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 
-import { AuthSecureStoreKey } from '../../constants/auth';
+import { AuthStorageKey } from '../../constants/auth';
 import { useAppDispatch, useAppSelector } from '../../hooks/store';
 import { userSlice } from '../../stores/user';
 import { userApi } from '../../services/user';
@@ -22,7 +22,7 @@ const AppLayout: FC = () => {
 
   const checkAuth = useCallback(async () => {
     const accessToken = await SecureStore.getItemAsync(
-      AuthSecureStoreKey.AccessToken,
+      AuthStorageKey.AccessToken,
     );
 
     if (!accessToken) {

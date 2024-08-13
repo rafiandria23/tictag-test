@@ -13,7 +13,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Text, TextInput, HelperText, Button } from 'react-native-paper';
 
 import type { SignInPayload } from '../../types/auth';
-import { AuthSecureStoreKey } from '../../constants/auth';
+import { AuthStorageKey } from '../../constants/auth';
 import { SignInValidationSchema } from '../../validations/auth';
 import { authApi } from '../../services/auth';
 
@@ -34,7 +34,7 @@ const SignInScreen: FC = () => {
       const { data } = await signIn(payload).unwrap();
 
       await SecureStore.setItemAsync(
-        AuthSecureStoreKey.AccessToken,
+        AuthStorageKey.AccessToken,
         data.access_token,
       );
 

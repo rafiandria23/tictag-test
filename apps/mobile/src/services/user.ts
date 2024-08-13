@@ -3,7 +3,7 @@ import * as SecureStore from 'expo-secure-store';
 
 import type { SuccessTimestamp } from '../interfaces/api';
 import type { User } from '../interfaces/user';
-import { AuthSecureStoreKey } from '../constants/auth';
+import { AuthStorageKey } from '../constants/auth';
 
 export const userApi = createApi({
   reducerPath: 'userApi',
@@ -11,7 +11,7 @@ export const userApi = createApi({
     baseUrl: `${process.env.EXPO_PUBLIC_API_URL}/users`,
     prepareHeaders: async (headers) => {
       const accessToken = await SecureStore.getItemAsync(
-        AuthSecureStoreKey.AccessToken,
+        AuthStorageKey.AccessToken,
       );
 
       if (accessToken !== null) {

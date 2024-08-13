@@ -50,7 +50,13 @@
     "@hookform/resolvers": "*",
     "validator": "*",
     "expo-build-properties": "*",
-    "expo-splash-screen": "*"
+    "expo-splash-screen": "*",
+    "@react-navigation/native": "*",
+    "@expo/vector-icons": "*",
+    "lodash": "*",
+    "@pchmn/expo-material3-theme": "*",
+    "deepmerge": "*",
+    "@react-native-async-storage/async-storage": "*"
   },
   "devDependencies": {}
 }

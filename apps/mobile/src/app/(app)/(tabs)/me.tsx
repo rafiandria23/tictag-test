@@ -6,7 +6,7 @@ import { useRouter } from 'expo-router';
 import * as SecureStore from 'expo-secure-store';
 import { Avatar, Text, Button } from 'react-native-paper';
 
-import { AuthSecureStoreKey } from '../../../constants/auth';
+import { AuthStorageKey } from '../../../constants/auth';
 import { useAppSelector } from '../../../hooks/store';
 
 const MeTabScreen: FC = () => {
@@ -14,7 +14,7 @@ const MeTabScreen: FC = () => {
   const userState = useAppSelector((state) => state.user);
 
   const handleSignOut = useCallback(async () => {
-    await SecureStore.deleteItemAsync(AuthSecureStoreKey.AccessToken);
+    await SecureStore.deleteItemAsync(AuthStorageKey.AccessToken);
 
     router.replace('/auth/sign-in');
   }, [router]);
