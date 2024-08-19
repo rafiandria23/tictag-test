@@ -1,5 +1,18 @@
 # Tictag Test
 
+[![GitHub Actions Build](https://github.com/rafiandria23/tictag-test/actions/workflows/ci.yaml/badge.svg)](https://github.com/rafiandria23/tictag-test/actions/workflows/ci.yaml)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=coverage)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_tictag-test&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rafiandria23_tictag-test)
+
 Test for Tictag.
 
 ## Apps
