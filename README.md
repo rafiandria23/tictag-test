@@ -48,3 +48,7 @@ nx run mobile:start
 ## API Docs
 
 Available at `/`.
+
+## License
+
+[MIT](LICENSE)
