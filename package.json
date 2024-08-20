@@ -81,7 +81,7 @@
     "@types/jest": "^29.4.0",
     "@types/lodash": "^4.17.7",
     "@types/morgan": "^1.9.9",
-    "@types/node": "18.16.9",
+    "@types/node": "18.19.45",
     "@types/react": "~18.2.45",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
