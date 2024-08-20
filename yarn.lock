@@ -6269,10 +6269,10 @@ detect-port@^1.5.1:
     address "^1.0.1"
     debug "4"
 
-detox@~20.18.1:
-  version "20.18.5"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.18.5.tgz#b0421b32a2674db6aa5518e33748bafe9e4f6ba0"
-  integrity sha512-J6f7rbUdVbmKaxqIA5M2EvTSHA60j6rZayXgmxcwb1sN0ug6iQykGX5DcC98GPP8s2ziIpAcyIdbjI/L9B+/Og==
+detox@~20.25.0:
+  version "20.25.5"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.25.5.tgz#2b3986abf4baa6c127f33bb018f1e0b3230250db"
+  integrity sha512-d37Uik4KCZrNow278HpMix+o9MxsIDO1s2ejBQ65mRq29Qr0M40f2fYI0YV9nN2JWXTGPniRyRzhFcFRxNRPgA==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
@@ -6286,7 +6286,7 @@ detox@~20.18.1:
     funpermaproxy "^1.1.0"
     glob "^8.0.3"
     ini "^1.3.4"
-    jest-environment-emit "^1.0.5"
+    jest-environment-emit "^1.0.8"
     json-cycle "^1.3.0"
     lodash "^4.17.11"
     multi-sort-stream "^1.0.3"
@@ -8826,7 +8826,7 @@ jest-each@^29.7.0:
     jest-util "^29.7.0"
     pretty-format "^29.7.0"
 
-jest-environment-emit@^1.0.5:
+jest-environment-emit@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/jest-environment-emit/-/jest-environment-emit-1.0.8.tgz#ab0dad2c1dd04d3ca092762a99080607b0eef10b"
   integrity sha512-WNqvxBLH0yNojHJQ99Y21963aT7UTavxV3PgiBQFi8zwrlnKU6HvkB6LOvQrbk5I8mI8JEKvcoOrQOvBVMLIXQ==
