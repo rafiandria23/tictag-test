@@ -88,7 +88,7 @@
     "babel-jest": "^29.4.1",
     "babel-preset-expo": "~11.0.0",
     "detox": "~20.26.0",
-    "eslint": "~9.9.0",
+    "eslint": "~9.10.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "2.30.0",
     "eslint-plugin-jsx-a11y": "6.10.0",
