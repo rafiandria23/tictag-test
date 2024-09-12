@@ -3809,10 +3809,10 @@
     pretty-format "^29.0.3"
     redent "^3.0.0"
 
-"@testing-library/react-native@~12.6.0":
-  version "12.6.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.6.1.tgz#dbb6b00246a3cffbffa18bbbb618fab968c0de28"
-  integrity sha512-ykXKeQEkqJ/lk0dqGfEspODjV5skmUh/6vVtyGZQsneFrcqGZJrO4uGhmChICLbnEKkstxXkjXeyoB7z8k9InQ==
+"@testing-library/react-native@~12.7.0":
+  version "12.7.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.7.1.tgz#930f2a597715dec4e5cec178ba37587a47344813"
+  integrity sha512-sxzYvttL5r7+jERTueAvQ0hTUfRiEGe0YtkSqw+tv55wy9vzD2DkrIeAo5pVLwWzEHwF7ijc7aGck0YH99AWFg==
   dependencies:
     jest-matcher-utils "^29.7.0"
     pretty-format "^29.7.0"
