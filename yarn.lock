@@ -3440,17 +3440,17 @@
     nullthrows "^1.1.1"
 
 "@react-navigation/bottom-tabs@^7.0.0":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-7.0.6.tgz#76d5d7992018de9dcd4aefad394c943fb815fef0"
-  integrity sha512-kng3s79Dnht/XBu9VJZP2Z+jr11VIiXwFi84sErKBTAnT3EEJybblCCjf+SWs9AhbaL3/YRi07vDtDmyTM0r6A==
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/bottom-tabs/-/bottom-tabs-7.0.7.tgz#457b7975ab12203c6c4b4324f3da7c878b102399"
+  integrity sha512-ZosKpDjalic/MiOu0kRJe9s0aGzDJcTR6wCWdJ0Ncnd3FXu3V55jS0502HjFCbaVXRItww4r3O0e5nc0Nq86NA==
   dependencies:
-    "@react-navigation/elements" "^2.1.0"
+    "@react-navigation/elements" "^2.1.1"
     color "^4.2.3"
 
-"@react-navigation/core@^7.0.3":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-7.0.3.tgz#bac011a459ae62bb91e3bc8adeb862f05ac19a88"
-  integrity sha512-BYfsHuPT/Z50CWw1chTPBzlIG+y/sTQEYXPAN+WvHkS2UbCFvJ3zN/wYfb08RFcyX8+5cYdiZAfC4Ui8hJjJ/A==
+"@react-navigation/core@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-7.0.4.tgz#f295538888bcd693c4981c69fbabb98c13e6a611"
+  integrity sha512-Olz6Y1Kf7SslTMcir4j3oo9GlFAZBUo5DAks/CsMAQHFJN+BYDQJTX5H8kEfPoKThIbKOLZozVMLQlC866u9HA==
   dependencies:
     "@react-navigation/routers" "^7.0.0"
     escape-string-regexp "^4.0.0"
@@ -3460,27 +3460,27 @@
     use-latest-callback "^0.2.1"
     use-sync-external-store "^1.2.2"
 
-"@react-navigation/elements@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-2.1.0.tgz#a0d8b3f5895aefb2bcc0f42d0381f1cd52b8a529"
-  integrity sha512-MTSSv5cKIITA8oN1lpAuGUsetv6i6xIeMpdzmuGSYc2ZIPN7z5t9dKxqG/dK29VKcLzkdEojIfpVh4IbEKKczw==
+"@react-navigation/elements@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-2.1.1.tgz#8e752e402ae0706c092b9c46fb3c062cd36c9971"
+  integrity sha512-5ENc4tFpSpSDECaIq0j4+TT8BDjF6Wc3qvLrWxsY+UCG8veFY+SunDQG5HmHZ91CFXXsj7zBUQ8Q14b1J7tOIA==
   dependencies:
     color "^4.2.3"
 
 "@react-navigation/native-stack@^7.0.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.1.0.tgz#7e4df1dc25daa9832f9677ca4c7c065287e5118f"
-  integrity sha512-9wp5YLFbT1TbIVCGN1B20TRRrA79UR3urhdNljbyHLxBHCB0DXCrY8asDC/l2ecTJCYVqNFLbRgPgSHYTBblfw==
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.1.1.tgz#a8b0551ebb6bfe2f816af7c3e9cb73f20d222bfb"
+  integrity sha512-IM2u3nYSfb/K7gOyMn/5Lg3kaZtrwcamyMvM+x4CzEuZIL2CzeCOKHXlmdiwJpW2kBYt/FDZmWwgOH38OwVJ0Q==
   dependencies:
-    "@react-navigation/elements" "^2.1.0"
+    "@react-navigation/elements" "^2.1.1"
     warn-once "^0.1.1"
 
 "@react-navigation/native@^7.0.0":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.0.3.tgz#24707bf0d14a040c44b4c4dcaa85c59f7588506b"
-  integrity sha512-GzHvM8HgCjLW+314+gFv2ElN6di4q4KUI7TxQ62lpZc2moi9p8Z78/mTHJ7DZeYjit0Z5ISF9Le+kFhH68avMw==
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.0.4.tgz#42cfd7acb6cf8263e1f309a9c2a494e3f434cf95"
+  integrity sha512-0K9AqV+qWjAzcielVClMltFr5e8bYppxM9f7GmG6R8+yUv9l60k/VEQFH5eKIyyld7u2PkWCLRKE3ghlUjMt/w==
   dependencies:
-    "@react-navigation/core" "^7.0.3"
+    "@react-navigation/core" "^7.0.4"
     escape-string-regexp "^4.0.0"
     fast-deep-equal "^3.1.3"
     nanoid "3.3.7"
@@ -7533,9 +7533,9 @@ expo-modules-core@2.0.5:
     invariant "^2.2.4"
 
 expo-router@~4.0.0:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-4.0.7.tgz#a1fd65405648e186029d81eb620d1e7ead7cd8be"
-  integrity sha512-shQ7nLaCOWlpfVnt9QB7xfjo3vJY9s88oOypOMWH4gSxyRYKSsymDBMvZAFi3FPONdWSDuuEJR1/RVJ8PLDt5w==
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-4.0.8.tgz#f6204275907ceed5993402681354a064a7dda598"
+  integrity sha512-WGAsVfY2BdH6RLl2OsRCbxcKpZ6hP1fGHbB/q6IholaRQShEzpVOlGh+tziNc35+mspA9bgdBn6AFnF4lhV3xw==
   dependencies:
     "@expo/metro-runtime" "4.0.0"
     "@expo/server" "^0.5.0"
