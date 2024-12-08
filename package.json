@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@config-plugins/detox": "~8.0.0",
-    "@expo/cli": "~0.21.0",
+    "@expo/cli": "~0.22.0",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/detox": "20.1.4",
