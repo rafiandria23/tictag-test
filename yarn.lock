@@ -1746,10 +1746,10 @@
   dependencies:
     uuid "^8.0.0"
 
-"@expo/cli@0.22.6", "@expo/cli@~0.22.0":
-  version "0.22.6"
-  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.22.6.tgz#dc27b685d2252027549d839437c5285c7814ec3f"
-  integrity sha512-eDjCnc3uHl2+SJ6aZ5seK0FkMp0W12oAdSI4A/yV8ecYtXzG8X87sfKAISEWt44B4DqJ0a1LEqCD6Vtvc783Mg==
+"@expo/cli@0.22.7", "@expo/cli@~0.22.0":
+  version "0.22.7"
+  resolved "https://registry.yarnpkg.com/@expo/cli/-/cli-0.22.7.tgz#c6501e6ff5162eacba9d027c0e09c91b8db32cee"
+  integrity sha512-aNrUPVFPdIX42Q6UM6qygrN4DUqnXMDS1CnkTfNFVIZWRiJ1TUA05Zk6aF35M674CKd/c/dWHFjmbgjsyN/hEA==
   dependencies:
     "@0no-co/graphql.web" "^1.0.8"
     "@babel/runtime" "^7.20.0"
@@ -5705,7 +5705,7 @@ call-bind-apply-helpers@^1.0.0, call-bind-apply-helpers@^1.0.1:
     es-errors "^1.3.0"
     function-bind "^1.1.2"
 
-call-bind@^1.0.2, call-bind@^1.0.7:
+call-bind@^1.0.2, call-bind@^1.0.7, call-bind@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/call-bind/-/call-bind-1.0.8.tgz#0736a9660f537e3388826f440d5ec45f744eaa4c"
   integrity sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==
@@ -5726,7 +5726,7 @@ call-bind@^1.0.5, call-bind@^1.0.6:
     get-intrinsic "^1.2.4"
     set-function-length "^1.2.1"
 
-call-bound@^1.0.2:
+call-bound@^1.0.2, call-bound@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/call-bound/-/call-bound-1.0.3.tgz#41cfd032b593e39176a71533ab4f384aa04fd681"
   integrity sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==
@@ -6985,11 +6985,11 @@ dtrace-provider@~0.8:
     nan "^2.14.0"
 
 dunder-proto@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/dunder-proto/-/dunder-proto-1.0.0.tgz#c2fce098b3c8f8899554905f4377b6d85dabaa80"
-  integrity sha512-9+Sj30DIu+4KvHqMfLUGLFYL2PkURSYMVXJyXe92nFRvlYq5hBjLEhblKB+vkd/WVlUYMWigiY07T91Fkk0+4A==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/dunder-proto/-/dunder-proto-1.0.1.tgz#d7ae667e1dc83482f8b70fd0f6eefc50da30f58a"
+  integrity sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==
   dependencies:
-    call-bind-apply-helpers "^1.0.0"
+    call-bind-apply-helpers "^1.0.1"
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
@@ -7641,10 +7641,10 @@ expo-file-system@~18.0.6:
   dependencies:
     web-streams-polyfill "^3.3.2"
 
-expo-font@~13.0.1:
-  version "13.0.1"
-  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-13.0.1.tgz#3a7eed7a4238a352fc74a425fd8c020c5f122382"
-  integrity sha512-8JE47B+6cLeKWr5ql8gU6YsPHjhrz1vMrTqYMm72No/8iW8Sb/uL4Oc0dpmbjq3hLLXBY0xPBQOgU7FQ6Y04Vg==
+expo-font@~13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-13.0.2.tgz#efd3e91714c040a0cf38db91920bce2e0331ff6e"
+  integrity sha512-H9FaXM7ZW5+EfV38w80BgJG3H17kB7CuVXwHoiszIYyoPfWz9bWesFe4QwNZjTq3pzKes28sSd8irFuflIrSIA==
   dependencies:
     fontfaceobserver "^2.1.0"
 
@@ -7683,9 +7683,9 @@ expo-modules-core@2.1.2:
     invariant "^2.2.4"
 
 expo-router@~4.0.0:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-4.0.13.tgz#9abe73cb343b58aa1f3b77dbe379f5731bd3d59d"
-  integrity sha512-22HN4OpcHhNKyWPVn4mfTCdoQkI9xbbKFLw5QONQwYGqP0Opva5Zpm74pxPUdHgwfsTHMvXqkzxcp95brgQQcQ==
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/expo-router/-/expo-router-4.0.14.tgz#75f681c6bacd90adcd7c4f85a1ac0dcb0f4f37f3"
+  integrity sha512-/iA4+W7fjX1NNk0yVaYyQ+oz0MfOTk8K6RNHCdLViH58Jl1/ZH08g0VDhVCtIBCJPGTu+W5SoYtyvj7tNaR0uA==
   dependencies:
     "@expo/metro-runtime" "4.0.0"
     "@expo/server" "^0.5.0"
@@ -7719,12 +7719,12 @@ expo-status-bar@~2.0.0:
   integrity sha512-vxxdpvpNDMTEc5uTiIrbTvySKKUsOACmfl8OZuUdjNle05oGqwtq3v5YObwym/njSByjoyuZX8UpXBZnxvarwQ==
 
 expo@~52.0.0:
-  version "52.0.19"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-52.0.19.tgz#1b881c96ea595da0c5f3c13f578bc368c5261f4a"
-  integrity sha512-wOb/wbiQa0xqQRhgVBuOhLRus05TSw6fgThVMrPQgdLo24EPuT/ZAiRVcVRdjrEbwOqCDumgQCB7636B9J+jKg==
+  version "52.0.20"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-52.0.20.tgz#db5c26308bbf29ace2215ed9d38ca521df048ce2"
+  integrity sha512-fyjKhd3o4MCSaGUIqZCO8bRSLpv+mR3hR1Nkq4AYs5avmfLOq8TEdLtjKT/gWjdRCDS93cXnpl3paekvIvFXSA==
   dependencies:
     "@babel/runtime" "^7.20.0"
-    "@expo/cli" "0.22.6"
+    "@expo/cli" "0.22.7"
     "@expo/config" "~10.0.6"
     "@expo/config-plugins" "~9.0.12"
     "@expo/fingerprint" "0.11.4"
@@ -7734,7 +7734,7 @@ expo@~52.0.0:
     expo-asset "~11.0.1"
     expo-constants "~17.0.3"
     expo-file-system "~18.0.6"
-    expo-font "~13.0.1"
+    expo-font "~13.0.2"
     expo-keep-awake "~14.0.1"
     expo-modules-autolinking "2.0.4"
     expo-modules-core "2.1.2"
@@ -8089,9 +8089,9 @@ flow-enums-runtime@^0.0.6:
   integrity sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==
 
 flow-parser@0.*:
-  version "0.256.0"
-  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.256.0.tgz#2a453925caa0f40beb83ef72ea6479ef7b25d739"
-  integrity sha512-HFb/GgB7hq+TYosLJuMLdLp8aGlyAVfrJaTvcM0w2rz2T33PjkVbRU419ncK/69cjowUksewuspkBheq9ZX9Hw==
+  version "0.257.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.257.0.tgz#7bac8843ca43c7ba46611dfdef4acb0828351a02"
+  integrity sha512-j1odE5mnPe6GOd5W1H/i8EXJvkhVquZCdoFVsZxUW8Yzda0OvjISCBBhDMjxtSkI1YU3d15BkTEeSYb5TLsVuw==
 
 follow-redirects@^1.0.0:
   version "1.15.6"
@@ -9275,12 +9275,19 @@ is-symbol@^1.0.2, is-symbol@^1.0.3:
   dependencies:
     has-symbols "^1.0.2"
 
-is-typed-array@^1.1.13, is-typed-array@^1.1.3:
+is-typed-array@^1.1.13:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/is-typed-array/-/is-typed-array-1.1.13.tgz#d6c5ca56df62334959322d7d7dd1cca50debe229"
   integrity sha512-uZ25/bUAlUY5fR4OKT4rZQEBrzQWYV9ZJYGGsUmEJ6thodVJ1HX64ePQ6Z0qPWP+m+Uq6e9UugrE38jeYsDSMw==
   dependencies:
     which-typed-array "^1.1.14"
+
+is-typed-array@^1.1.3:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/is-typed-array/-/is-typed-array-1.1.15.tgz#4bfb4a45b61cee83a5a46fba778e4e8d59c0ce0b"
+  integrity sha512-p3EcsicXjit7SaskXHs1hA91QxgTw46Fv6EFKKGS5DRFLD8yKnohjF3hxoju94b/OcMZoQukzpPpBE9uLVKzgQ==
+  dependencies:
+    which-typed-array "^1.1.16"
 
 is-unicode-supported@^0.1.0:
   version "0.1.0"
@@ -15310,15 +15317,16 @@ which-collection@^1.0.2:
     is-weakmap "^2.0.2"
     is-weakset "^2.0.3"
 
-which-typed-array@^1.1.14, which-typed-array@^1.1.2:
-  version "1.1.16"
-  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.16.tgz#db4db429c4706feca2f01677a144278e4a8c216b"
-  integrity sha512-g+N+GAWiRj66DngFwHvISJd+ITsyphZvD1vChfVg6cEdnzy53GzB3oy0fUNlvhz7H7+MiqhYr26qxQShCpKTTQ==
+which-typed-array@^1.1.14, which-typed-array@^1.1.16, which-typed-array@^1.1.2:
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/which-typed-array/-/which-typed-array-1.1.18.tgz#df2389ebf3fbb246a71390e90730a9edb6ce17ad"
+  integrity sha512-qEcY+KJYlWyLH9vNbsr6/5j59AXk5ni5aakf8ldzBvGde6Iz4sxZGkJyWSAueTG7QhOvNRYb1lDdFmL5Td0QKA==
   dependencies:
     available-typed-arrays "^1.0.7"
-    call-bind "^1.0.7"
+    call-bind "^1.0.8"
+    call-bound "^1.0.3"
     for-each "^0.3.3"
-    gopd "^1.0.1"
+    gopd "^1.2.0"
     has-tostringtag "^1.0.2"
 
 which-typed-array@^1.1.15:
