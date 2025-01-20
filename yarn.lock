@@ -2696,9 +2696,9 @@
     "@tybys/wasm-util" "^0.9.0"
 
 "@nestjs/common@^11.0.0":
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-11.0.1.tgz#0e4e017188a739f27e7dec4923e4f10a411d5bfe"
-  integrity sha512-GbPKvDz/sYjhR86ebZu+0F5jAvYDZDXY5WcHek9gkEkMI9eIo3xeH/F/tNIPhdyeWp3eG+kNWqR9VPtC18G+TA==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-11.0.2.tgz#e8f7ddf1885365877108ec6d03a93da075d2711f"
+  integrity sha512-SC3RsvFAPPwV+S55M056UfbLq43CPWxe8bPWQranm7hrWpIXh43CVqoUW9o38u0NF3gb5ES8QAQa8KAk2+bOkA==
   dependencies:
     uid "2.0.2"
     iterare "1.2.1"
@@ -2714,9 +2714,9 @@
     lodash "4.17.21"
 
 "@nestjs/core@^11.0.0":
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-11.0.1.tgz#6dedf3d4c69de8d85f1ef76c8c663d39230ea26c"
-  integrity sha512-Yn7X2aInjmX7yxpH8TjJmgC0JPvs+tcreETkquSRmKbuK5J28dZDi8loiaw3eRTLLvzzUovv5mlqFxmVhDESOw==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-11.0.2.tgz#9739fe4afc4ba390611d61caf52d59b350b6acac"
+  integrity sha512-MA9+vnNLnDLfZDWGX7Y6z7IozKwahGBxsiywmEkEkue4iHj6/mZF1PMl31ZUISszixFMPkYkxjQfYNSVONkNwA==
   dependencies:
     uid "2.0.2"
     "@nuxt/opencollective" "0.4.1"
@@ -2744,11 +2744,10 @@
   integrity sha512-dp0J6ZCp8tvkI9MDDLtxyMCh0HGGr6Bg+nNAsT0TpeiHVJIDAPQ5dIteA+EIoS2pm7tyNPBRyZKKv04r/BCzPA==
 
 "@nestjs/platform-express@^11.0.0":
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-11.0.1.tgz#2e2566e52da1800ea97dd37d0fadb84dc5281fdc"
-  integrity sha512-vkAcm4Lm/aAvvpYtRcRKuwzsliy4SqoSp0saHOIx6VdphIb1k7ziRkjDbLFDczDZmkiyX1pJ9kI5SHjoQzVDPw==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-11.0.2.tgz#db508a4ccb0ae811d3ddc42447c91787c1c76b23"
+  integrity sha512-Gs4xPASTDxTHuZHrituNMbxvljUdOlu0Xcx2cepN8+4wQh93OoDsvTDaKO0vlnWhN3wj9DO+Xv9PVjIYBYsIag==
   dependencies:
-    body-parser "1.20.3"
     cors "2.8.5"
     express "5.0.1"
     multer "1.4.5-lts.1"
@@ -2788,9 +2787,9 @@
     swagger-ui-dist "5.18.2"
 
 "@nestjs/testing@^11.0.0":
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-11.0.1.tgz#3bc55ed6f213c04fe9221aa2144167f5a618732c"
-  integrity sha512-s1hQAC46W/qp2JJqCeqhG/uT8IBtvgIoAHklUPl7sTYSJCs745q6X2+rrOPtAewVW8CuYNhQS7/0g94QR1IHXw==
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-11.0.2.tgz#8dce4193ee45dee401fa65b719f2864c9b3fa60d"
+  integrity sha512-bjfPY/vRYYFhAk6arPdPNKmq+otoTuIb6Jwq2dhbzLJ5hMQHe3PvDcL4FoRAGurTiHI8hZu+zz/NCX7KeIF1vQ==
   dependencies:
     tslib "2.8.1"
 
@@ -5525,24 +5524,6 @@ body-parser@1.20.2:
     iconv-lite "0.4.24"
     on-finished "2.4.1"
     qs "6.11.0"
-    raw-body "2.5.2"
-    type-is "~1.6.18"
-    unpipe "1.0.0"
-
-body-parser@1.20.3:
-  version "1.20.3"
-  resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.20.3.tgz#1953431221c6fb5cd63c4b36d53fab0928e548c6"
-  integrity sha512-7rAxByjUMqQ3/bHJy7D6OGXvx/MMc4IqBn/X0fcM1QUcAItpZrBEYhWGem+tzXH90c+G01ypMcYJBO9Y30203g==
-  dependencies:
-    bytes "3.1.2"
-    content-type "~1.0.5"
-    debug "2.6.9"
-    depd "2.0.0"
-    destroy "1.2.0"
-    http-errors "2.0.0"
-    iconv-lite "0.4.24"
-    on-finished "2.4.1"
-    qs "6.13.0"
     raw-body "2.5.2"
     type-is "~1.6.18"
     unpipe "1.0.0"
@@ -14212,7 +14193,7 @@ side-channel-weakmap@^1.0.2:
     object-inspect "^1.13.3"
     side-channel-map "^1.0.1"
 
-side-channel@^1.0.4, side-channel@^1.0.6:
+side-channel@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.6.tgz#abd25fb7cd24baf45466406b1096b7831c9215f2"
   integrity sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==
@@ -14222,7 +14203,7 @@ side-channel@^1.0.4, side-channel@^1.0.6:
     get-intrinsic "^1.2.4"
     object-inspect "^1.13.1"
 
-side-channel@^1.1.0:
+side-channel@^1.0.6, side-channel@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.1.0.tgz#c3fcff9c4da932784873335ec9765fa94ff66bc9"
   integrity sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==
