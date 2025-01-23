@@ -18,7 +18,7 @@ jobs:
           corepack enable
       - name: Dependency Installation
         run: |
-          yarn --frozen-lockfile
+          yarn --immutable
       - name: Analyze Code
         uses: SonarSource/sonarcloud-github-action@master
         env:
