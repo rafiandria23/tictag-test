@@ -4009,7 +4009,7 @@ __metadata:
     "@nx/webpack": "npm:20.4.0"
     "@nx/workspace": "npm:20.4.0"
     "@pchmn/expo-material3-theme": "npm:^1.3.2"
-    "@react-native-async-storage/async-storage": "npm:2.1.0"
+    "@react-native-async-storage/async-storage": "npm:2.1.1"
     "@reduxjs/toolkit": "npm:^2.2.7"
     "@swc-node/register": "npm:~1.10.0"
     "@swc/core": "npm:~1.10.0"
@@ -4084,14 +4084,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-native-async-storage/async-storage@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@react-native-async-storage/async-storage@npm:2.1.0"
+"@react-native-async-storage/async-storage@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@react-native-async-storage/async-storage@npm:2.1.1"
   dependencies:
     merge-options: "npm:^3.0.4"
   peerDependencies:
     react-native: ^0.0.0-0 || >=0.65 <1.0
-  checksum: 10c0/76a81a55059e93e256f6e9cf3f33a49d24ba83ce2f88e52343107953a66168c533bb387111a88708247c926297ee93c681c4936bcb66993dba78ea7fb28c9fdf
+  checksum: 10c0/16858168576f034945f1180c9fdb57c54f1de1c80d08054f5d15f43347ac5e85b08f2af31fe632d673e9c09d65b8035bb3c77b61ba1d0dcd0f59240de4ae2ef5
   languageName: node
   linkType: hard
 
