@@ -1856,9 +1856,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:0.22.11, @expo/cli@npm:~0.22.0":
-  version: 0.22.11
-  resolution: "@expo/cli@npm:0.22.11"
+"@expo/cli@npm:0.22.12, @expo/cli@npm:~0.22.0":
+  version: 0.22.12
+  resolution: "@expo/cli@npm:0.22.12"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.8"
     "@babel/runtime": "npm:^7.20.0"
@@ -1876,6 +1876,7 @@ __metadata:
     "@expo/prebuild-config": "npm:^8.0.25"
     "@expo/rudder-sdk-node": "npm:^1.1.1"
     "@expo/spawn-async": "npm:^1.7.2"
+    "@expo/ws-tunnel": "npm:^1.0.1"
     "@expo/xcpretty": "npm:^4.3.0"
     "@react-native/dev-middleware": "npm:0.76.6"
     "@urql/core": "npm:^5.0.6"
@@ -1933,7 +1934,7 @@ __metadata:
     ws: "npm:^8.12.1"
   bin:
     expo-internal: build/bin/cli
-  checksum: 10c0/afd48283668a54aac368e51d3fd3aa09282d0cbac06070596abc8155f941f6341c8792823c89d465144ddf4f457bb3a189ea14acec6af0acc4f9c2bacf8a1033
+  checksum: 10c0/ac440765c363a43315158f0aa1626dc1dc6e22a90af9779f17b716e3e48f13ee30c71d258f6b712b5635ebf473b7739e059952240a26237d84f172500831f89d
   languageName: node
   linkType: hard
 
@@ -2223,6 +2224,13 @@ __metadata:
   dependencies:
     prop-types: "npm:^15.8.1"
   checksum: 10c0/230543be93212f538200b5a6d708a22697c29c00faf054b5c224e5a1fde1feacf96d04ab870d780e1351975503035084fd2187acca2cc2bbd09d8935b2efbfa0
+  languageName: node
+  linkType: hard
+
+"@expo/ws-tunnel@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "@expo/ws-tunnel@npm:1.0.2"
+  checksum: 10c0/574c7a2af1149ae2df3cd654f7378db4f98837bea9f7d20e8cc1f648b1064f72ecc6e01a84e1df55b41b6af0fba47b53d519467f976c75022a6564d4547fa008
   languageName: node
   linkType: hard
 
@@ -10220,11 +10228,11 @@ __metadata:
   linkType: hard
 
 "expo@npm:~52.0.0":
-  version: 52.0.29
-  resolution: "expo@npm:52.0.29"
+  version: 52.0.30
+  resolution: "expo@npm:52.0.30"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@expo/cli": "npm:0.22.11"
+    "@expo/cli": "npm:0.22.12"
     "@expo/config": "npm:~10.0.8"
     "@expo/config-plugins": "npm:~9.0.14"
     "@expo/fingerprint": "npm:0.11.8"
@@ -10256,7 +10264,7 @@ __metadata:
       optional: true
   bin:
     expo: bin/cli
-  checksum: 10c0/afd33570c2dad5b6f1d041b470a4c1b3ca07188f0bc89f44d4ad344cdf61844b20e04dea59e4e09110a8718dc116d0cac9444d6ae5049b0a26449becf9905f53
+  checksum: 10c0/21efc13ea31c0aaf5182227fbcd6dda67a9dbc2a5829e6b6f1fe8f7306dc1517af2302293943eec92cdcbd8420e6f28e6e3f7aeb2e7aaeaf2e89c7d2b1f86d5c
   languageName: node
   linkType: hard
 
