@@ -4041,7 +4041,7 @@ __metadata:
     class-validator: "npm:^0.14.1"
     dayjs: "npm:^1.11.12"
     deepmerge: "npm:^4.3.1"
-    detox: "npm:~20.32.0"
+    detox: "npm:~20.33.0"
     eslint: "npm:~9.19.0"
     eslint-config-prettier: "npm:^10.0.0"
     eslint-plugin-import: "npm:2.31.0"
@@ -9048,9 +9048,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detox@npm:~20.32.0":
-  version: 20.32.0
-  resolution: "detox@npm:20.32.0"
+"detox@npm:~20.33.0":
+  version: 20.33.0
+  resolution: "detox@npm:20.33.0"
   dependencies:
     ajv: "npm:^8.6.3"
     bunyan: "npm:^1.8.12"
@@ -9095,7 +9095,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/8e6cbeeef21fc84f924cc35d730c5df3de36b25f38e341bdc7e9cca6fee270f26b986d85ebf7e50ae6a6e25c4d8554091b582a46d52a3b7c9a41cdcdf0cab1b7
+  checksum: 10c0/458c9745cb70bef4d1bb6a496a68b1239fd47e823f66812bd6b0a9f1687edef8c6ebc42b3b29b8b4077b206add1445d49ef8a5382fd05f09034ca789155b4e7c
   languageName: node
   linkType: hard
 
