@@ -1865,14 +1865,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:0.22.13, @expo/cli@npm:~0.22.0":
-  version: 0.22.13
-  resolution: "@expo/cli@npm:0.22.13"
+"@expo/cli@npm:0.22.15, @expo/cli@npm:~0.22.0":
+  version: 0.22.15
+  resolution: "@expo/cli@npm:0.22.15"
   dependencies:
     "@0no-co/graphql.web": "npm:^1.0.8"
     "@babel/runtime": "npm:^7.20.0"
     "@expo/code-signing-certificates": "npm:^0.0.5"
-    "@expo/config": "npm:~10.0.8"
+    "@expo/config": "npm:~10.0.9"
     "@expo/config-plugins": "npm:~9.0.15"
     "@expo/devcert": "npm:^1.1.2"
     "@expo/env": "npm:~0.4.1"
@@ -1943,7 +1943,7 @@ __metadata:
     ws: "npm:^8.12.1"
   bin:
     expo-internal: build/bin/cli
-  checksum: 10c0/23c1018beab3b21fa91d26e5c017c621b8bce840d9abd5535756f3b63875d32ab96eb35dd509fa32ea5d0d183e489e8dc162c87ec63d214c4f670139956df02a
+  checksum: 10c0/80db267a052298654b031b0b66056f2b722ec44e9505415ad69dbba5af5ada1cb381324bc13b9843e94ecf7c642f4f5cb1d39c6cfe9254cf3159932d2630d7d6
   languageName: node
   linkType: hard
 
@@ -10304,11 +10304,11 @@ __metadata:
   linkType: hard
 
 "expo@npm:~52.0.0":
-  version: 52.0.32
-  resolution: "expo@npm:52.0.32"
+  version: 52.0.33
+  resolution: "expo@npm:52.0.33"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@expo/cli": "npm:0.22.13"
+    "@expo/cli": "npm:0.22.15"
     "@expo/config": "npm:~10.0.9"
     "@expo/config-plugins": "npm:~9.0.15"
     "@expo/fingerprint": "npm:0.11.9"
@@ -10340,7 +10340,7 @@ __metadata:
       optional: true
   bin:
     expo: bin/cli
-  checksum: 10c0/b63b6ce54ba2ac5f732bfbedea7fa95998d83956f4d4b0c81eced688c06239f9d4c746f3c788960ff45172e332381bbc73eb1528912b4a59bc901bedddd0b89a
+  checksum: 10c0/00afb5088120a57ff0e008339d7c1fc690efecb619df5669574583a243ffec1546c9a17019dedd4206b659ad0c0d40d28fa044660a7855d872e9ae5035fc58c0
   languageName: node
   linkType: hard
 
