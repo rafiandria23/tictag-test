@@ -2334,11 +2334,13 @@ __metadata:
   linkType: hard
 
 "@hookform/resolvers@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@hookform/resolvers@npm:4.0.0"
+  version: 4.1.0
+  resolution: "@hookform/resolvers@npm:4.1.0"
+  dependencies:
+    caniuse-lite: "npm:^1.0.30001698"
   peerDependencies:
     react-hook-form: ^7.0.0
-  checksum: 10c0/4839b4cf869e5fe5e271a8d827e3c5ce803a956675f8d66b010f6784caffa2d507ffd4c2065e209470735ebd6fa3d942d74bce1b6223761d48a94b6fd7216e33
+  checksum: 10c0/aeb5c0037c49a9bf0b2026e9c28769ba33a9a8d73223319dd576b35e2e5906f062f17b358ea2d0193482805ccd8918e4f97f3924fc94a1fdfe09de3e255a8c39
   languageName: node
   linkType: hard
 
@@ -7730,6 +7732,13 @@ __metadata:
   version: 1.0.30001695
   resolution: "caniuse-lite@npm:1.0.30001695"
   checksum: 10c0/acf90a767051fdd8083711b3ff9f07a28149c55e394115d8f874f149aa4f130e6bc50cea1dd94fe03035b9ebbe13b64f446518a6d2e19f72650962bdff44b2c5
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001698":
+  version: 1.0.30001699
+  resolution: "caniuse-lite@npm:1.0.30001699"
+  checksum: 10c0/e87b3a0602c3124131f6a21f1eb262378e17a2ee3089e3c472ac8b9caa85cf7d6a219655379302c29c6f10a74051f2a712639d7f98ee0444c73fefcbaf25d519
   languageName: node
   linkType: hard
 
