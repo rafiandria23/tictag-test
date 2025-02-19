@@ -39,7 +39,7 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hook-form": "^7.52.2",
-    "react-native": "0.77.1",
+    "react-native": "0.78.0",
     "react-native-paper": "^5.12.5",
     "react-native-safe-area-context": "5.2.0",
     "react-native-screens": "4.7.0",
