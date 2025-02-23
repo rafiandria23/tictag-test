@@ -9120,8 +9120,8 @@ __metadata:
   linkType: hard
 
 "detox@npm:~20.34.0":
-  version: 20.34.2
-  resolution: "detox@npm:20.34.2"
+  version: 20.34.3
+  resolution: "detox@npm:20.34.3"
   dependencies:
     ajv: "npm:^8.6.3"
     bunyan: "npm:^1.8.12"
@@ -9166,7 +9166,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/d7531648552d0dce11f98ce438edd24d0c0185ac3785466fcbc402b0932a00741226ccb6da0ec81324dc14f02c8d20e5cd980dec7bdfaef0a3040c2f73a5d8d6
+  checksum: 10c0/c4ddfb04a3f66241713fadb75c2f5114d47ad34a25032eeb1b3b17af5197a44f53883b900d10212ee7975e534edc7f8e7c36cdb35f4b0045c27ba6c758526877
   languageName: node
   linkType: hard
 
