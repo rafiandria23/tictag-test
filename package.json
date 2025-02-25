@@ -71,7 +71,7 @@
     "@nx/webpack": "20.4.6",
     "@nx/workspace": "20.4.6",
     "@swc-node/register": "~1.10.0",
-    "@swc/core": "~1.10.0",
+    "@swc/core": "~1.11.0",
     "@swc/helpers": "~0.5.11",
     "@testing-library/jest-dom": "~6.6.0",
     "@testing-library/jest-native": "~5.4.3",
