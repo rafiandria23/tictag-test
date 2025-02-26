@@ -12826,11 +12826,11 @@ __metadata:
   linkType: hard
 
 "jest-expo@npm:~52.0.0":
-  version: 52.0.4
-  resolution: "jest-expo@npm:52.0.4"
+  version: 52.0.5
+  resolution: "jest-expo@npm:52.0.5"
   dependencies:
-    "@expo/config": "npm:~10.0.9"
-    "@expo/json-file": "npm:^9.0.1"
+    "@expo/config": "npm:~10.0.10"
+    "@expo/json-file": "npm:^9.0.2"
     "@jest/create-cache-key-function": "npm:^29.2.1"
     "@jest/globals": "npm:^29.2.1"
     babel-jest: "npm:^29.2.1"
@@ -12851,7 +12851,7 @@ __metadata:
     react-native: "*"
   bin:
     jest: bin/jest.js
-  checksum: 10c0/122aba7ff075783e0f8aab190d632535640b748dc3ca2c577216148b9e0ac03f48e6e5e9ac0c401fad84720e60991e25137b78b3854b69807f5b70c869b72d23
+  checksum: 10c0/b4a4968401034fca094ea722e6e7d0f230787c9bde4e04d05eb216d3c866aab3375fc918ca0f4d8f14d349b87ceadfebebf657fa36942aec54d78f21fa9b8531
   languageName: node
   linkType: hard
 
