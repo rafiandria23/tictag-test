@@ -6401,11 +6401,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix-pilot/core@npm:^3.1.6":
-  version: 3.1.6
-  resolution: "@wix-pilot/core@npm:3.1.6"
+"@wix-pilot/core@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "@wix-pilot/core@npm:3.2.2"
   dependencies:
-    ora: "npm:^5.4.1"
     pngjs: "npm:^7.0.0"
     winston: "npm:^3.17.0"
   peerDependencies:
@@ -6413,7 +6412,7 @@ __metadata:
   peerDependenciesMeta:
     expect:
       optional: true
-  checksum: 10c0/822ba56028577dec7a61ddeb1d0a09cff75f0723e7141be57d8af816ef9cb3a7866a6bc646b3c9a372dbcf3ec2694a3a268e5863f83daff050ea7b054a74a50b
+  checksum: 10c0/5ab62828ef6cd6a6047bfa58f6ef03b2fcacf3f3c36ebf90d72072a552dbbe2e405d971b243268c446241be1fa9a45650aa34abb813b2c022ccb66d9cc3ae44c
   languageName: node
   linkType: hard
 
@@ -9308,10 +9307,10 @@ __metadata:
   linkType: hard
 
 "detox@npm:~20.36.0":
-  version: 20.36.3
-  resolution: "detox@npm:20.36.3"
+  version: 20.36.4
+  resolution: "detox@npm:20.36.4"
   dependencies:
-    "@wix-pilot/core": "npm:^3.1.6"
+    "@wix-pilot/core": "npm:^3.2.2"
     "@wix-pilot/detox": "npm:^1.0.11"
     ajv: "npm:^8.6.3"
     bunyan: "npm:^1.8.12"
@@ -9355,7 +9354,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/b291822c332766e56c4fe770a36b6f8004fbbb6b31dd582a914fd03f47332551c0694bfe53db99b720e9e9c9766861cef706343f67f909a3df4e583b114c413b
+  checksum: 10c0/f112f5f536fb50e35d0f7ba2975a8423e78a5ec6bce9b4680731a43f8a9326cb6425b0cd669f40967f0f81c3178747302a72700a3e2a94ca2c032e04b719ac79
   languageName: node
   linkType: hard
 
@@ -16114,7 +16113,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ora@npm:5.4.1, ora@npm:^5.4.1":
+"ora@npm:5.4.1":
   version: 5.4.1
   resolution: "ora@npm:5.4.1"
   dependencies:
