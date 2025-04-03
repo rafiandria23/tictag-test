@@ -10493,8 +10493,8 @@ __metadata:
   linkType: hard
 
 "expo@npm:~52.0.0":
-  version: 52.0.43
-  resolution: "expo@npm:52.0.43"
+  version: 52.0.44
+  resolution: "expo@npm:52.0.44"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:0.22.24"
@@ -10531,7 +10531,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/61900e64a47c543d0dc65984b53353b4d42c97948bb61906776a819bee5662938ff9bc697b3a58adc8e082f495233a22dc09012fb0e4599be34cd0385febd0f2
+  checksum: 10c0/5a47bb7d811b46dc0783b09fb2451fb4a454e304f5d720866ff99b97504c03f4d612f95a8ff02b391d396daa071688a4d34da28e8e69ee95ad9038cd8a32acf9
   languageName: node
   linkType: hard
 
