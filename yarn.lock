@@ -9875,15 +9875,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-font@npm:~13.3.0":
-  version: 13.3.0
-  resolution: "expo-font@npm:13.3.0"
+"expo-font@npm:~13.3.1":
+  version: 13.3.1
+  resolution: "expo-font@npm:13.3.1"
   dependencies:
     fontfaceobserver: "npm:^2.1.0"
   peerDependencies:
     expo: "*"
     react: "*"
-  checksum: 10c0/39a5601d6fe02791620679e9902ecd9bd1c6a37dc0a534a0d570981e564c57217e41efc4d24b05598fe384d6bddfeb751837638ade3ed20f7e08ff53b0537b9b
+  checksum: 10c0/aefcf1a1a413f11bcd8b1a4948ff725a864710a517cf15d6fd17c80b5b261595502dd2afa97044cb32d0a65371d6104c69df872c4d8cf4e24e8129e3073f5547
   languageName: node
   linkType: hard
 
@@ -9937,8 +9937,8 @@ __metadata:
   linkType: hard
 
 "expo-router@npm:~5.0.0":
-  version: 5.0.4
-  resolution: "expo-router@npm:5.0.4"
+  version: 5.0.5
+  resolution: "expo-router@npm:5.0.5"
   dependencies:
     "@expo/metro-runtime": "npm:5.0.4"
     "@expo/server": "npm:^0.6.2"
@@ -9969,7 +9969,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: 10c0/28d02564eae55801c6de2d68607aeeb9f008cb3c4d1b0bfed5c4fa808e16121648a15a71dc475269aabfef2c05a2fc806618351a4f7cbc960351c827f4455bba
+  checksum: 10c0/ac1f45133667627a9a539cde259e3119d4cf48c8c125c3e64435e64f95d749c81fc4e69e39173c1e8e0f2bba1d4b071182f5248deb0f14e12c8a0a370d86b37e
   languageName: node
   linkType: hard
 
@@ -10007,8 +10007,8 @@ __metadata:
   linkType: hard
 
 "expo@npm:~53.0.0":
-  version: 53.0.5
-  resolution: "expo@npm:53.0.5"
+  version: 53.0.6
+  resolution: "expo@npm:53.0.6"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:0.24.10"
@@ -10021,7 +10021,7 @@ __metadata:
     expo-asset: "npm:~11.1.4"
     expo-constants: "npm:~17.1.5"
     expo-file-system: "npm:~18.1.8"
-    expo-font: "npm:~13.3.0"
+    expo-font: "npm:~13.3.1"
     expo-keep-awake: "npm:~14.1.4"
     expo-modules-autolinking: "npm:2.1.9"
     expo-modules-core: "npm:2.3.12"
@@ -10044,7 +10044,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/42f80986b39d325e27d60e32397cc401bf5e2dc05e294879421d45049cd0e34edd77a3b749d489db1ac0de1a7333a3c1496e891aaa27428df3164a271880d18f
+  checksum: 10c0/ad4ac36bcfd8b3fa01c6fd8de364089470cb14ae6f7030b48f10f92eeeae4f690b6b77886e0df314ee83ae90a3177369efa8f9b5f2ceefb29e9361cf471a40b7
   languageName: node
   linkType: hard
 
@@ -12389,8 +12389,8 @@ __metadata:
   linkType: hard
 
 "jest-expo@npm:~53.0.0":
-  version: 53.0.3
-  resolution: "jest-expo@npm:53.0.3"
+  version: 53.0.4
+  resolution: "jest-expo@npm:53.0.4"
   dependencies:
     "@expo/config": "npm:~11.0.7"
     "@expo/json-file": "npm:^9.1.4"
@@ -12413,7 +12413,7 @@ __metadata:
     react-native: "*"
   bin:
     jest: bin/jest.js
-  checksum: 10c0/ac856b99e879acd5e19ee7b5bfccf44a6aae2726e16612243b2b7830ac8613ff284120487a18706c47aa1fca5400c4fd4ea37b2c466443ecf571924508a20f8a
+  checksum: 10c0/30fdb88d06fe8587cb7dd1d554a51e17037b0f2a1f95bf4394d492528469a5c5aafb15406cb14df1dd581517fe57dacae623326ade8782e7849e64c6d4ea6012
   languageName: node
   linkType: hard
 
