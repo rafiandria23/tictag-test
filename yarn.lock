@@ -16737,8 +16737,8 @@ __metadata:
   linkType: hard
 
 "react-native-paper@npm:^5.12.5":
-  version: 5.14.2
-  resolution: "react-native-paper@npm:5.14.2"
+  version: 5.14.3
+  resolution: "react-native-paper@npm:5.14.3"
   dependencies:
     "@callstack/react-theme-provider": "npm:^3.0.9"
     color: "npm:^3.1.2"
@@ -16747,7 +16747,7 @@ __metadata:
     react: "*"
     react-native: "*"
     react-native-safe-area-context: "*"
-  checksum: 10c0/e5a68147119295a554bd6a62649fc950f83fea768730f6fe77650c9a3c774797871e6fd2890b46192e1048f041e64c42ccfe886f5ffc117ba0cd74706fcea091
+  checksum: 10c0/331ed6d285826be3694ffd55fbe92dc2f441ebb73925a677fe2b509ce1a42b7021ec66e9830b8f4dd3f35d3530cc81a03207122696558895eda8eb33f38a1dcd
   languageName: node
   linkType: hard
 
