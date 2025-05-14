@@ -4273,7 +4273,7 @@ __metadata:
     class-validator: "npm:^0.14.1"
     dayjs: "npm:^1.11.12"
     deepmerge: "npm:^4.3.1"
-    detox: "npm:~20.37.0"
+    detox: "npm:~20.38.0"
     eslint: "npm:~9.26.0"
     eslint-config-prettier: "npm:^10.0.0"
     eslint-plugin-import: "npm:2.31.0"
@@ -8857,9 +8857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detox@npm:~20.37.0":
-  version: 20.37.0
-  resolution: "detox@npm:20.37.0"
+"detox@npm:~20.38.0":
+  version: 20.38.0
+  resolution: "detox@npm:20.38.0"
   dependencies:
     "@wix-pilot/core": "npm:^3.2.2"
     "@wix-pilot/detox": "npm:^1.0.11"
@@ -8905,7 +8905,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/539fc1a216dea32f7356435d1fbbbc47f28dece2d72f0bee540ecb8650f47b1b454c81e77f1109a4a30a0146cf7eb51c53445118327a701f4dea66705b7563d0
+  checksum: 10c0/fe3322aa248c0a2c70b794ce48e0a72f5acb349440a0f6376c4587c093bc6dede630c2154a9309ede29e7ac235b49f2e1d6bf063aa188c9e4cf336144c0d1204
   languageName: node
   linkType: hard
 
