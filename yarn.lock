@@ -20757,8 +20757,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.23.8":
-  version: 3.25.21
-  resolution: "zod@npm:3.25.21"
-  checksum: 10c0/e45c571318d74622572c6d7cbd3bcc6c6a8fd4b16ba65f75ebee69ed65a994f4a3a644163ea0a359641864dc9e93bf35592fe968acd7e0937053bfe52d3e94d2
+  version: 3.25.23
+  resolution: "zod@npm:3.25.23"
+  checksum: 10c0/c0a9d1b215ead64fdd1f3be47bc7376be6016472ae5bd1ef56d0a579d544b785b5e266dbd30947172e5b92873b7a8bed123625eeb00aea4e5d7526d86a5a31f6
   languageName: node
   linkType: hard
