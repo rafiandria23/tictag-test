@@ -1652,14 +1652,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@config-plugins/detox@npm:~9.0.0":
-  version: 9.0.0
-  resolution: "@config-plugins/detox@npm:9.0.0"
+"@config-plugins/detox@npm:~11.0.0":
+  version: 11.0.0
+  resolution: "@config-plugins/detox@npm:11.0.0"
   dependencies:
     expo-build-properties: "npm:^0.13.1"
   peerDependencies:
-    expo: ^52
-  checksum: 10c0/8fb55d078e61c3468c5811cb4b5be3d03e207b065359b1e2c6b017f50cb95a12da417e8af440b47bc811c6fd521756ee921b7677d836a7b5df6ee6393ab71db2
+    expo: ^53
+  checksum: 10c0/d042524ec3f87c1b5fd4028177106a05c15a5e0abf5e5f85fc5e52c6f836e4e6ce550ae003ba0268795f7df50466bdab0c3a34683efdb5fad4858d9e771a4c92
   languageName: node
   linkType: hard
 
@@ -4205,7 +4205,7 @@ __metadata:
   resolution: "@rafiandria23/tictag-test@workspace:."
   dependencies:
     "@casl/ability": "npm:^6.7.1"
-    "@config-plugins/detox": "npm:~9.0.0"
+    "@config-plugins/detox": "npm:~11.0.0"
     "@expo/cli": "npm:~0.24.0"
     "@expo/metro-config": "npm:~0.20.0"
     "@expo/metro-runtime": "npm:~5.0.0"
