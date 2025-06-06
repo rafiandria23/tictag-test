@@ -12390,8 +12390,8 @@ __metadata:
   linkType: hard
 
 "jest-expo@npm:~53.0.0":
-  version: 53.0.6
-  resolution: "jest-expo@npm:53.0.6"
+  version: 53.0.7
+  resolution: "jest-expo@npm:53.0.7"
   dependencies:
     "@expo/config": "npm:~11.0.10"
     "@expo/json-file": "npm:^9.1.4"
@@ -12414,7 +12414,7 @@ __metadata:
     react-native: "*"
   bin:
     jest: bin/jest.js
-  checksum: 10c0/e54daaafa195ced302a2a677ffb376e95bd41d9e9283dbb1cacacaf5d9592ed3d583eb09144f78b3a1e22d78e6599277a0ec6d61b164bd5c55a669c7faae29fd
+  checksum: 10c0/a8bc45840970565d75a9a54cad4fbf9c822ed569e50e40b0c5b463c0a06670337b9d279acc8bae02d3429b67adc386ea9eb0a25056d198c09c0ac3f210a3a29b
   languageName: node
   linkType: hard
 
