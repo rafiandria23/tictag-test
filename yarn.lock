@@ -4754,7 +4754,7 @@ __metadata:
     expo-build-properties: "npm:~0.14.0"
     expo-constants: "npm:~17.1.0"
     expo-linking: "npm:~7.1.0"
-    expo-router: "npm:~5.0.0"
+    expo-router: "npm:~5.1.0"
     expo-secure-store: "npm:~14.2.0"
     expo-splash-screen: "npm:~0.30.0"
     expo-status-bar: "npm:~2.2.0"
@@ -10745,9 +10745,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-router@npm:~5.0.0":
-  version: 5.0.7
-  resolution: "expo-router@npm:5.0.7"
+"expo-router@npm:~5.1.0":
+  version: 5.1.0
+  resolution: "expo-router@npm:5.1.0"
   dependencies:
     "@expo/metro-runtime": "npm:5.0.4"
     "@expo/server": "npm:^0.6.2"
@@ -10778,7 +10778,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: 10c0/a8fa0435199fd3b6aa7444a01c450003ee459930896f108c2622ca7feaa16ac1a4cd5636ce8e0b7a221213f684a280c55b9805618b28288ded302755296774ad
+  checksum: 10c0/aee97bc4710ff417a519f915baea75111d3b2ad06243fe457a3cf8926f5fa100acc952ee4027543acc08e5f4e606106b74278662b24aa456f34ebc9037c17ba4
   languageName: node
   linkType: hard
 
