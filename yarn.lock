@@ -22213,8 +22213,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.23.8":
-  version: 3.25.60
-  resolution: "zod@npm:3.25.60"
-  checksum: 10c0/4b5c0fc9fc9020a1b41c9e4093e722181f9535dc4e917cd5a63ce764c405f49ff49d7f5ef4d8c92665d250d92c2216c4c0b0145175c755209762be4ec305c5d2
+  version: 3.25.61
+  resolution: "zod@npm:3.25.61"
+  checksum: 10c0/45386e88c52b5946dbe22c95fe45f3e7c1c90c4fba8cd7b8ce4e6cf0a79c987026990cbb082c54bb2926be35ed49947f351f05b35d6507aa17c23c088a5f4667
   languageName: node
   linkType: hard
