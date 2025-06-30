@@ -10865,26 +10865,26 @@ __metadata:
   linkType: hard
 
 "expo-build-properties@npm:^0.13.1":
-  version: 0.13.2
-  resolution: "expo-build-properties@npm:0.13.2"
+  version: 0.13.3
+  resolution: "expo-build-properties@npm:0.13.3"
   dependencies:
     ajv: "npm:^8.11.0"
     semver: "npm:^7.6.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/7df50514dda73dde8ca141047c850f7a1d2b42dd3d6822b5ae284c0854a592b23fece95b758b8acc40b4e5a50a7652e72f2dba0810f21284770d472d0ea692fb
+  checksum: 10c0/7302ac2403e0cd5d95d0f31c15dcf29a634f716cac022bc17e9ac2e405f577b4d0e2b45cb19b5659472e248824dfcf54250bebf309976a3ef308bc85c6f5d2b1
   languageName: node
   linkType: hard
 
 "expo-build-properties@npm:~0.14.0":
-  version: 0.14.6
-  resolution: "expo-build-properties@npm:0.14.6"
+  version: 0.14.7
+  resolution: "expo-build-properties@npm:0.14.7"
   dependencies:
     ajv: "npm:^8.11.0"
     semver: "npm:^7.6.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/ef03bc96fe200418ab8bd2b41866413f1df45140a28e9eb414bf6db496cc2d053ca53ec14ca9ab273a391e676b00ac3d51f04c3adf75ad62404545a2cc23d2e5
+  checksum: 10c0/b13e6e5d49b322d56df2e074112d5d31bb3362be02728628ed0c6648ca53deca1ad501ecda7c28563993a6912c84f73323ff2b0915d64dabbe8f59fa6e3cdd3e
   languageName: node
   linkType: hard
 
