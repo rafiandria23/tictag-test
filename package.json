@@ -87,7 +87,7 @@
     "@typescript-eslint/parser": "^8.0.0",
     "babel-jest": "^30.0.0",
     "babel-preset-expo": "~13.2.0",
-    "detox": "~20.39.0",
+    "detox": "~20.40.0",
     "eslint": "~9.30.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-import": "2.32.0",
