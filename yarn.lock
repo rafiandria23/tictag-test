@@ -6812,9 +6812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wix-pilot/core@npm:^3.3.0":
-  version: 3.3.4
-  resolution: "@wix-pilot/core@npm:3.3.4"
+"@wix-pilot/core@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "@wix-pilot/core@npm:3.4.1"
   dependencies:
     chalk: "npm:^4.1.0"
     pngjs: "npm:^7.0.0"
@@ -6824,18 +6824,18 @@ __metadata:
   peerDependenciesMeta:
     expect:
       optional: true
-  checksum: 10c0/5f1c803e5a61e71c4c566e39683800449fecd0ef7cf2a612ff586296c53f1cfca9118cf325136f84769988a09dd5e4fb66ad1c381b98888ea343179fa66ff9e7
+  checksum: 10c0/4bde1e3848274e2ccc2ce1f3ddb9f15eda61c3852d18e6a6a893238ebb183abfb4de8a18f4e791b9757da6bcec79e9f1c9cdb0fb83aee60d880a6d090a22fa8c
   languageName: node
   linkType: hard
 
-"@wix-pilot/detox@npm:^1.0.11":
-  version: 1.0.11
-  resolution: "@wix-pilot/detox@npm:1.0.11"
+"@wix-pilot/detox@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "@wix-pilot/detox@npm:1.0.13"
   peerDependencies:
-    "@wix-pilot/core": ^3.1.6
+    "@wix-pilot/core": ^3.4.1
     detox: ">=20.33.0"
     expect: 29.x.x || 28.x.x || ^27.2.5
-  checksum: 10c0/21bb8d6f57cfe17aa25901d5abfe6b5c8eae20a27dbd511509bbe2aca058fa0c5a84a028523ffa72ee0679025dc0c1ee549f3d3cb63811a8a312313174b81a63
+  checksum: 10c0/210b1834ce628cfacdc7417ed8596455045bd6c87bc4ef01b99558ddeeab00648d8ed73abdd212f7cb3d96110b0d36bf8812fd31e1d61a4d3b8f7cad41ab69bf
   languageName: node
   linkType: hard
 
@@ -9546,11 +9546,11 @@ __metadata:
   linkType: hard
 
 "detox@npm:~20.40.0":
-  version: 20.40.1
-  resolution: "detox@npm:20.40.1"
+  version: 20.40.2
+  resolution: "detox@npm:20.40.2"
   dependencies:
-    "@wix-pilot/core": "npm:^3.3.0"
-    "@wix-pilot/detox": "npm:^1.0.11"
+    "@wix-pilot/core": "npm:^3.4.1"
+    "@wix-pilot/detox": "npm:^1.0.13"
     ajv: "npm:^8.6.3"
     bunyan: "npm:^1.8.12"
     bunyan-debug-stream: "npm:^3.1.0"
@@ -9593,7 +9593,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/35360697cbc7fb75f97d93848c1675049772e7bcbdfb73b20c91cdfe2807fdee1065c4753e492a98e4eae7dcaab5f5856bc1c6e25c6e7d57e9f4778bd551e3d4
+  checksum: 10c0/aca5269e088f934b92258bf985b36a284d1c3992708a0cd96ea0065c69e41eae6868d6dbbc41e906d7fb76c1bbc57feed23ef863759e6f0bcdc222017e5c133f
   languageName: node
   linkType: hard
 
