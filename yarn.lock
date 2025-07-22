@@ -13037,7 +13037,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-circus@npm:30.0.4, jest-circus@npm:^30.0.0":
+"jest-circus@npm:30.0.4":
   version: 30.0.4
   resolution: "jest-circus@npm:30.0.4"
   dependencies:
@@ -13065,7 +13065,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-circus@npm:30.0.5":
+"jest-circus@npm:30.0.5, jest-circus@npm:^30.0.0":
   version: 30.0.5
   resolution: "jest-circus@npm:30.0.5"
   dependencies:
