@@ -4656,7 +4656,7 @@ __metadata:
     react-native-screens: "npm:4.13.1"
     react-native-svg: "npm:15.12.0"
     react-native-svg-transformer: "npm:1.5.1"
-    react-native-web: "npm:~0.20.0"
+    react-native-web: "npm:~0.21.0"
     react-redux: "npm:^9.1.2"
     react-test-renderer: "npm:19.1.0"
     reflect-metadata: "npm:^0.2.2"
@@ -18150,9 +18150,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web@npm:~0.20.0":
-  version: 0.20.0
-  resolution: "react-native-web@npm:0.20.0"
+"react-native-web@npm:~0.21.0":
+  version: 0.21.0
+  resolution: "react-native-web@npm:0.21.0"
   dependencies:
     "@babel/runtime": "npm:^7.18.6"
     "@react-native/normalize-colors": "npm:^0.74.1"
@@ -18165,7 +18165,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/266c16c67ccc4114864cf4facac14c3736412c937af8cf031eaaa618e801723f2c4aac5bf2d680536bbbe95602b97c13a819e775602884e900dd1362bbe2f3f5
+  checksum: 10c0/942f8696281927dfc2970b08939fce62d1dec9486e41ce913f659f132a7fa35d704e18b48d79df9407d17ff51a4986c872c79852616e522f11fa6f41286b6510
   languageName: node
   linkType: hard
 
