@@ -4653,7 +4653,7 @@ __metadata:
     react-native: "npm:0.81.0"
     react-native-paper: "npm:^5.12.5"
     react-native-safe-area-context: "npm:5.6.0"
-    react-native-screens: "npm:4.13.1"
+    react-native-screens: "npm:4.14.0"
     react-native-svg: "npm:15.12.1"
     react-native-svg-transformer: "npm:1.5.1"
     react-native-web: "npm:~0.21.0"
@@ -18132,9 +18132,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-screens@npm:4.13.1":
-  version: 4.13.1
-  resolution: "react-native-screens@npm:4.13.1"
+"react-native-screens@npm:4.14.0":
+  version: 4.14.0
+  resolution: "react-native-screens@npm:4.14.0"
   dependencies:
     react-freeze: "npm:^1.0.0"
     react-native-is-edge-to-edge: "npm:^1.2.1"
@@ -18142,7 +18142,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/7168228da8fe54fce59a31a15ace5b83d91e2cf205d5be4e6306cc749151cee50162bd0c74e163f38d25bf957153a5ea9e6d91cf9ef6aac8a0c0d5b4ba0d93af
+  checksum: 10c0/b19a6d5bd9880ccb53cc8a981c26da550851c164159fda046cd6afc13f6c653dfb082b4edfa14a55048faab9d4cc4efaddb07f1c0b7b70dc2481600de4bd23c5
   languageName: node
   linkType: hard
 
