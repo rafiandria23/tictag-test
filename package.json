@@ -74,7 +74,7 @@
     "@swc-node/register": "~1.10.0",
     "@swc/core": "~1.13.0",
     "@swc/helpers": "~0.5.11",
-    "@testing-library/jest-dom": "~6.6.0",
+    "@testing-library/jest-dom": "~6.7.0",
     "@testing-library/jest-native": "~5.4.3",
     "@testing-library/react-native": "~13.2.0",
     "@types/bcrypt": "^6.0.0",
