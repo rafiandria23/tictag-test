@@ -4750,7 +4750,7 @@ __metadata:
     "@swc/helpers": "npm:~0.5.11"
     "@testing-library/jest-dom": "npm:~6.7.0"
     "@testing-library/jest-native": "npm:~5.4.3"
-    "@testing-library/react-native": "npm:~13.2.0"
+    "@testing-library/react-native": "npm:~13.3.0"
     "@types/bcrypt": "npm:^6.0.0"
     "@types/jest": "npm:^30.0.0"
     "@types/lodash": "npm:^4.17.7"
@@ -6011,13 +6011,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:~13.2.0":
-  version: 13.2.2
-  resolution: "@testing-library/react-native@npm:13.2.2"
+"@testing-library/react-native@npm:~13.3.0":
+  version: 13.3.0
+  resolution: "@testing-library/react-native@npm:13.3.0"
   dependencies:
-    chalk: "npm:^4.1.2"
-    jest-matcher-utils: "npm:^30.0.2"
-    pretty-format: "npm:^30.0.2"
+    jest-matcher-utils: "npm:^30.0.5"
+    picocolors: "npm:^1.1.1"
+    pretty-format: "npm:^30.0.5"
     redent: "npm:^3.0.0"
   peerDependencies:
     jest: ">=29.0.0"
@@ -6027,7 +6027,7 @@ __metadata:
   peerDependenciesMeta:
     jest:
       optional: true
-  checksum: 10c0/dbe2a509c1c30d5fd616bce8831ffc7d3b6df819ab0ff24b23e66be7a8c510df29e94a4406b786b58c7bce668abcf44890a5b71aa791ce65a58795c0ab556c41
+  checksum: 10c0/6e93af0200727e3ca08a1c071bce44fb1b9ac7306d6aa1e5f3926a1ac331c66e9fab8a336fe7ad3e59f2ca9354cc73478c510c37243fd03b45957639e9e134c6
   languageName: node
   linkType: hard
 
@@ -14230,7 +14230,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:30.0.5, jest-matcher-utils@npm:^30.0.2":
+"jest-matcher-utils@npm:30.0.5, jest-matcher-utils@npm:^30.0.5":
   version: 30.0.5
   resolution: "jest-matcher-utils@npm:30.0.5"
   dependencies:
@@ -18577,7 +18577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:30.0.5, pretty-format@npm:^30.0.2":
+"pretty-format@npm:30.0.5, pretty-format@npm:^30.0.5":
   version: 30.0.5
   resolution: "pretty-format@npm:30.0.5"
   dependencies:
