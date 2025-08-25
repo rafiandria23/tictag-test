@@ -6013,8 +6013,8 @@ __metadata:
   linkType: hard
 
 "@testing-library/react-native@npm:~13.3.0":
-  version: 13.3.1
-  resolution: "@testing-library/react-native@npm:13.3.1"
+  version: 13.3.2
+  resolution: "@testing-library/react-native@npm:13.3.2"
   dependencies:
     jest-matcher-utils: "npm:^30.0.5"
     picocolors: "npm:^1.1.1"
@@ -6028,7 +6028,7 @@ __metadata:
   peerDependenciesMeta:
     jest:
       optional: true
-  checksum: 10c0/85979432a5509d9ed855e570facfd1cb4f4854a48da90dcacea9243e1f8b5cd27f8fc365d1f34f7f059e5a7a89fcf62720e73c050103bb566161d8848c508a58
+  checksum: 10c0/c76baefa200183aa79e45d672370061a7ff8bdb8b45c02fd83c903604c265bae2d4ca194ddb71c90646cc2649eaf0d6e6ffc1ea375823d96e81635423b51e024
   languageName: node
   linkType: hard
 
