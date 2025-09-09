@@ -4702,7 +4702,7 @@ __metadata:
     expo-build-properties: "npm:^0.14.8"
     expo-constants: "npm:^17.1.7"
     expo-linking: "npm:^7.1.7"
-    expo-router: "npm:5.1.4"
+    expo-router: "npm:5.1.6"
     expo-secure-store: "npm:14.2.3"
     expo-splash-screen: "npm:^0.30.10"
     expo-status-bar: "npm:^2.2.3"
@@ -11423,11 +11423,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-router@npm:5.1.4":
-  version: 5.1.4
-  resolution: "expo-router@npm:5.1.4"
+"expo-router@npm:5.1.6":
+  version: 5.1.6
+  resolution: "expo-router@npm:5.1.6"
   dependencies:
     "@expo/metro-runtime": "npm:5.0.4"
+    "@expo/schema-utils": "npm:^0.1.0"
     "@expo/server": "npm:^0.6.3"
     "@radix-ui/react-slot": "npm:1.2.0"
     "@react-navigation/bottom-tabs": "npm:^7.3.10"
@@ -11437,7 +11438,6 @@ __metadata:
     invariant: "npm:^2.2.4"
     react-fast-compare: "npm:^3.2.2"
     react-native-is-edge-to-edge: "npm:^1.1.6"
-    schema-utils: "npm:^4.0.1"
     semver: "npm:~7.6.3"
     server-only: "npm:^0.0.1"
     shallowequal: "npm:^1.1.0"
@@ -11456,7 +11456,7 @@ __metadata:
       optional: true
     react-native-reanimated:
       optional: true
-  checksum: 10c0/b51b763b85372c3718bf0daba08216473d483ac93a217c122e9c94a6ce637636c41db2096331115741f77681ea0250f0d0a104de76b0cf4bb652bcc51ddc05cf
+  checksum: 10c0/3196aa006e17eb4aa66aab77fc40526364afbab4a16228c09cc87b6fb6793990141b4f6a8d72957c690e0b3b89b08215857e301d04f77fb0a611d7491d629218
   languageName: node
   linkType: hard
 
