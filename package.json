@@ -1,7 +1,7 @@
 {
   "name": "@rafiandria23/tictag-test",
   "version": "1.0.0",
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.10.1",
   "license": "MIT",
   "private": true,
   "dependencies": {
