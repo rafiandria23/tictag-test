@@ -5315,7 +5315,7 @@ __metadata:
     expo-build-properties: "npm:^1.0.0"
     expo-constants: "npm:^18.0.0"
     expo-linking: "npm:^8.0.0"
-    expo-router: "npm:6.0.11"
+    expo-router: "npm:6.0.12"
     expo-secure-store: "npm:15.0.7"
     expo-splash-screen: "npm:^31.0.0"
     expo-status-bar: "npm:^3.0.0"
@@ -12072,9 +12072,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-router@npm:6.0.11":
-  version: 6.0.11
-  resolution: "expo-router@npm:6.0.11"
+"expo-router@npm:6.0.12":
+  version: 6.0.12
+  resolution: "expo-router@npm:6.0.12"
   dependencies:
     "@expo/metro-runtime": "npm:^6.1.2"
     "@expo/schema-utils": "npm:^0.1.7"
@@ -12130,7 +12130,7 @@ __metadata:
       optional: true
     react-server-dom-webpack:
       optional: true
-  checksum: 10c0/a032e5214d2a48c4da383f11ded523ef192146d54fdbf343fede05cea7160c51d307dafcea5636f3599c207387c60b7b22f7595616a5ae78627c249b011ac3b4
+  checksum: 10c0/8e8e073b9d7310e5ad33e80a15694d0cee2da98e9e6eaf2651060d0ba40811ca2a24b2a2130df002be0a44d8208cd45dbb6a49b959be1c19f6ff9ca0c1eedbfc
   languageName: node
   linkType: hard
 
