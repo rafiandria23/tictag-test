@@ -19842,13 +19842,13 @@ __metadata:
   linkType: hard
 
 "react-dom@npm:^19.1.1":
-  version: 19.2.2
-  resolution: "react-dom@npm:19.2.2"
+  version: 19.2.3
+  resolution: "react-dom@npm:19.2.3"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.2
-  checksum: 10c0/392c0ab526b5eba3938c2ed435c6daaed055ebc367398b3bfe424fa5c1667be843c012a44edbeb35187794e441bfed3ba8206e4a060d8b4641f3eac9bda23cd1
+    react: ^19.2.3
+  checksum: 10c0/dc43f7ede06f46f3acc16ee83107c925530de9b91d1d0b3824583814746ff4c498ea64fd65cd83aba363205268adff52e2827c582634ae7b15069deaeabc4892
   languageName: node
   linkType: hard
 
@@ -19898,10 +19898,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "react-is@npm:19.2.2"
-  checksum: 10c0/e8ccabc8a3479bf3423661066518e38ac1ed001509b25d1652e855b65d29cc1c4d54005505974ccfb956ce04c03912379d8a0624b4e0a23411593ec1fc976d7c
+"react-is@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "react-is@npm:19.2.3"
+  checksum: 10c0/2b54c422c21b8dbd68a435a1cce21ecd5b6f06f48659531f7d53dd7368365da5a67e946f352fb2010d11ca40658aa67bec90995f0f1ec5556c0f71dbffe54994
   languageName: node
   linkType: hard
 
@@ -20142,21 +20142,21 @@ __metadata:
   linkType: hard
 
 "react-test-renderer@npm:^19.1.1":
-  version: 19.2.2
-  resolution: "react-test-renderer@npm:19.2.2"
+  version: 19.2.3
+  resolution: "react-test-renderer@npm:19.2.3"
   dependencies:
-    react-is: "npm:^19.2.2"
+    react-is: "npm:^19.2.3"
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.2
-  checksum: 10c0/e0e31791ce118039854e3f46347d23fa4d6b46c3359af2fb77fb216f1965a9a0d0b001dd473e991d78a25df279cbfeabf6e29e22cdfbb6443ef383db0ef5e279
+    react: ^19.2.3
+  checksum: 10c0/842b82239dbddbc536083a6260c3e1b0507c02a3400bd05879fc19160468fd0f8ab79fec5dceffa6113b131835cc7621212f8415b46ea5156ab66bbfd7e24297
   languageName: node
   linkType: hard
 
 "react@npm:^19.1.1":
-  version: 19.2.2
-  resolution: "react@npm:19.2.2"
-  checksum: 10c0/cf64766e3c7d885aadbf4372c28ecc81627dc33155bd1fdf4a150b2590c859bab38e2eb0ad5a1956d0a3c38e5b1d4b6e4c6598da5d8f640dc237f892a6a66546
+  version: 19.2.3
+  resolution: "react@npm:19.2.3"
+  checksum: 10c0/094220b3ba3a76c1b668f972ace1dd15509b157aead1b40391d1c8e657e720c201d9719537375eff08f5e0514748c0319063392a6f000e31303aafc4471f1436
   languageName: node
   linkType: hard
 
