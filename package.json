@@ -25,7 +25,7 @@
     "class-validator": "^0.14.2",
     "dayjs": "^1.11.18",
     "deepmerge": "^4.3.1",
-    "expo": "54.0.31",
+    "expo": "54.0.32",
     "expo-build-properties": "^1.0.0",
     "expo-constants": "^18.0.0",
     "expo-linking": "^8.0.0",
@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@config-plugins/detox": "^11.0.0",
-    "@expo/cli": "54.0.21",
+    "@expo/cli": "54.0.22",
     "@nestjs/schematics": "^11.0.7",
     "@nestjs/testing": "^11.1.6",
     "@nx/detox": "^22.0.0",
