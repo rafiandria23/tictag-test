@@ -2089,9 +2089,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/cli@npm:55.0.14":
-  version: 55.0.14
-  resolution: "@expo/cli@npm:55.0.14"
+"@expo/cli@npm:55.0.15":
+  version: 55.0.15
+  resolution: "@expo/cli@npm:55.0.15"
   dependencies:
     "@expo/code-signing-certificates": "npm:^0.0.6"
     "@expo/config": "npm:~55.0.8"
@@ -2161,7 +2161,7 @@ __metadata:
       optional: true
   bin:
     expo-internal: build/bin/cli
-  checksum: 10c0/9dc574c0132fcde065efae4d904c5d8f6b482e6aaafe413953f7263442244f470095622851a0c2cd6447eacb38bcf78bd11a33b92079ad668e4bfb72fdfffd07
+  checksum: 10c0/c04985251d38ce6b5693a5c1805f1de359db528f8421742e410f94c882a2102ba853ed3d0e9a5c109f2880678cf7f49aeacbe71bffa67d35c4fb1026e9ea3707
   languageName: node
   linkType: hard
 
@@ -5270,7 +5270,7 @@ __metadata:
   dependencies:
     "@casl/ability": "npm:^6.7.3"
     "@config-plugins/detox": "npm:^11.0.0"
-    "@expo/cli": "npm:55.0.14"
+    "@expo/cli": "npm:55.0.15"
     "@expo/metro-config": "npm:^55.0.0"
     "@expo/metro-runtime": "npm:^55.0.0"
     "@hookform/resolvers": "npm:^5.2.1"
@@ -5326,11 +5326,11 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.0"
-    expo: "npm:55.0.4"
+    expo: "npm:55.0.5"
     expo-build-properties: "npm:^55.0.0"
     expo-constants: "npm:^55.0.0"
     expo-linking: "npm:^55.0.0"
-    expo-router: "npm:55.0.3"
+    expo-router: "npm:55.0.4"
     expo-secure-store: "npm:55.0.8"
     expo-splash-screen: "npm:^55.0.0"
     expo-status-bar: "npm:^55.0.0"
@@ -11879,9 +11879,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-image@npm:^55.0.5":
-  version: 55.0.5
-  resolution: "expo-image@npm:55.0.5"
+"expo-image@npm:^55.0.6":
+  version: 55.0.6
+  resolution: "expo-image@npm:55.0.6"
   dependencies:
     sf-symbols-typescript: "npm:^2.2.0"
   peerDependencies:
@@ -11892,7 +11892,7 @@ __metadata:
   peerDependenciesMeta:
     react-native-web:
       optional: true
-  checksum: 10c0/3b88a5b153b275f39e8a2507a63ebaf1f6fc2cdd5565299bc4dc8e12c93554428a4c1474e5d9d64cc209f7a055a09f2a618b5929d15b09fc917ecaabf0d9228f
+  checksum: 10c0/1c90cbd4bfd440b060df67a325ff3b40bdc1a83ac0b297e0a68992c327fa439b38eaf73cbce1f7f4116be7cc6aa33076c61a65d1bcdb8a3c65210177fde3a64c
   languageName: node
   linkType: hard
 
@@ -11933,21 +11933,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-modules-core@npm:55.0.13":
-  version: 55.0.13
-  resolution: "expo-modules-core@npm:55.0.13"
+"expo-modules-core@npm:55.0.14":
+  version: 55.0.14
+  resolution: "expo-modules-core@npm:55.0.14"
   dependencies:
     invariant: "npm:^2.2.4"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/c8f366aec6cecad11fecf4727589265a3631731a1cdfdfec0309752de24d236e84dff3124760df3cdf1f27becdd01612395b81b0c8675cadfe3d17ea32266348
+  checksum: 10c0/1cedd1561c4638dbdf3a8ca6b50d11d5d8d4d79e6a9e7e481adee74d51cca95e74748caaa1e76d8bab2e7b5850b0009a66b554db32d834fa08267039d1f0472a
   languageName: node
   linkType: hard
 
-"expo-router@npm:55.0.3":
-  version: 55.0.3
-  resolution: "expo-router@npm:55.0.3"
+"expo-router@npm:55.0.4":
+  version: 55.0.4
+  resolution: "expo-router@npm:55.0.4"
   dependencies:
     "@expo/metro-runtime": "npm:^55.0.6"
     "@expo/schema-utils": "npm:^55.0.2"
@@ -11960,9 +11960,9 @@ __metadata:
     debug: "npm:^4.3.4"
     escape-string-regexp: "npm:^4.0.0"
     expo-glass-effect: "npm:^55.0.7"
-    expo-image: "npm:^55.0.5"
+    expo-image: "npm:^55.0.6"
     expo-server: "npm:^55.0.6"
-    expo-symbols: "npm:^55.0.4"
+    expo-symbols: "npm:^55.0.5"
     fast-deep-equal: "npm:^3.1.3"
     invariant: "npm:^2.2.4"
     nanoid: "npm:^3.3.8"
@@ -12007,7 +12007,7 @@ __metadata:
       optional: true
     react-server-dom-webpack:
       optional: true
-  checksum: 10c0/c90a4ccacf05fa3cb53006f0c2ac67cd3dc3cd44ef0743496b9ea7099c10fcf183c5d51344f7aaee6af9a7e18b6dd6b4b5ab9dafeb511fed4e7748c54d2e15ef
+  checksum: 10c0/7e07530af2a80fa2496ca4dbf349819ebd3d6188df4df0c5166dac8410e662e9d6817df4d1c6dd58deefbc9d0faafd0872daab30929ff9dc5b4027a640048651
   languageName: node
   linkType: hard
 
@@ -12050,9 +12050,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-symbols@npm:^55.0.4":
-  version: 55.0.4
-  resolution: "expo-symbols@npm:55.0.4"
+"expo-symbols@npm:^55.0.5":
+  version: 55.0.5
+  resolution: "expo-symbols@npm:55.0.5"
   dependencies:
     "@expo-google-fonts/material-symbols": "npm:^0.4.1"
     sf-symbols-typescript: "npm:^2.0.0"
@@ -12061,16 +12061,16 @@ __metadata:
     expo-font: "*"
     react: "*"
     react-native: "*"
-  checksum: 10c0/e8a4a4f45760a3ecd21735584f39d9b2fd2aa6c598f8cc7ec76435aa2fc59da94dd4f8bb2a1b7ee3492330cb0def4c0b8e9a52bffa61d28060a3d497c471ef73
+  checksum: 10c0/9b8b43dd8604db686a2b6ee1c287174509f6c470a6b2278316e24a967cee5d7a0d08aef72943c955f3e347f3ad1ee45b7b3fbe39e1bd50fa4bbdf11a892aee0b
   languageName: node
   linkType: hard
 
-"expo@npm:55.0.4":
-  version: 55.0.4
-  resolution: "expo@npm:55.0.4"
+"expo@npm:55.0.5":
+  version: 55.0.5
+  resolution: "expo@npm:55.0.5"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
-    "@expo/cli": "npm:55.0.14"
+    "@expo/cli": "npm:55.0.15"
     "@expo/config": "npm:~55.0.8"
     "@expo/config-plugins": "npm:~55.0.6"
     "@expo/devtools": "npm:55.0.2"
@@ -12088,7 +12088,7 @@ __metadata:
     expo-font: "npm:~55.0.4"
     expo-keep-awake: "npm:~55.0.4"
     expo-modules-autolinking: "npm:55.0.8"
-    expo-modules-core: "npm:55.0.13"
+    expo-modules-core: "npm:55.0.14"
     pretty-format: "npm:^29.7.0"
     react-refresh: "npm:^0.14.2"
     whatwg-url-minimum: "npm:^0.1.1"
@@ -12109,7 +12109,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/879e9bb9c4f54cd74b595cd362f7852f6b4e2ef801d9a9c6757a8880694e456ffa147ff132900492a9025bd7b3aa8c82d893e1df293baabca022a0f2b50973b7
+  checksum: 10c0/0505bcb7cbcd6e9900dde77c290b0c9fba0cb2a9ef31284d1f3ca7555d891468ca4e16db5a930d44473f37565f15dbf2696d2f395318fad42e64b6529c04a7a4
   languageName: node
   linkType: hard
 
