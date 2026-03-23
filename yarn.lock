@@ -10926,8 +10926,8 @@ __metadata:
   linkType: hard
 
 "detox@npm:^20.40.2":
-  version: 20.48.1
-  resolution: "detox@npm:20.48.1"
+  version: 20.50.0
+  resolution: "detox@npm:20.50.0"
   dependencies:
     "@wix-pilot/core": "npm:^3.4.2"
     "@wix-pilot/detox": "npm:^1.0.13"
@@ -10973,7 +10973,7 @@ __metadata:
       optional: true
   bin:
     detox: local-cli/cli.js
-  checksum: 10c0/baaf72bd3c3ffe153ed71be4d2feac3874602fb5613325890bca6032c792dd58a35b36bb6d77ff7aa3a371de76c383d3a6a50e54b825d522dd67617b649a8c44
+  checksum: 10c0/c86ab67de306bc2a81c29d74bed0b0adc7e87266538842799802e5470e828ec26a32c18e8abbdf74f53234bf52669fb26600d18ca158321abd4ea494ec579692
   languageName: node
   linkType: hard
 
