@@ -8804,14 +8804,13 @@ __metadata:
   linkType: hard
 
 "axios@npm:^1.11.0, axios@npm:^1.12.0, axios@npm:^1.13.5":
-  version: 1.14.1
-  resolution: "axios@npm:1.14.1"
+  version: 1.15.0
+  resolution: "axios@npm:1.15.0"
   dependencies:
     follow-redirects: "npm:^1.15.11"
     form-data: "npm:^4.0.5"
-    plain-crypto-js: "npm:^4.2.1"
     proxy-from-env: "npm:^2.1.0"
-  checksum: 10c0/2f45cfa0268a88f2d8a9aadec9c220d2e446579da97f5475cbd379a1a26293b4eed828e3eaec59c0c3b5ffb409f88f76299efa58406e96c5a9b8dd140e7ae254
+  checksum: 10c0/47e0f860e98d4d7aa145e89ce0cae00e1fb0f1d2485f065c21fce955ddb1dba4103a46bd0e47acd18a27208a7f62c96249e620db575521b92a968619ab133409
   languageName: node
   linkType: hard
 
@@ -18991,13 +18990,6 @@ __metadata:
   dependencies:
     find-up: "npm:^6.3.0"
   checksum: 10c0/1afb23d2efb1ec9d8b2c4a0c37bf146822ad2774f074cb05b853be5dca1b40815c5960dd126df30ab8908349262a266f31b771e877235870a3b8fd313beebec5
-  languageName: node
-  linkType: hard
-
-"plain-crypto-js@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "plain-crypto-js@npm:4.2.1"
-  checksum: 10c0/447582c3da09fd2f429d6f0249679815cc0bdc9968dc301b90aa64b2921709b6031241560e3be9e9423a524f36dd5681f96538c98d0c99bb308b1b42cec6c6af
   languageName: node
   linkType: hard
 
