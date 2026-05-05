@@ -5707,7 +5707,7 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.0"
-    expo: "npm:55.0.20"
+    expo: "npm:55.0.21"
     expo-build-properties: "npm:^55.0.0"
     expo-constants: "npm:^55.0.0"
     expo-linking: "npm:^55.0.0"
@@ -12380,9 +12380,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-modules-autolinking@npm:55.0.19":
-  version: 55.0.19
-  resolution: "expo-modules-autolinking@npm:55.0.19"
+"expo-modules-autolinking@npm:55.0.20":
+  version: 55.0.20
+  resolution: "expo-modules-autolinking@npm:55.0.20"
   dependencies:
     "@expo/require-utils": "npm:^55.0.4"
     "@expo/spawn-async": "npm:^1.7.2"
@@ -12390,7 +12390,7 @@ __metadata:
     commander: "npm:^7.2.0"
   bin:
     expo-modules-autolinking: bin/expo-modules-autolinking.js
-  checksum: 10c0/0056bfcfcf4d5ac450dfeb2da0d4931aa7f14a3da3566dee63af8265f58f80082fe09ebfbb3a60a4757ddf17bcddf14fddc090fa65d54720299fdc8b318bdfa4
+  checksum: 10c0/c5ee737f9d11c28fe092f466cecb50ed9a05857120dde6b19b5e37dbb2f6965cf87f016cbac2d38946d1863f993a35830d3db5d652e51e175372e321d643bf30
   languageName: node
   linkType: hard
 
@@ -12530,9 +12530,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:55.0.20":
-  version: 55.0.20
-  resolution: "expo@npm:55.0.20"
+"expo@npm:55.0.21":
+  version: 55.0.21
+  resolution: "expo@npm:55.0.21"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:55.0.28"
@@ -12552,7 +12552,7 @@ __metadata:
     expo-file-system: "npm:~55.0.17"
     expo-font: "npm:~55.0.6"
     expo-keep-awake: "npm:~55.0.7"
-    expo-modules-autolinking: "npm:55.0.19"
+    expo-modules-autolinking: "npm:55.0.20"
     expo-modules-core: "npm:55.0.24"
     pretty-format: "npm:^29.7.0"
     react-refresh: "npm:^0.14.2"
@@ -12574,7 +12574,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/539fa6f2757a20b751528ea94a27600012fb609c37caddccaf58f5d18e9e0f31f6e8cd8a706b9ae3433016ca7cd8345bbdee7b19313c60ca476edef01fcd3f26
+  checksum: 10c0/74c08994007332e68d3f4f4efd99cf8d4d384824d91084a3b294b1516b40afd4d041cfdd34861bf6f4a14fd571ae1ad42a0f96f564e53ad7c99dbd5200680454
   languageName: node
   linkType: hard
 
