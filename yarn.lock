@@ -5848,14 +5848,14 @@ __metadata:
   linkType: soft
 
 "@react-native-async-storage/async-storage@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "@react-native-async-storage/async-storage@npm:3.0.3"
+  version: 3.1.0
+  resolution: "@react-native-async-storage/async-storage@npm:3.1.0"
   dependencies:
     idb: "npm:8.0.3"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/2b2a8369ae20a8847c8c65485e7d28131870234aee8d87d531094248f71100c192975d1eda71932d8968328be54ecea78b6a1843c0ddd0f4d29e77e08b327f8b
+  checksum: 10c0/d81f8ad525018ec877fd6f52fafb339be80883e7cb6c6e127665373dafdc7f3b520c80cad2225df49354cf8689c23eaa21459cdf1ff76efdc70de52710e916e4
   languageName: node
   linkType: hard
 
