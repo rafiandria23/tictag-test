@@ -12321,15 +12321,15 @@ __metadata:
   linkType: hard
 
 "expo-build-properties@npm:^56.0.0":
-  version: 56.0.15
-  resolution: "expo-build-properties@npm:56.0.15"
+  version: 56.0.16
+  resolution: "expo-build-properties@npm:56.0.16"
   dependencies:
     "@expo/schema-utils": "npm:^56.0.0"
     resolve-from: "npm:^5.0.0"
     semver: "npm:^7.6.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/13b0838605f2eb399a8eb4dfff6095a94fcde4a27994dfe9280dd557b9c8c7fff7b6f73cb68379274bb40d75248dd5e1d943438891dacc50735f3dcf436f2453
+  checksum: 10c0/da182de8ed64b554645be11f12064d20f62ae18be7ec460b0cd0da0b3a9a9be9cc386b13ed549fb38c277cc9a3e453f7e3aa0546e7d1c6e541be7af8e3c8469d
   languageName: node
   linkType: hard
 
@@ -12390,15 +12390,15 @@ __metadata:
   linkType: hard
 
 "expo-linking@npm:^56.0.0":
-  version: 56.0.12
-  resolution: "expo-linking@npm:56.0.12"
+  version: 56.0.13
+  resolution: "expo-linking@npm:56.0.13"
   dependencies:
     expo-constants: "npm:~56.0.16"
     invariant: "npm:^2.2.4"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/c94f875640f4e2624e585975b0e3729544dfa5e182b16d3e349b6197c6e8381ef44384d22aee421e8a14325782938676a7a1d7bfa2e98b5eeec99c394f2d57f3
+  checksum: 10c0/97652fb485f7235070ea85c79efb7772833276aa0163ffa6dd132cb01d9adfb05705f9f6319ec150ef3fbe7f2ea440b878ef4d55c753909e49501403278a5a8d
   languageName: node
   linkType: hard
 
