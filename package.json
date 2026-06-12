@@ -76,7 +76,7 @@
     "@swc/helpers": "^0.5.17",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/jest-native": "^5.4.3",
-    "@testing-library/react-native": "^13.3.3",
+    "@testing-library/react-native": "^14.0.0",
     "@types/bcrypt": "^6.0.0",
     "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.20",
