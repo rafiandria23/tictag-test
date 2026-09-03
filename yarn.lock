@@ -2702,29 +2702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/metro-runtime@npm:^57.0.0":
-  version: 57.0.14
-  resolution: "@expo/metro-runtime@npm:57.0.14"
-  dependencies:
-    "@expo/log-box": "npm:^57.0.4"
-    anser: "npm:^1.4.9"
-    pretty-format: "npm:^29.7.0"
-    stacktrace-parser: "npm:^0.1.10"
-    whatwg-fetch: "npm:^3.0.0"
-  peerDependencies:
-    "@expo/log-box": ^57.0.4
-    expo: "*"
-    react: "*"
-    react-dom: "*"
-    react-native: "*"
-  peerDependenciesMeta:
-    react-dom:
-      optional: true
-  checksum: 10c0/0260b50388461f7e8bd0240d49770af2941d43c3af5b0a1568c053f95db17b840c95bea11e3f9a40767fec0cae7786cc8ecfb56209815b042a1dda9671849432
-  languageName: node
-  linkType: hard
-
-"@expo/metro-runtime@npm:^57.0.15":
+"@expo/metro-runtime@npm:^57.0.0, @expo/metro-runtime@npm:^57.0.15":
   version: 57.0.15
   resolution: "@expo/metro-runtime@npm:57.0.15"
   dependencies:
@@ -11621,31 +11599,19 @@ __metadata:
   linkType: hard
 
 "expo-build-properties@npm:^57.0.0":
-  version: 57.0.15
-  resolution: "expo-build-properties@npm:57.0.15"
+  version: 57.0.16
+  resolution: "expo-build-properties@npm:57.0.16"
   dependencies:
     "@expo/schema-utils": "npm:^57.0.2"
     resolve-from: "npm:^5.0.0"
     semver: "npm:^7.6.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/624ca5fdb7b140dc98b0c52c943be417185d86bab3d19d23a7eeb9931d42661d32f8482a7eede1a32bb854a48cbc5cfa845f5e2525ac2a262da4d750fb1443c3
+  checksum: 10c0/370d00c64890766682594d563e19fe86b31da5295aef26f0341bd4cdfc41ccaccff97fbf3a49adb66fe56cbe0b5e400076042997a1bb7dc04323ec0140993251
   languageName: node
   linkType: hard
 
-"expo-constants@npm:^57.0.0, expo-constants@npm:~57.0.15":
-  version: 57.0.16
-  resolution: "expo-constants@npm:57.0.16"
-  dependencies:
-    "@expo/env": "npm:~2.4.3"
-  peerDependencies:
-    expo: "*"
-    react-native: "*"
-  checksum: 10c0/2f6a2c87217b44e696dd2403de16ab9fee215495d9aaaf2e8b0089bd8283b584b663392488b70296e9d495e84700202b0a81937fa841f525d3e406f57aad5e31
-  languageName: node
-  linkType: hard
-
-"expo-constants@npm:~57.0.17":
+"expo-constants@npm:^57.0.0, expo-constants@npm:~57.0.17":
   version: 57.0.17
   resolution: "expo-constants@npm:57.0.17"
   dependencies:
@@ -11702,15 +11668,15 @@ __metadata:
   linkType: hard
 
 "expo-linking@npm:^57.0.0":
-  version: 57.0.8
-  resolution: "expo-linking@npm:57.0.8"
+  version: 57.0.9
+  resolution: "expo-linking@npm:57.0.9"
   dependencies:
-    expo-constants: "npm:~57.0.15"
+    expo-constants: "npm:~57.0.17"
     invariant: "npm:^2.2.4"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/6cf65007f3144ce2001059ee796c4ce0f119db0b3ae6426b6ab2150c4497790f949c1eab2ac53425f3b7d1776d77c3c189da56db836b4ce52648a7dd61727dee
+  checksum: 10c0/83ce2fb772f54cb2314d6e954825064e01e0a5f3f99c4c2f9c65274194c6db388e37dfb86a32dc779d3238b779ad39d07bf3618f22dc3c304020ca1abb29109e
   languageName: node
   linkType: hard
 
