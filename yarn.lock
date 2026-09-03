@@ -4074,15 +4074,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mongoose@npm:^11.0.3":
-  version: 11.0.4
-  resolution: "@nestjs/mongoose@npm:11.0.4"
+"@nestjs/mongoose@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "@nestjs/mongoose@npm:12.0.0"
   peerDependencies:
-    "@nestjs/common": ^10.0.0 || ^11.0.0
-    "@nestjs/core": ^10.0.0 || ^11.0.0
+    "@nestjs/common": ^11.0.0 || ^12.0.0
+    "@nestjs/core": ^11.0.0 || ^12.0.0
     mongoose: ^7.0.0 || ^8.0.0 || ^9.0.0
     rxjs: ^7.0.0
-  checksum: 10c0/291f2e06e5b14ddf53bb3f04fee894613c5c2134ff1b13ed2c82d0ee43d519c987fbf4a287e667004ac56c6bd2bd1b1496ef8d28c0639e7f80a9b646b651f55a
+  checksum: 10c0/6449c89f56751579b0250e79c7d412e9c0a4e4c42001f6248b1cd8fa6c4ac6709d4ed7a35c6d28307241afb40783b9796e156b91c18c86e22847a6dd8ebbd1f0
   languageName: node
   linkType: hard
 
@@ -5799,7 +5799,7 @@ __metadata:
     "@nestjs/config": "npm:^12.0.0"
     "@nestjs/core": "npm:^12.0.0"
     "@nestjs/jwt": "npm:^12.0.0"
-    "@nestjs/mongoose": "npm:^11.0.3"
+    "@nestjs/mongoose": "npm:^12.0.0"
     "@nestjs/platform-express": "npm:^12.0.0"
     "@nestjs/schematics": "npm:^12.0.0"
     "@nestjs/swagger": "npm:^12.0.0"
