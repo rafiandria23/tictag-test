@@ -41,9 +41,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/core@npm:22.1.6":
-  version: 22.1.6
-  resolution: "@angular-devkit/core@npm:22.1.6"
+"@angular-devkit/core@npm:22.1.8":
+  version: 22.1.8
+  resolution: "@angular-devkit/core@npm:22.1.8"
   dependencies:
     ajv: "npm:8.20.0"
     ajv-formats: "npm:3.0.1"
@@ -56,7 +56,7 @@ __metadata:
   peerDependenciesMeta:
     chokidar:
       optional: true
-  checksum: 10c0/158f5cf92f6477f76b15386102d7d2d91830bc1aff59df8d0f3be2a0df8c1b24a1cb34c8086f8cdffec195010191e3af43fefc3e57588ca82ae46c042aaed3b3
+  checksum: 10c0/666156660be640ad3a3cd8f72acb26054a819017ff65b49898a31a98be971cf6759d40acfbbea92bc262a214a9f953e73878ec44a48b398f8d079a533ede9eab
   languageName: node
   linkType: hard
 
@@ -73,16 +73,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/schematics@npm:22.1.6":
-  version: 22.1.6
-  resolution: "@angular-devkit/schematics@npm:22.1.6"
+"@angular-devkit/schematics@npm:22.1.8":
+  version: 22.1.8
+  resolution: "@angular-devkit/schematics@npm:22.1.8"
   dependencies:
-    "@angular-devkit/core": "npm:22.1.6"
+    "@angular-devkit/core": "npm:22.1.8"
     jsonc-parser: "npm:3.3.1"
     magic-string: "npm:1.0.0"
     ora: "npm:9.4.1"
     rxjs: "npm:7.8.2"
-  checksum: 10c0/41842278dbeaf2233f8ac082d639f79de49d0da855efdc2d0c523d6d2fda13faf4afd28c11139c3cdb3ce1074421101bdf0fc6cee33f6159c94ec1ada1ab05fe
+  checksum: 10c0/aadf32388b331507e2f575b5b9c300bd2d214c217fec9a5d1551e4db2f4e4af54fa1d0447bc0b156df9ba354d068c0ebc0ccb57be2f89522894a14abe0789895
   languageName: node
   linkType: hard
 
@@ -4021,8 +4021,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^12.0.0":
-  version: 12.0.1
-  resolution: "@nestjs/common@npm:12.0.1"
+  version: 12.0.2
+  resolution: "@nestjs/common@npm:12.0.2"
   dependencies:
     "@standard-schema/spec": "npm:1.1.0"
     file-type: "npm:22.0.2"
@@ -4040,7 +4040,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10c0/5a4c18372b0ebc4974e3e1032fa3e860702a28621e49d04634af7664752f5d71ae5794e97cf0efc9b6a48ba8886a077dc4f340bea4f323d3109ae84060d3952b
+  checksum: 10c0/e5f538d4b0ee0efdda79eaffb539c60f838f13178dfc979ae5bdbb298b0adfdd943d33e2d146876d856b6f7c2813b08ff6d9d632c1e6d92a19342be607fd3d1b
   languageName: node
   linkType: hard
 
@@ -4060,8 +4060,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/core@npm:^12.0.0":
-  version: 12.0.1
-  resolution: "@nestjs/core@npm:12.0.1"
+  version: 12.0.2
+  resolution: "@nestjs/core@npm:12.0.2"
   dependencies:
     fast-safe-stringify: "npm:2.1.1"
     iterare: "npm:1.2.1"
@@ -4082,7 +4082,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10c0/ccf18a31ce5d1409466f722805cc8bd1f1525ce13ea4a19dfad83a930a35c9de602b9e8e55a6837a46856ee107966763db2bb79b4e2e691bc29f22d2728fd897
+  checksum: 10c0/63394bd338b0e1c795848bd8cb543fc8a6c00c2ceec8056ad7b1c4c4c0b6b5e7976b363184b27d82711eb55f4bfc3f720bb67308c9d05e69a1f843a9e5a41225
   languageName: node
   linkType: hard
 
@@ -4128,18 +4128,18 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^12.0.0":
-  version: 12.0.1
-  resolution: "@nestjs/platform-express@npm:12.0.1"
+  version: 12.0.2
+  resolution: "@nestjs/platform-express@npm:12.0.2"
   dependencies:
     cors: "npm:2.8.6"
     express: "npm:5.2.1"
-    multer: "npm:2.2.0"
+    multer: "npm:2.3.0"
     path-to-regexp: "npm:8.4.2"
     tslib: "npm:2.8.1"
   peerDependencies:
     "@nestjs/common": ^12.0.0
     "@nestjs/core": ^12.0.0
-  checksum: 10c0/84083f9e85bcbd0609be09860c71096c623e3c21186f245e1172644169cad4d3951f9486e932dabbf4ff3ff74d072aaed0f1a7c7f69f9a39ce7f01879d981281
+  checksum: 10c0/d4fc732885a0be510216891d82647f54136680503f109b12192e07648285e0706b2883147500f54439c2045433987423d3da707009e27d45748739399e9e565a
   languageName: node
   linkType: hard
 
@@ -4163,11 +4163,11 @@ __metadata:
   linkType: hard
 
 "@nestjs/schematics@npm:^12.0.0":
-  version: 12.0.1
-  resolution: "@nestjs/schematics@npm:12.0.1"
+  version: 12.0.2
+  resolution: "@nestjs/schematics@npm:12.0.2"
   dependencies:
-    "@angular-devkit/core": "npm:22.1.6"
-    "@angular-devkit/schematics": "npm:22.1.6"
+    "@angular-devkit/core": "npm:22.1.8"
+    "@angular-devkit/schematics": "npm:22.1.8"
     comment-json: "npm:5.0.0"
     jsonc-parser: "npm:3.3.1"
     pluralize: "npm:8.0.0"
@@ -4177,7 +4177,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10c0/37b0327714f45989a4d236328db4e1da0b2f04110cd6e1ea8f473522096ccf7968a43e37bff6d37f2f12260c7b866389d90e1ff5aac2799b46a2ff92a2441ddd
+  checksum: 10c0/307be046da3aed488ac1311d9f965dd8e0b2d61e74b743f45cbf7c1163650ee22aba7e4da87b0c58b883f8cc240bce3bba95cbc591653c2d4b833f764cea98a3
   languageName: node
   linkType: hard
 
@@ -4211,8 +4211,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^12.0.0":
-  version: 12.0.1
-  resolution: "@nestjs/testing@npm:12.0.1"
+  version: 12.0.2
+  resolution: "@nestjs/testing@npm:12.0.2"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -4225,7 +4225,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10c0/79efea430bd359b4d98ad20b81d9f2b589a3dbcb680dbe6e105622395ef953574e2ec6d92b4ce02e64ee45b5873efa1f16d94a27b03da72e5051accf16837711
+  checksum: 10c0/644d44dd07d75b9cd7b27452f6f71a2fe100b086ab62c0e9c48fa7fa5bb24e5cd2eace0dc273fafca04d4f3f671c3f14ba7b74a931d233b5a3ab1af5c1ff1be0
   languageName: node
   linkType: hard
 
@@ -16975,15 +16975,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"multer@npm:2.2.0":
-  version: 2.2.0
-  resolution: "multer@npm:2.2.0"
+"multer@npm:2.3.0":
+  version: 2.3.0
+  resolution: "multer@npm:2.3.0"
   dependencies:
     append-field: "npm:^1.0.0"
     busboy: "npm:^1.6.0"
     concat-stream: "npm:^2.0.0"
     type-is: "npm:^1.6.18"
-  checksum: 10c0/7aa366d89042427347b6ab8e4a203405d7fe942e4a3095648a14526fcf3691d98ffc2da62abf85d8aca0a341f828168eb197b33cfdcfcce29d6ef593a5625591
+  checksum: 10c0/e78fe6b1fe2132cdd33eeec4146643b906046edc1bbbcc90a43ea3d3aed6a7271272897a6d2e40e711e595a156d99b6761848a76fecca6ae3b9a7ee4892ee30c
   languageName: node
   linkType: hard
 
