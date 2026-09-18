@@ -11643,15 +11643,15 @@ __metadata:
   linkType: hard
 
 "expo-build-properties@npm:^57.0.0":
-  version: 57.0.19
-  resolution: "expo-build-properties@npm:57.0.19"
+  version: 57.0.20
+  resolution: "expo-build-properties@npm:57.0.20"
   dependencies:
     "@expo/schema-utils": "npm:^57.0.2"
     resolve-from: "npm:^5.0.0"
     semver: "npm:^7.6.0"
   peerDependencies:
     expo: "*"
-  checksum: 10c0/f4a2658cbce458fc4f292d43dd5495360e195435c807639cec6f3191174304356333fc7232ca27ec89fce32275d6d332feb71e8d57b3da8e5a3b36d197d2cf0f
+  checksum: 10c0/0444dd08435d308de538cbed62125d8e9d58f350cdabe7a8a73471377ed5fb9b368bdf32aa27d092cc4c5ec4a7f986c72eda7bc2e14e5583745adf4d0075a2f0
   languageName: node
   linkType: hard
 
