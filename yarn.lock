@@ -4021,8 +4021,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/common@npm:12.0.4"
+  version: 12.1.0
+  resolution: "@nestjs/common@npm:12.1.0"
   dependencies:
     "@standard-schema/spec": "npm:1.1.0"
     file-type: "npm:22.1.1"
@@ -4040,7 +4040,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10c0/e0c32956e935015f6ed49f9e3e100c35b054aba200b0ef1fed2576c4f581cacb856b2d0a05e1d1f9a41166886e8e4ada5146dc093fd071689496026f202a29a0
+  checksum: 10c0/ec1ad6663b19df293ebc9943753b20d1439c8633551e1eafc4122a91fab015cb4cb35188ae1fc2689e7225d743dbae344472376f10b9e02b4cae9f94917bcac3
   languageName: node
   linkType: hard
 
@@ -4060,8 +4060,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/core@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/core@npm:12.0.4"
+  version: 12.1.0
+  resolution: "@nestjs/core@npm:12.1.0"
   dependencies:
     fast-safe-stringify: "npm:2.1.1"
     iterare: "npm:1.2.1"
@@ -4082,7 +4082,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10c0/780639ffeb4144a4d60f7e19891f8298aeb5ca507c26d8b80466267b9e057ab29b81e206e07699d636fc34c717986d2c9fac166a34b3f9e3145c283677dcffd3
+  checksum: 10c0/5ef9c17d9ac6ac629c85df5dbe1b8b2990a94672199739f7b596ae86b53a4a65208f74b7da19c3371588d81afcc6cb9eb9b3abae33d06f5ffdfc379a5424471c
   languageName: node
   linkType: hard
 
@@ -4128,8 +4128,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/platform-express@npm:12.0.4"
+  version: 12.1.0
+  resolution: "@nestjs/platform-express@npm:12.1.0"
   dependencies:
     cors: "npm:2.8.6"
     express: "npm:5.2.1"
@@ -4139,7 +4139,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^12.0.0
     "@nestjs/core": ^12.0.0
-  checksum: 10c0/0a2a1f425d25bded9b5ff206a2b2b5a9c62ffa60a1e69d624fb58c785ded450b0ec8e1db69cdd506980f7dd0b3b4c2b4d89d83c8195e9a63232094252128c5d7
+  checksum: 10c0/39b621899a9f4ac00d45615a346d77c11c7280ab058bed4865fee99794b417f4bda001f7821e2051e7db8234ad43a49135b9019343ef6e4ecb3eb73de1fcda4b
   languageName: node
   linkType: hard
 
@@ -4163,8 +4163,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/schematics@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/schematics@npm:12.0.4"
+  version: 12.0.5
+  resolution: "@nestjs/schematics@npm:12.0.5"
   dependencies:
     "@angular-devkit/core": "npm:22.1.8"
     "@angular-devkit/schematics": "npm:22.1.8"
@@ -4177,7 +4177,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10c0/2e6e378517e3877718eda8fe9c08125b80b2c7bde7964c646614d4f7b2979da4e16fabec427a6ed13d9b048bfe05aad03a37db295f096006c9f9f275ebcb16ba
+  checksum: 10c0/762f0483181598117c43a3410d5e31eb113d10584daa3a0f06860af16c98d8f06ac28c64a51e3e2f2bab7eb60cd26e344e38107b2ceb0f3d9cf50b0bb33797c3
   languageName: node
   linkType: hard
 
@@ -4214,8 +4214,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/testing@npm:12.0.4"
+  version: 12.1.0
+  resolution: "@nestjs/testing@npm:12.1.0"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -4228,7 +4228,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10c0/e07d0314118597f1a5527d83ca3c3b633430611caef4fc385e4f45ded0eb4c89259fca008ca7288d9139d4a5bb453b2b626878f745766505c7c974a41aa43476
+  checksum: 10c0/fa6539921b281a8d9f152233b89eb1bed9b03169722d638ffac2e1b1abe17bae8df1757fa0d70a56a133f91a763d0f53b60d6eff1134d6f84514d530753cc247
   languageName: node
   linkType: hard
 
