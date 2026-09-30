@@ -11742,15 +11742,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-constants@npm:^57.0.0, expo-constants@npm:~57.0.19":
-  version: 57.0.19
-  resolution: "expo-constants@npm:57.0.19"
+"expo-constants@npm:^57.0.0, expo-constants@npm:~57.0.19, expo-constants@npm:~57.0.20":
+  version: 57.0.20
+  resolution: "expo-constants@npm:57.0.20"
   dependencies:
     "@expo/env": "npm:~2.4.3"
   peerDependencies:
     expo: "*"
     react-native: "*"
-  checksum: 10c0/c68944f58131e62dd1f2dc668e6a5202340a8baed62aa079ca3a588430d889b718e9bc12425548f7684d7b52f50354e615a0e9c2c13366d9641b4d24bb407b4e
+  checksum: 10c0/5d719dd67b92e30f7ba67917cd83010438572e5475037f9a98f7aadec40a514f1417ce3b2c8ec8a4d9c01991fb98cac656eaf068cd598d49de1b9ef5ce834523
   languageName: node
   linkType: hard
 
