@@ -8,7 +8,7 @@
     "@casl/ability": "^7.0.0",
     "@expo/metro-config": "^58.0.0",
     "@expo/metro-runtime": "^58.0.0",
-    "@hookform/resolvers": "^5.2.1",
+    "@hookform/resolvers": "^6.0.0",
     "@nestjs/common": "^12.0.0",
     "@nestjs/config": "^12.0.0",
     "@nestjs/core": "^12.0.0",
