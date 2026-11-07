@@ -4038,14 +4038,14 @@ __metadata:
   linkType: hard
 
 "@nestjs/mongoose@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@nestjs/mongoose@npm:12.0.0"
+  version: 12.0.1
+  resolution: "@nestjs/mongoose@npm:12.0.1"
   peerDependencies:
     "@nestjs/common": ^11.0.0 || ^12.0.0
     "@nestjs/core": ^11.0.0 || ^12.0.0
     mongoose: ^7.0.0 || ^8.0.0 || ^9.0.0
     rxjs: ^7.0.0
-  checksum: 10c0/6449c89f56751579b0250e79c7d412e9c0a4e4c42001f6248b1cd8fa6c4ac6709d4ed7a35c6d28307241afb40783b9796e156b91c18c86e22847a6dd8ebbd1f0
+  checksum: 10c0/06397973825097828a9c9c6ae50b72c0137b5537243338e9c215ba7180ced9d7c0467c0a8b09ecb35b79735ce6062895283281cba08a15c65f2dcd3f331334b3
   languageName: node
   linkType: hard
 
