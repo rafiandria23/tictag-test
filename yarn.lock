@@ -5841,7 +5841,7 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.10.2"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.0"
-    expo: "npm:58.0.24"
+    expo: "npm:58.0.25"
     expo-build-properties: "npm:^58.0.0"
     expo-constants: "npm:^58.0.0"
     expo-linking: "npm:^58.0.0"
@@ -11554,9 +11554,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo@npm:58.0.24":
-  version: 58.0.24
-  resolution: "expo@npm:58.0.24"
+"expo@npm:58.0.25":
+  version: 58.0.25
+  resolution: "expo@npm:58.0.25"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:^58.1.20"
@@ -11607,7 +11607,7 @@ __metadata:
     expo-modules: bin/modules
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/98d360a7058516b2b2cd22e2bd040e001a2cae88199c7f476cea8b1c3901d29814ee5eb78ac2b6dd9c366d0936f3afb9693701265ea7b0897072ba965eb49e4c
+  checksum: 10c0/648572dc2ae042a8481ce9778680f4b59666abae560cbee6fc4da646fc5887dc74f7c86572eebd3879634c2af9e508b382d1c5ffbe33e7ae8b93e496a9b8d66f
   languageName: node
   linkType: hard
 
