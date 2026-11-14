@@ -4115,14 +4115,14 @@ __metadata:
   linkType: hard
 
 "@nestjs/jwt@npm:^12.0.0":
-  version: 12.0.4
-  resolution: "@nestjs/jwt@npm:12.0.4"
+  version: 12.0.5
+  resolution: "@nestjs/jwt@npm:12.0.5"
   dependencies:
     "@types/jsonwebtoken": "npm:9.0.10"
     jsonwebtoken: "npm:9.0.3"
   peerDependencies:
     "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0
-  checksum: 10c0/d4dcdb2173730f930c9ef0457c64e2216d903c08b925ff29a8ea9300ffe53ebe6da6804ac94ce81738857b10979af1b3a354999f4bb6a6ca4645a674e98f41ee
+  checksum: 10c0/ed4093749037245fee469fa4d9696a228873053d86579e3127d1e1960535db5f389a912f89ee8e139fcc9d0ef69e73a9fce72a5fa78c2722929f4fa0691275ae
   languageName: node
   linkType: hard
 
