@@ -2163,11 +2163,11 @@ __metadata:
   linkType: hard
 
 "@casl/ability@npm:^7.0.0":
-  version: 7.1.2
-  resolution: "@casl/ability@npm:7.1.2"
+  version: 7.1.3
+  resolution: "@casl/ability@npm:7.1.3"
   dependencies:
     "@ucast/mongo2js": "npm:^2.0.0"
-  checksum: 10c0/e85043e5bba388efd176b5f23000ab6dbf8cd99d4375910d61f3cddd4a28934f163f58bf04970f26d07af12c007a8afd66fbe7ae3a17c5586281466b61da9bef
+  checksum: 10c0/e72dc8334275d86d26875fbe1edfabb9049da820903d1705dbe53a31b2d15b21aec265db821805781d4d7e04f63ed26dbae56beb194f11e59a1ee2d2d6d74f48
   languageName: node
   linkType: hard
 
